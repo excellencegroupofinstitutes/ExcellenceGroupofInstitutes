@@ -1,3 +1,4 @@
+import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import {createBrowserRouter} from 'react-router-dom'
 
@@ -8,6 +9,7 @@ const App = () => {
     <>
     <Navbar/>
     <div className='h-[2000px]'></div>
+    <HeroSection/>
     </>
   )
 }
