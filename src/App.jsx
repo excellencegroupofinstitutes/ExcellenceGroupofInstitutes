@@ -2,7 +2,7 @@ import Navbar from './components/Navbar'
 import {createBrowserRouter} from 'react-router-dom'
 import WebSerive from './pages/WebService'
 import Home from './pages/Home'
-import MeetDirector from './components/hero/MeetDirector'
+// import MeetDirector from './components/hero/MeetDirector'
 
 
 
@@ -11,8 +11,8 @@ const App = () => {
     <>
     <Navbar/>
     <Home/>
-    <MeetDirector/>
-    {/* <WebSerive/> */}
+    {/* <MeetDirector/> */}
+    {/* <WebServe/> */}
     </>
   )
 }
