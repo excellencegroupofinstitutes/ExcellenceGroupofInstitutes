@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import {createBrowserRouter} from 'react-router-dom'
 import WebSerive from './pages/WebService'
 import Home from './pages/Home'
+import Footer from './components/Footer'
 // import MeetDirector from './components/hero/MeetDirector'
 
 
@@ -13,6 +14,7 @@ const App = () => {
     <Home/>
     {/* <MeetDirector/> */}
     {/* <WebServe/> */}
+    <Footer/>
     </>
   )
 }
