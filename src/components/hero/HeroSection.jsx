@@ -47,7 +47,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative h-[80vh] bg-cover bg-center"
+      className="relative h-[80vh] bg-cover bg-center max-w-[1560px] mx-auto overflow-hidden"
       style={{ backgroundImage: `url(${imgSrc})` }}
       aria-label={imgAlt}
     >

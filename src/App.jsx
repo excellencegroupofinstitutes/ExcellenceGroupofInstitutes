@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar'
 import {createBrowserRouter} from 'react-router-dom'
-import WebSerive from './pages/WebSerive'
+import WebSerive from './pages/WebService'
 import Home from './pages/Home'
 
 

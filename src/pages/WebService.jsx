@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroWebSerive from '../components/webSerivice/HeroWebSerive'
+import HeroWebSerive from '../components/webService/HeroWebService'
 
 const WebSerive = () => {
   return (
