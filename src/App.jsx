@@ -1,12 +1,13 @@
-import React from 'react'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
+import {createBrowserRouter} from 'react-router-dom'
+
+
 
 const App = () => {
   return (
     <>
     <Navbar/>
-    <HeroSection/>
+    <div className='h-[2000px]'></div>
     </>
   )
 }
