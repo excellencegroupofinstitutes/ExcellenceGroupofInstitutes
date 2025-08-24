@@ -34,43 +34,50 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="shadow-md max-w-[1560px] mx-auto fixed top-0 right-0 left-0 z-50 bg-white">
-        {/* Top section (only visible before scroll) */}
-        {!isScrolled && (
-          <div className="hidden md:flex justify-between items-center px-4 md:px-20 py-6">
-            <div className="text-[38px] font-bold text-primary">
-              <img src="/images/logo.png" alt="logo" className="w-20" />
-            </div>
-            <div className="text-lg font-semibold text-primary cursor-pointer hover:text-primary-hover transition-colors">
-              Book a Demo
-            </div>
+      <header className="shadow-md max-w-[1560px] mx-auto fixed top-0 right-0 left-0 z-50 bg-white transition-all duration-300">
+        {/* Top section (always visible on mobile, visible before scroll on desktop) */}
+        <div
+          className={`flex justify-between items-center px-4 md:px-20 py-6 ${
+            isScrolled ? "md:hidden" : ""
+          }`}
+        >
+          <div className="text-[38px] font-bold text-primary">
+            <img src="/images/logo.png" alt="logo" className="w-20" />
           </div>
-        )}
+
+          {/* Desktop Book a Demo (only before scroll) */}
+          <div className="hidden md:block text-lg font-semibold text-primary cursor-pointer hover:text-primary-hover transition-colors">
+            Book a Demo
+          </div>
+
+          {/* Hamburger button for mobile */}
+          <button
+            className="md:hidden text-2xl text-primary focus:outline-none"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <FaTimes /> : <FaEllipsisV />}
+          </button>
+        </div>
 
         {!isScrolled && <hr className="mx-auto" width="1400" />}
 
-        {/* Main nav */}
+        {/* Main nav (desktop only) */}
         <nav
-          className={`flex items-center px-4 md:px-20 transition-all duration-300 ${
-            isScrolled ? "justify-between py-4" : "justify-center py-4"
+          className={`hidden md:flex items-center px-4 md:px-20 transition-all duration-300 ${
+            isScrolled
+              ? "justify-between py-4" // after scroll: logo + nav + demo
+              : "justify-center py-4" // before scroll: nav centered
           }`}
         >
-          {/* Logo (visible on scroll or mobile) */}
-          <div className="flex items-center justify-between w-full md:w-auto">
-            <div className={`text-2xl font-bold ${isScrolled?'block':'hidden'} ${isMenuOpen?'hidden':'block'} text-primary`}>
-              <img src="/images/logo.png" alt="logo" className="w-20" />
+          {/* Show logo inside nav ONLY when scrolled */}
+          {isScrolled && (
+            <div className="flex items-center gap-4">
+              <img src="/images/logo.png" alt="logo" className="w-16" />
             </div>
-            {/* Hamburger button for mobile */}
-            <button
-              className="md:hidden text-2xl text-primary focus:outline-none"
-              onClick={toggleMenu}
-            >
-              {isMenuOpen ? "": <FaEllipsisV />}
-            </button>
-          </div>
+          )}
 
           {/* Desktop Links */}
-          <ul className={`hidden md:flex gap-6 text-primary text-[18px]`}>
+          <ul className="flex gap-6 text-primary text-[18px]">
             <li>
               <span className="list-item hover:cursor-pointer hover:text-primary-hover relative px-2 py-1">
                 Home
@@ -95,7 +102,7 @@ const Navbar = () => {
 
           {/* Desktop Book a Demo (only when scrolled) */}
           {isScrolled && (
-            <div className="hidden md:block text-lg font-semibold text-primary hover:cursor-pointer hover:text-primary-hover transition-colors">
+            <div className="text-lg font-semibold text-primary hover:cursor-pointer hover:text-primary-hover transition-colors">
               Book a Demo
             </div>
           )}
@@ -109,10 +116,7 @@ const Navbar = () => {
               className="bg-white w-64 h-full p-4 flex flex-col gap-4"
             >
               {/* Mobile Menu Header with Close Button */}
-              <div className="flex justify-between items-center">
-                <div className="text-2xl font-bold text-primary">
-                  <img src="/images/logo.png" alt="logo" className="w-16" />
-                </div>
+              <div className="flex justify-end items-center">
                 <button
                   className="text-2xl text-primary focus:outline-none"
                   onClick={toggleMenu}
