@@ -7,6 +7,7 @@ import InstituteAchievements from '../components/hero/InstituteAchievements'
 
 import CoreSection from '../components/hero/CoreSection'
 import Gallery from '../components/hero/Gallery'
+import Testimonials from '../components/hero/Testimonials'
 
 
 const Home = () => {
@@ -18,8 +19,7 @@ const Home = () => {
         <ChooseUsCard/>
         <InstituteAchievements/>
         <Gallery/>
-
-       
+        <Testimonials/>     
 
     </div>
 )
