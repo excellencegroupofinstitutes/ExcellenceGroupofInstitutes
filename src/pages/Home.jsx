@@ -6,6 +6,7 @@ import ChooseUsCard from '../components/hero/ChooseUsCard'
 import InstituteAchievements from '../components/hero/InstituteAchievements'
 
 import CoreSection from '../components/hero/CoreSection'
+import Gallery from '../components/hero/Gallery'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <MeetDirector/>
         <ChooseUsCard/>
         <InstituteAchievements/>
+        <Gallery/>
 
        
 

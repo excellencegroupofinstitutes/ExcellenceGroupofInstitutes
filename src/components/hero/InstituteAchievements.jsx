@@ -45,7 +45,7 @@ const InstituteAchievements = () => {
       {/* Stats Box */}
       <div
         ref={counterRef}
-        className="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 w-[90%] md:w-[70%] bg-gradient-to-r from-yellow-500 to-orange-500 text-white rounded-xl shadow-xl py-6 px-6 grid grid-cols-2 md:grid-cols-4 justify-between text-center z-20"
+        className="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 w-[90%] md:w-[70%] bg-gradient-to-r from-primary to-primary/70 text-white rounded-xl shadow-xl py-6 px-6 grid grid-cols-2 md:grid-cols-4 justify-between text-center z-20"
       >
         <div>
           <h3 className="text-4xl font-extrabold">
