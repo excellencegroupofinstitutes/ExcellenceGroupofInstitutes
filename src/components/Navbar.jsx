@@ -1,41 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { FaPhone, FaSearch, FaHeart, FaShoppingCart, FaEllipsisV, FaUser } from "react-icons/fa";
-import { GiClothes } from "react-icons/gi";
-import { Link } from "react-router-dom";
-// import { useAuth } from "../hooks/useAuth";
-// import { useSelector, useDispatch } from "react-redux";
-// import { useQuery, useQueryClient } from "@tanstack/react-query";
-// import { getCart } from "../services/cartService";
-// import { clearCart, setCart } from "../redux/cartSlice";
+import { useState, useEffect, useRef } from "react";
+import { FaEllipsisV, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-//   const [showMore, setShowMore] = useState(false);
-//   const { isAuthenticated } = useAuth();
-//   const { user } = useSelector((state) => state.auth);
-//   const { itemCount } = useSelector((state) => state.cart);
-//   const dispatch = useDispatch();
-//   const queryClient = useQueryClient();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  // Fetch cart data
-//   const { data: cart, isLoading, error } = useQuery({
-//     queryKey: ['cart'],
-//     queryFn: getCart,
-//     enabled: isAuthenticated,
-//   });
-
-//   useEffect(() => {
-//     if (cart) {
-//       dispatch(setCart(cart));
-//     }
-//   }, [cart, dispatch]);
-
-//     useEffect(() => {
-//     if (!isAuthenticated) {
-//       dispatch(clearCart());
-//     }
-//   }, [isAuthenticated, dispatch]);
-
+  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -46,169 +17,154 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-//   const accountRoute = isAuthenticated ? "/my-account" : "/auth";
-//   const isAdmin = isAuthenticated && user?.role === "admin";
+  // Handle click outside to close menu
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
       <header className="shadow-md max-w-[1560px] mx-auto fixed top-0 right-0 left-0 z-50 bg-white">
+        {/* Top section (only visible before scroll) */}
         {!isScrolled && (
-          <div className="hidden md:flex justify-between items-center px-20 py-6">
-            <div className="text-[38px] font-bold text-primary" style={{ fontFamily: 'Brittany Signature' }}>
-              <Link to="/">Excellence Group of Institutes</Link>
+          <div className="hidden md:flex justify-between items-center px-4 md:px-20 py-6">
+            <div className="text-[38px] font-bold text-primary">
+              <img src="/images/logo.png" alt="logo" className="w-20" />
             </div>
-            <div className="flex items-center gap-6 text-2xl text-primary">
-              <Link to="/">
-                <FaSearch className="cursor-pointer hover:text-primary-hover transition-colors" />
-              </Link>
-              <div className="relative cursor-pointer">
-                <Link to="/">
-                  {/* <FaHeart className="hover:text-primary-hover transition-colors" /> */}
-                  About Us
-                </Link>
-              </div>
-              <div className="relative cursor-pointer">
-                <Link to="/">
-                  {/* <FaShoppingCart className="hover:text-primary-hover transition-colors" />
-                  {itemCount > 0 && (
-                    <span className="absolute -top-2 -right-3 border border-primary bg-white text-primary text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">
-                      {itemCount}
-                    </span>
-                  )} */}
-                  Book a Demo
-                </Link>
-              </div>
-              <div className="relative cursor-pointer">
-                <Link to="/" className="hover:text-primary-hover transition-colors">
-                  {/* <FaUser className="hover:text-primary-hover transition-colors" /> */}
-                  Contact Us
-                </Link>
-              </div>
+            <div className="text-lg font-semibold text-primary cursor-pointer hover:text-primary-hover transition-colors">
+              Book a Demo
             </div>
           </div>
         )}
 
         {!isScrolled && <hr className="mx-auto" width="1400" />}
 
+        {/* Main nav */}
         <nav
-          className={`hidden md:flex items-center px-20 text-md ${
-            isScrolled ? "justify-between py-6" : "justify-center py-4"
+          className={`flex items-center px-4 md:px-20 transition-all duration-300 ${
+            isScrolled ? "justify-between py-4" : "justify-center py-4"
           }`}
         >
-          {isScrolled && (
-            <div className="text-2xl font-bold text-primary" style={{ fontFamily: 'Brittany Signature' }}>
-              <Link to="/">Excellence </Link>
+          {/* Logo (visible on scroll or mobile) */}
+          <div className="flex items-center justify-between w-full md:w-auto">
+            <div className={`text-2xl font-bold ${isScrolled?'block':'hidden'} ${isMenuOpen?'hidden':'block'} text-primary`}>
+              <img src="/images/logo.png" alt="logo" className="w-20" />
             </div>
-          )}
+            {/* Hamburger button for mobile */}
+            <button
+              className="md:hidden text-2xl text-primary focus:outline-none"
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? "": <FaEllipsisV />}
+            </button>
+          </div>
 
-          <ul className="flex gap-6 text-primary">
+          {/* Desktop Links */}
+          <ul className={`hidden md:flex gap-6 text-primary text-[18px]`}>
             <li>
-              <Link to="/" className="list-item relative px-2 py-1">
-                HOME
-              </Link>
+              <span className="list-item hover:cursor-pointer hover:text-primary-hover relative px-2 py-1">
+                Home
+              </span>
             </li>
             <li>
-              <Link to="/" className="list-item relative px-2 py-1">
+              <span className="list-item relative hover:cursor-pointer hover:text-primary-hover px-2 py-1">
                 Tuitions
-              </Link>
+              </span>
             </li>
             <li>
-              <Link to="/" className="list-item relative px-2 py-1">
+              <span className="list-item relative hover:cursor-pointer hover:text-primary-hover px-2 py-1">
                 Computer Centers
-              </Link>
+              </span>
             </li>
             <li>
-              <Link to="/" className="list-item relative px-2 py-1">
+              <span className="list-item relative hover:cursor-pointer hover:text-primary-hover px-2 py-1">
                 Web Services
-              </Link>
+              </span>
             </li>
-            {/* {isAdmin && (
-              <>
-                <li>
-                  <Link to="/admin/dashboard" className="list-item relative px-2 py-1">
-                    ADMIN DASHBOARD
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/admin/products" className="list-item relative px-2 py-1">
-                    PRODUCT MANAGEMENT
-                  </Link>
-                </li>
-              </>
-            )} */}
           </ul>
 
+          {/* Desktop Book a Demo (only when scrolled) */}
           {isScrolled && (
-            <div className="flex items-center gap-4 text-xl text-primary">
-              <Link to="/">
-                <FaSearch className="cursor-pointer hover:text-primary-hover transition-colors" />
-              </Link>
-              <div className="relative cursor-pointer">
-                <Link to="/">
-                  {/* <FaHeart className="hover:text-primary-hover transition-colors" /> */}
-                    About Us
-                </Link>
-              </div>
-              <div className="relative cursor-pointer">
-                <Link to="/">
-                  {/* <FaShoppingCart className="hover:text-primary-hover transition-colors" />
-                  {itemCount > 0 && (
-                    <span className="absolute -top-2 -right-3 border border-primary bg-white text-primary text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">
-                      {itemCount}
-                    </span>
-                  )} */}
-                  Book a Demo
-                </Link>
-              </div>
-              <div className="relative cursor-pointer">
-                <Link to="/" className="hover:text-primary-hover transition-colors">
-                  {/* <FaUser className="hover:text-primary-hover transition-colors" /> */}
-                  Contact Us
-                </Link>
-              </div>
+            <div className="hidden md:block text-lg font-semibold text-primary hover:cursor-pointer hover:text-primary-hover transition-colors">
+              Book a Demo
             </div>
           )}
         </nav>
 
-        {/* <div className="fixed bottom-0 left-0 right-0 md:hidden bg-white z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] rounded-t-xl">
-          <div className="flex justify-around items-center py-2 text-xl text-primary">
-            <Link to="/" className="hover:text-primary-hover transition-colors">
-              <GiClothes className="cursor-pointer" />
-            </Link>
-            <Link to="/">
-              <div className="text-xl font-bold" style={{ fontFamily: 'Brittany Signature' }}>
-                Excellence 
-              </div>
-            </Link>
-            <Link to="/">
-              <div className="relative cursor-pointer">
-               
-                Book a Demo
-              </div>
-            </Link>
-            <button
-              onClick={() => setShowMore(!showMore)}
-              className="hover:text-primary-hover transition-colors"
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden fixed inset-0 backdrop-blur-sm z-50">
+            <div
+              ref={menuRef}
+              className="bg-white w-64 h-full p-4 flex flex-col gap-4"
             >
-              <FaEllipsisV />
-            </button>
-          </div>
-
-          {showMore && (
-            <div className="absolute bottom-14 right-4 bg-white shadow-lg rounded-lg p-3 flex flex-col gap-3 text-primary text-lg">
-              <Link to="/" className="hover:text-primary-hover transition-colors">
-                <span className="inline mr-2" > Search</span>
-              </Link>
-              <Link to="/" className="hover:text-primary-hover transition-colors">
-                <span className="inline mr-2"> About Us</span>
-              </Link>
-              <Link to="/" className="hover:text-primary-hover transition-colors">
-                <span className="inline mr-2"> Contact Us</span>
-              </Link>
-            
+              {/* Mobile Menu Header with Close Button */}
+              <div className="flex justify-between items-center">
+                <div className="text-2xl font-bold text-primary">
+                  <img src="/images/logo.png" alt="logo" className="w-16" />
+                </div>
+                <button
+                  className="text-2xl text-primary focus:outline-none"
+                  onClick={toggleMenu}
+                >
+                  <FaTimes />
+                </button>
+              </div>
+              <ul className="flex flex-col gap-4 text-primary text-[18px]">
+                <li>
+                  <span
+                    className="block hover:cursor-pointer hover:text-primary-hover px-2 py-1"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Home
+                  </span>
+                </li>
+                <li>
+                  <span
+                    className="block hover:cursor-pointer hover:text-primary-hover px-2 py-1"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Tuitions
+                  </span>
+                </li>
+                <li>
+                  <span
+                    className="block hover:cursor-pointer hover:text-primary-hover px-2 py-1"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Computer Centers
+                  </span>
+                </li>
+                <li>
+                  <span
+                    className="block hover:cursor-pointer hover:text-primary-hover px-2 py-1"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Web Services
+                  </span>
+                </li>
+                <li>
+                  <span
+                    className="block text-lg font-semibold text-primary hover:cursor-pointer hover:text-primary-hover px-2 py-1"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Book a Demo
+                  </span>
+                </li>
+              </ul>
             </div>
-          )}
-        </div> */}
+          </div>
+        )}
       </header>
     </>
   );
