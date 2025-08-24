@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
     <Navbar/>
-    <div className='h-[2000px]'></div>
+    {/* <div className='h-[2000px]'></div> */}
     </>
   )
 }
