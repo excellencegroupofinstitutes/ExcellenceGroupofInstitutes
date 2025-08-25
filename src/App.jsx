@@ -3,6 +3,8 @@ import {createBrowserRouter} from 'react-router-dom'
 import WebService from './pages/WebService'
 import Home from './pages/Home'
 import Footer from './components/Footer'
+import ComputerService from './pages/ComputerService'
+import Tuition from './pages/Tuition'
 // import MeetDirector from './components/hero/MeetDirector'
 
 
@@ -12,7 +14,9 @@ const App = () => {
     <>
     <Navbar/>
     {/* <Home/> */}
-    <WebService/>
+    {/* <WebService/> */}
+    {/* <ComputerService /> */}
+    <Tuition/>
     <Footer/>
     </>
   )
