@@ -1,14 +1,14 @@
 import React from 'react'
-import HeroSection from '../components/hero/HeroSection'
+import HeroSection from '../components/home/HeroSection'
 
-import MeetDirector from '../components/hero/MeetDirector'
-import ChooseUsCard from '../components/hero/ChooseUsCard'
-import InstituteAchievements from '../components/hero/InstituteAchievements'
+import MeetDirector from '../components/home/MeetDirector'
+import ChooseUsCard from '../components/home/ChooseUsCard'
+import InstituteAchievements from '../components/home/InstituteAchievements'
 
-import CoreSection from '../components/hero/CoreSection'
-import Gallery from '../components/hero/Gallery'
-import Testimonials from '../components/hero/Testimonials'
-import BookDemoForm from '../components/hero/BookDemoForm'
+import CoreSection from '../components/home/CoreSection'
+import Gallery from '../components/home/Gallery'
+import Testimonials from '../components/home/Testimonials'
+import BookDemoForm from '../components/home/BookDemoForm'
 
 
 const Home = () => {
