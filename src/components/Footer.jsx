@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-r from-secondary via-secondary/40 to-secondary text-primary py-12 mt-16 rounded-t-[3rem] shadow-2xl">
+    <footer className="relative max-w-[1560px] mx-auto bg-gradient-to-r from-secondary via-secondary/40 to-secondary text-primary py-12 mt-16 rounded-t-[3rem] shadow-2xl">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] opacity-10"></div>
 
       <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10">

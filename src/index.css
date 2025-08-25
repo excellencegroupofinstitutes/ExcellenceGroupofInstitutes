@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-@theme{
-    --color-secondary: #f8cb21;
-    --color-primary: #000000;
-    --color-primary-hover:#3e3b3b;
+@theme {
+  --color-secondary: #f8cb21;
+  --color-primary: #000000;
+  --color-primary-hover: #3e3b3b;
 }
 
 @layer components {
@@ -13,7 +13,7 @@
     transition: color 0.3s ease;
   }
 
-  
+
   .list-item::before {
     content: "";
     position: absolute;
@@ -51,4 +51,43 @@
     top: -8px;
     right: -8px;
   }
+
+  @keyframes floatX {
+
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-20px);
+    }
+  }
+
+  @keyframes ring {
+
+    0%,
+    100% {
+      transform: rotate(-4deg);
+    }
+
+    50% {
+      transform: rotate(4deg);
+    }
+  }
+
+  .ring-animation {
+    animation: ring 0.2s infinite;
+  }
+
+
+  .float-x {
+    animation: floatX 6s ease-in-out infinite;
+  }
+
+}
+
+input,
+textarea {
+  caret-color: black;
 }

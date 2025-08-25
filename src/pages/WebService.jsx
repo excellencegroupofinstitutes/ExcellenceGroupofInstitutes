@@ -1,12 +1,12 @@
 import React from 'react'
-import HeroWebSerive from '../components/webService/HeroWebService'
+import HeroWebService from '../components/webService/HeroWebService'
 
-const WebSerive = () => {
+const WebService = () => {
   return (
-    <div className='mt-5 md:mt-20'>
-        <HeroWebSerive />
+    <div className='mt-45 md:mt-65'>
+        <HeroWebService />
     </div>
   )
 }
 
-export default WebSerive
+export default WebService
