@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function BookDemoForm() {
   return (
-    <div className="relative flex min-h-screen items-center justify-center bg-gray-50 overflow-hidden">
+    <div id="book-demo"  className="relative py-40 flex min-h-screen items-center justify-center bg-gray-50 overflow-hidden">
       {/* Curved Gradient Background */}
       <div className="absolute inset-0">
         <svg
@@ -25,7 +25,7 @@ export default function BookDemoForm() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex w-11/12 max-w-6xl rounded-2xl shadow-2xl bg-white overflow-hidden">
+      <div className="relative  z-10 flex w-11/12 max-w-6xl rounded-2xl shadow-2xl bg-white overflow-hidden">
         {/* Left - Form */}
         <div className="w-full md:w-1/2 p-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">

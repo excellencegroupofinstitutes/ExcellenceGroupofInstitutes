@@ -2,9 +2,9 @@ import React from 'react'
 
 const HeroComputer = () => {
   return (
-    <section className='bg-secondary relative'>
-        <div className='max-w-[1560px] text-black mx-auto p-4 md:p-10 flex justify-evenly items-center'>
-            <div>
+    <section className='bg-secondary relative pb-10'>
+        <div className='max-w-[1560px] text-black mx-auto p-4 md:p-10 flex flex-col-reverse md:flex-row justify-evenly items-center'>
+            <div className='mt-10 md:mt-0'>
                 {/* text */}
                 <h2 className='text-5xl font-bold' >Master tomorrow's skills today</h2>
                 <p className='text-xl mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
