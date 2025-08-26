@@ -1,23 +1,55 @@
 import Navbar from './components/Navbar'
-import {createBrowserRouter} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import WebService from './pages/WebService'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import ComputerService from './pages/ComputerService'
 import Tuition from './pages/Tuition'
-// import MeetDirector from './components/hero/MeetDirector'
+import ScrollToTop from './components/ScrollToTop'
 
-
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<>
+      <Navbar/>
+      <ScrollToTop />
+      <Home/>
+      <Footer/>
+    </>
+  },
+  {
+    path:'/tuition',
+    element:<>
+      <Navbar/>
+      <ScrollToTop />
+      <Tuition/>
+      <Footer/>
+    </>
+  },
+  {
+    path:'/computer-services',
+    element:<>
+      <Navbar/>
+      <ScrollToTop />
+      <ComputerService/>
+      <Footer/>
+    </>
+  },
+  {
+    path:'/web-services',
+    element:<>
+      <Navbar/>
+      <ScrollToTop />
+      <WebService/>
+      <Footer/>
+    </>
+  },
+])
 
 const App = () => {
   return (
     <>
-    <Navbar/>
-    <Home/>
-    {/* <WebService/>
-    <ComputerService />
-    <Tuition/> */}
-    <Footer/>
+    <RouterProvider router={router} />
     </>
   )
 }
