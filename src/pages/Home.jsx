@@ -9,6 +9,7 @@ import CoreSection from '../components/home/CoreSection'
 import Gallery from '../components/home/Gallery'
 import Testimonials from '../components/home/Testimonials'
 import BookDemoForm from '../components/home/BookDemoForm'
+import OurVision from '../components/home/OurVision'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
     <div className='mt-32 md:mt-39'>
         <HeroSection/>
         <CoreSection/>
+        <OurVision/>
         <MeetDirector/>
         <ChooseUsCard/>
         <InstituteAchievements/>

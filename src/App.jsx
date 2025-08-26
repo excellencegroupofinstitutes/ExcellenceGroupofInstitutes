@@ -13,10 +13,10 @@ const App = () => {
   return (
     <>
     <Navbar/>
-    {/* <Home/> */}
-    {/* <WebService/> */}
-    {/* <ComputerService /> */}
-    <Tuition/>
+    <Home/>
+    {/* <WebService/>
+    <ComputerService />
+    <Tuition/> */}
     <Footer/>
     </>
   )
