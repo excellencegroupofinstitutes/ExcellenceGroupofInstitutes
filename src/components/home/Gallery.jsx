@@ -19,7 +19,7 @@ const images = [
 
 const core_tuition = () => {
   return (
-    <section className="bg-white py-16 px-6">
+    <section className="bg-white max-w-[1560px] mx-auto py-16 px-6">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800">Our Gallery</h2>
         <p className="text-gray-500 mt-3">
