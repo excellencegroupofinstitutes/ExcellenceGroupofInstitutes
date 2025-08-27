@@ -20,11 +20,11 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-primary">
-            <li><a href="#services" className="hover:text-yellow-300 transition">Services</a></li>
-            <li><a href="#about" className="hover:text-yellow-300 transition">About Us</a></li>
-            <li><a href="#testimonials" className="hover:text-yellow-300 transition">Testimonials</a></li>
-            <li><a href="#book-demo" className="hover:text-yellow-300 transition">Book a Demo</a></li>
-            <li><a href="#contact" className="hover:text-yellow-300 transition">Contact</a></li>
+            <li><a href="#services" className="hover:text-yellow-700 transition">Services</a></li>
+            <li><a href="#about" className="hover:text-yellow-700 transition">About Us</a></li>
+            <li><a href="#testimonials" className="hover:text-yellow-700 transition">Testimonials</a></li>
+            <li><a href="#book-demo" className="hover:text-yellow-700 transition">Book a Demo</a></li>
+            <li><a href="#contact" className="hover:text-yellow-700 transition">Contact</a></li>
           </ul>
         </div>
 
@@ -37,9 +37,9 @@ export default function Footer() {
             <p className="flex items-center gap-2"><FaEnvelope /> info@suryanshsirs.com</p>
           </div>
           <div className="flex gap-4 mt-5">
-            <a href="#" className="hover:text-yellow-300 transition"><FaFacebookF size={22} /></a>
-            <a href="#" className="hover:text-yellow-300 transition"><FaInstagram size={22} /></a>
-            <a href="#" className="hover:text-yellow-300 transition"><FaLinkedinIn size={22} /></a>
+            <a href="#" className="hover:text-yellow-700 transition"><FaFacebookF size={22} /></a>
+            <a href="#" className="hover:text-yellow-700 transition"><FaInstagram size={22} /></a>
+            <a href="#" className="hover:text-yellow-700 transition"><FaLinkedinIn size={22} /></a>
           </div>
         </div>
       </div>
