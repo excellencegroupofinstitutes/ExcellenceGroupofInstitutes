@@ -1,12 +1,6 @@
 import React from "react";
 import FancyButton from "../FancyButton"
 
-// const FancyButton = ({ children }) => (
-//   <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
-//     {children}
-//   </button>
-// );
-
 const CoreSection = () => {
   return (
     <section className="text-black py-16 relative overflow-hidden">
