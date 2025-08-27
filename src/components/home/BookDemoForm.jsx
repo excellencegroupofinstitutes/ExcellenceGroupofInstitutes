@@ -1,9 +1,95 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import api from "../../service/api";
 
 export default function BookDemoForm() {
+  const timingOptions = [
+    "Morning (9 AM - 12 PM)",
+    "Afternoon (12 PM - 4 PM)",
+    "Evening (4 PM - 8 PM)",
+  ];
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contactNumber: "",
+    preferredTiming: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  // Handle input change
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Validate inputs
+  const validateForm = () => {
+    const { name, email, contactNumber, preferredTiming } = formData;
+
+    if (!name.trim()) {
+      toast.error("Name is required");
+      return false;
+    }
+
+    // Email validation regex
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address");
+      return false;
+    }
+
+    // Contact number validation (10 digits only)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(contactNumber)) {
+      toast.error("Please enter a valid 10-digit contact number");
+      return false;
+    }
+
+    if (!preferredTiming) {
+      toast.error("Please select a preferred timing");
+      return false;
+    }
+
+    return true;
+  };
+
+  // Handle submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) return; // stop if validation fails
+
+    setLoading(true);
+    try {
+      await api.post("/book-demo", formData);
+      toast.success("Demo booked successfully! 🎉");
+      setFormData({
+        name: "",
+        email: "",
+        contactNumber: "",
+        preferredTiming: "",
+      });
+    } catch (error) {
+      console.error("Error booking demo:", error);
+      toast.error(
+        error.response?.data?.message || "Failed to book demo. Try again."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div id="book-demo"  className="relative py-40 flex min-h-screen items-center justify-center bg-gray-50 overflow-hidden">
+    <div
+      id="book-demo"
+      className="relative py-40 flex min-h-screen items-center justify-center bg-gray-50 overflow-hidden"
+    >
+      {/* Toast container */}
+      <ToastContainer position="top-right" autoClose={3000} />
+
       {/* Curved Gradient Background */}
       <div className="absolute inset-0">
         <svg
@@ -25,17 +111,20 @@ export default function BookDemoForm() {
       </div>
 
       {/* Content */}
-      <div className="relative  z-10 flex w-11/12 max-w-6xl rounded-2xl shadow-2xl bg-white overflow-hidden">
+      <div className="relative z-10 flex w-11/12 max-w-6xl rounded-2xl shadow-2xl bg-white overflow-hidden">
         {/* Left - Form */}
         <div className="w-full md:w-1/2 p-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Book a Free Demo
           </h2>
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <label className="block text-gray-700 font-medium">Name</label>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Your full name"
                 className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:outline-none"
               />
@@ -44,6 +133,9 @@ export default function BookDemoForm() {
               <label className="block text-gray-700 font-medium">Email</label>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Your email address"
                 className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:outline-none"
               />
@@ -54,6 +146,9 @@ export default function BookDemoForm() {
               </label>
               <input
                 type="tel"
+                name="contactNumber"
+                value={formData.contactNumber}
+                onChange={handleChange}
                 placeholder="Your contact number"
                 className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:outline-none"
               />
@@ -62,18 +157,28 @@ export default function BookDemoForm() {
               <label className="block text-gray-700 font-medium">
                 Preferred Timing
               </label>
-              <select className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:outline-none">
-                <option>Morning (9 AM - 12 PM)</option>
-                <option>Afternoon (12 PM - 4 PM)</option>
-                <option>Evening (4 PM - 8 PM)</option>
+              <select
+                name="preferredTiming"
+                value={formData.preferredTiming}
+                onChange={handleChange}
+                className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:outline-none"
+              >
+                <option value="">Select an option</option>
+                {timingOptions.map((option, index) => (
+                  <option key={index} value={option}>
+                    {option}
+                  </option>
+                ))}
               </select>
             </div>
             <motion.button
+              type="submit"
+              disabled={loading}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full bg-primary text-white font-semibold py-3 rounded-lg shadow-lg hover:bg-primary-hover transition"
+              className="w-full bg-primary text-white font-semibold py-3 rounded-lg shadow-lg hover:bg-primary-hover transition disabled:opacity-50"
             >
-              Submit
+              {loading ? "Submitting..." : "Submit"}
             </motion.button>
           </form>
         </div>

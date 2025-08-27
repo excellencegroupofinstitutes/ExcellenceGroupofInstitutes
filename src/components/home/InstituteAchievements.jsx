@@ -7,7 +7,7 @@ const InstituteAchievements = () => {
   const { ref: counterRef, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section className="relative bg-white pt-16 pb-36 px-6">
+    <section className="relative bg-white max-w-[1280px] mx-auto pt-16 pb-36 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         {/* Left: Image */}
         <div className="relative z-10">

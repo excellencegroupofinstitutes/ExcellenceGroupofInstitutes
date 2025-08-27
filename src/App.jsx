@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import ComputerService from './pages/ComputerService'
 import Tuition from './pages/Tuition'
 import ScrollToTop from './components/ScrollToTop'
+import { ToastContainer} from "react-toastify";
+
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <>
+    <ToastContainer position="top-right" autoClose={3000}/>
     <RouterProvider router={router} />
     </>
   )
