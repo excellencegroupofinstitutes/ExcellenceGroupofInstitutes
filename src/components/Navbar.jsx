@@ -84,10 +84,11 @@ const Navbar = () => {
           )}
 
           <ul className="flex gap-6 text-primary text-[18px]">
-            <Link to="/" className="hover:text-primary-hover px-2 py-1">Home</Link>
-            <Link to="/tuition" className="hover:text-primary-hover px-2 py-1">Tuitions</Link>
-            <Link to="/computer-services" className="hover:text-primary-hover px-2 py-1">Computer Centers</Link>
-            <Link to="/web-services" className="hover:text-primary-hover px-2 py-1">Web Services</Link>
+            <Link to="/" className="hover:text-primary-hover list-item px-2 py-1">Home</Link>
+            <Link to="/tuition" className="hover:text-primary-hover list-item px-2 py-1">Tuitions</Link>
+            <Link to="/computer-services" className="hover:text-primary-hover list-item px-2 py-1">Computer Centers</Link>
+            <Link to="/web-services" className="hover:text-primary-hover px-2 list-item py-1">Web Services</Link>
+            <Link to="/about" className="hover:text-primary-hover px-2 list-item py-1">About</Link>
           </ul>
 
           {isScrolled && (
@@ -126,6 +127,9 @@ const Navbar = () => {
                 </Link>
                 <Link to="/web-services" onClick={() => setIsMenuOpen(false)}>
                   <span className="block hover:text-primary-hover px-2 py-1">Web Services</span>
+                </Link>
+                <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+                  <span className="block hover:text-primary-hover px-2 py-1">About</span>
                 </Link>
                 <li>
                   <span

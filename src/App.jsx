@@ -7,6 +7,7 @@ import ComputerService from './pages/ComputerService'
 import Tuition from './pages/Tuition'
 import ScrollToTop from './components/ScrollToTop'
 import { ToastContainer} from "react-toastify";
+import About from './pages/About'
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,15 @@ const router = createBrowserRouter([
       <Navbar/>
       <ScrollToTop />
       <WebService/>
+      <Footer/>
+    </>
+  },
+  {
+    path:'/about',
+    element:<>
+      <Navbar/>
+      <ScrollToTop />
+      <About/>
       <Footer/>
     </>
   },
