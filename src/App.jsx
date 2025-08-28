@@ -8,6 +8,7 @@ import Tuition from './pages/Tuition'
 import ScrollToTop from './components/ScrollToTop'
 import { ToastContainer} from "react-toastify";
 import About from './pages/About'
+import WhatsApp from './components/WhatsApp'
 
 
 const router = createBrowserRouter([
@@ -63,6 +64,7 @@ const App = () => {
     <>
     <ToastContainer position="top-right" autoClose={3000}/>
     <RouterProvider router={router} />
+    <WhatsApp/>
     </>
   )
 }
