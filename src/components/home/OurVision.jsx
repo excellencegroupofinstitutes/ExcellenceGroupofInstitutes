@@ -28,17 +28,18 @@ const OurVision = () => {
           viewport={{ once: true }}
           className="flex justify-center items-center"
         >
-          <div className="relative w-full max-w-sm sm:max-w-md">
-            {/* Big yellow panel */}
-            <div className="w-full h-48 sm:h-56 bg-yellow-300 rounded-lg shadow-lg"></div>
+          <div className="relative w-full max-w-sm sm:max-w-md mt-5 md:mt-0">
+  {/* Big yellow panel */}
+  <div className="absolute bottom-[22%] w-full h-48 sm:h-56 bg-yellow-300 rounded-lg shadow-lg z-0"></div>
 
-            {/* Illustration */}
-            <img
-              src="/images/image.png"
-              alt="vision illustration"
-              className="absolute inset-0 m-auto w-4/5 sm:w-[90%] h-auto max-w-xs sm:max-w-sm"
-            />
-          </div>
+  {/* Illustration */}
+  <img
+    src="/images/image.png"
+    alt="vision illustration"
+    className="relative m-auto w-4/5 sm:w-[90%] h-auto max-w-xs sm:max-w-sm z-10"
+  />
+</div>
+
         </motion.div>
       </div>
     </section>
