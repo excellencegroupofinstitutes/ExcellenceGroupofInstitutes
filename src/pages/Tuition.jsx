@@ -3,14 +3,17 @@ import TuitionHero from '../components/tuition/TuitionHero'
 import TuitionCourses from '../components/tuition/TuitionCourses'
 import OurResults from '../components/tuition/OurResults'
 import QuoteSection from '../components/tuition/QuoteSection'
+import TuitionAmenities from '../components/tuition/TuitionAmenities'
 import Locations from '../components/tuition/Locations'
 import AboutTuitions from '../components/tuition/AboutTuitions'
+
 
 const Tuition = () => {
   return (
     <div className='mt-32 md:mt-49'>
         <TuitionHero/>
-        <TuitionCourses/>      
+        <TuitionCourses/>  
+        <TuitionAmenities/>    
         <OurResults/>
         <QuoteSection/>
         <Locations/>

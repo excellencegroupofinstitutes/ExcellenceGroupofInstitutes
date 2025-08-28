@@ -5,7 +5,7 @@ import {
   MdOutlineHistory,
   MdOutlinePublic,
   MdOutlineComputer,
-  MdOutlineBrush,
+  MdAccountBalanceWallet,
 } from "react-icons/md";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useRef } from "react";
@@ -29,7 +29,7 @@ const TuitionHero = () => {
     { name: "History", Icon: MdOutlineHistory },
     { name: "Geography", Icon: MdOutlinePublic },
     { name: "Computer", Icon: MdOutlineComputer },
-    { name: "Art", Icon: MdOutlineBrush },
+    { name: "Accounts", Icon: MdAccountBalanceWallet },
   ];
 
   return (

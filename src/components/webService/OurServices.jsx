@@ -51,36 +51,75 @@ const OurServices = () => {
                     </svg>
                 </div>
 
-                <div className="max-w-[1280px] mx-auto px-10 gap-10 flex md:gap-5 flex-col md:flex-row">
+                <div className="max-w-[1280px] mx-auto px-10 gap-10 grid grid-cols-1 md:grid-cols-3">
                     {/* cards */}
                     <div className="flex flex-col p-3">
                         <div className=" shadow-lg w-auto object-cover">
                             <img src="/images/sample-service.png" alt="card feature img" />
                         </div>
-                        <h3 className="text-2xl mt-6">Primary Text</h3>
-                        <p className="text-md text-gray-600 font-[300] mt-1">Secondary Text</p>
-                        <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, optio nihil repellendus odio consectetur vero.</p>
-                        <button className="w-fit bg-secondary py-3 font-bold px-4 mt-3 rounded-3xl cursor-pointer hover:scale-[1.05] active:scale-[0.99] text-white">Call To Action</button>
+                        <h3 className="text-2xl mt-6">Website Designing</h3>
+                        <p className="mt-5 text-gray-700">We craft modern, responsive, and visually appealing designs that perfectly align with your brand identity and deliver an engaging user experience.</p>
                     </div>
-                    <div className="flex flex-col p-3">
-                        <div className=" shadow-lg w-auto object-cover">
-                            <img src="/images/sample-service.png" alt="card feature img" />
-                        </div>
-                        <h3 className="text-2xl mt-6">Primary Text</h3>
-                        <p className="text-md text-gray-600 font-[300] mt-1">Secondary Text</p>
-                        <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, optio nihil repellendus odio consectetur vero.</p>
-                        <button className="w-fit bg-secondary py-3 font-bold px-4 mt-3 rounded-3xl cursor-pointer hover:scale-[1.05] active:scale-[0.99] text-white">Call To Action</button>
 
-                    </div>
+
                     <div className="flex flex-col p-3">
                         <div className=" shadow-lg w-auto object-cover">
                             <img src="/images/sample-service.png" alt="card feature img" />
                         </div>
-                        <h3 className="text-2xl mt-6">Primary Text</h3>
-                        <p className="text-md text-gray-600 font-[300] mt-1">Secondary Text</p>
-                        <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, optio nihil repellendus odio consectetur vero.</p>
-                        <button className="w-fit bg-secondary py-3 font-bold px-4 mt-3 rounded-3xl cursor-pointer hover:scale-[1.05] active:scale-[0.99] text-white">Call To Action</button>
+                        <h3 className="text-2xl mt-6">Web Development</h3>
+                        <p className="mt-5 text-gray-700">Our development team builds secure, scalable, and high-performance websites using the latest technologies to meet your business goals.</p>
                     </div>
+
+
+                    <div className="flex flex-col p-3">
+                        <div className=" shadow-lg w-auto object-cover">
+                            <img src="/images/sample-service.png" alt="card feature img" />
+                        </div>
+                        <h3 className="text-2xl mt-6">IT Services</h3>
+                        <p className="mt-5 text-gray-700">From troubleshooting to complete IT management, we provide reliable services that keep your systems running smoothly and efficiently.</p>
+                    </div>
+
+                    <div className="flex flex-col p-3">
+                        <div className=" shadow-lg w-auto object-cover">
+                            <img src="/images/sample-service.png" alt="card feature img" />
+                        </div>
+                        <h3 className="text-2xl mt-6">Digital Marketing</h3>
+                        <p className="mt-5 text-gray-700">Boost your brand visibility with tailored digital marketing strategies designed to reach the right audience and drive measurable results.</p>
+                    </div>
+
+                    <div className="flex flex-col p-3">
+                        <div className=" shadow-lg w-auto object-cover">
+                            <img src="/images/sample-service.png" alt="card feature img" />
+                        </div>
+                        <h3 className="text-2xl mt-6">SEO Services</h3>
+                        <p className="mt-5 text-gray-700">We optimize your website with proven SEO techniques that improve search rankings, increase traffic, and enhance online credibility.</p>
+                    </div>
+
+
+                    <div className="flex flex-col p-3">
+                        <div className=" shadow-lg w-auto object-cover">
+                            <img src="/images/sample-service.png" alt="card feature img" />
+                        </div>
+                        <h3 className="text-2xl mt-6">Google Listing</h3>
+                        <p className="mt-5 text-gray-700">Ensure your business gets noticed with a verified Google listing that improves local visibility and helps customers find you easily.</p>
+                    </div>
+
+                    <div className="flex flex-col p-3">
+                        <div className=" shadow-lg w-auto object-cover">
+                            <img src="/images/sample-service.png" alt="card feature img" />
+                        </div>
+                        <h3 className="text-2xl mt-6">Social Media Marketing</h3>
+                        <p className="mt-5 text-gray-700">Grow your brand on popular platforms with engaging social media campaigns that build trust, loyalty, and a wider audience.</p>
+                    </div>
+
+                    <div className="flex flex-col p-3">
+                        <div className=" shadow-lg w-auto object-cover">
+                            <img src="/images/sample-service.png" alt="card feature img" />
+                        </div>
+                        <h3 className="text-2xl mt-6">Facebook & Instagram Ads</h3>
+                        <p className="mt-5 text-gray-700">Maximize reach and conversions with data-driven ad campaigns on Facebook and Instagram tailored to your business objectives.</p>
+                    </div>
+
                 </div>
 
             </div>
