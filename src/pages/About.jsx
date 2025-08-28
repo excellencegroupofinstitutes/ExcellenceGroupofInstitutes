@@ -47,8 +47,7 @@ const About = () => {
       {/* Content */}
       <div className="relative z-10 py-16">
         <h2
-          style={{ fontSize: "clamp(65px,10vw,100px)" }}
-          className="text-center font-[700] text-secondary mb-12 relative"
+          className="text-center text-4xl md:text-5xl font-extrabold text-secondary mb-12 relative"
         >
           <span className="relative z-10">ABOUT US</span>
           <span
