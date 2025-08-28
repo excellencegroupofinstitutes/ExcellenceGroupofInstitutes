@@ -87,7 +87,7 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
               Frequently Asked Questions
             </h2>
             <p className="section-subtitle text-xl text-gray-500  max-w-3xl mx-auto leading-relaxed">
-              Everything you need to know about Startup Chaser
+              Everything you need to know about Excellence WebServices
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-brand to-brand-light mx-auto mt-6 rounded-full"></div>
           </motion.div>
@@ -167,7 +167,7 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
             </div>
           </motion.div>
 
-          {/* Contact CTA */}
+          {/* Contact CTA
           <motion.div 
             variants={fadeInUp}
             whileHover={{ y: -5 }}
@@ -184,7 +184,7 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
               relative overflow-hidden
             "
           >
-            {/* Background pattern */}
+            Background pattern
             <div className="absolute inset-0 bg-gradient-to-br from-brand-light/20 to-brand-dark/20 opacity-50"></div>
             
             <div className="relative z-10">
@@ -226,7 +226,7 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

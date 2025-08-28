@@ -12,9 +12,8 @@ const WebService = () => {
     <div className='mt-45 md:mt-65'>
         <HeroWebService />
         <OurServices />
-        <FAQ/>
         <WebProjects />
-
+        <FAQ/>
     </div>
   )
 }
