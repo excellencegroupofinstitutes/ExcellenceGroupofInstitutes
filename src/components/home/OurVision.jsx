@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const OurVision = () => {
@@ -13,25 +12,11 @@ const OurVision = () => {
           viewport={{ once: true }}
           className="flex flex-col justify-center space-y-5 text-center md:text-left"
         >
-          <h3 className="uppercase text-sm font-bold text-yellow-500 tracking-wider">
-            Logo
-          </h3>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl mb-10 py-2 md:text-5xl font-extrabold text-gray-900">
             Our Vision
           </h2>
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-            We envision a world where technology and knowledge come together to
-            empower every individual. Our mission is to create platforms that
-            foster innovation, collaboration, and growth, enabling people to
-            unlock their full potential. At the heart of our vision lies a
-            commitment to accessibility, creativity, and impact. 
-          </p>
-          <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-            We believe in
-            solutions that don’t just serve today’s needs but also build a
-            foundation for tomorrow. By embracing curiosity, nurturing talent,
-            and leveraging technology responsibly, we strive to drive progress
-            that benefits communities, industries, and the future of learning.
+          <p className="text-gray-600 leading-relaxed text-justify sm:text-lg">
+            At Excellence Group of Institutes, we believe that <b className="font-[700]" >you</b> are the center of everything we do. Our vision is to be a leader in providing top-tier educational and technological services, setting a benchmark for quality and customer satisfaction. We strive to create an environment where every client feels valued and respected, treating each one with the reverence of <b className="font-[700]" >royalty</b>. We believe that by providing exceptional service and building strong, lasting relationships, we can contribute to the success of our clients and the community as a whole.
           </p>
         </motion.div>
 
