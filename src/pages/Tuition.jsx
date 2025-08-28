@@ -3,6 +3,8 @@ import TuitionHero from '../components/tuition/TuitionHero'
 import TuitionCourses from '../components/tuition/TuitionCourses'
 import OurResults from '../components/tuition/OurResults'
 import QuoteSection from '../components/tuition/QuoteSection'
+import Locations from '../components/tuition/Locations'
+import AboutTuitions from '../components/tuition/AboutTuitions'
 
 const Tuition = () => {
   return (
@@ -11,6 +13,8 @@ const Tuition = () => {
         <TuitionCourses/>      
         <OurResults/>
         <QuoteSection/>
+        <Locations/>
+        <AboutTuitions/>
     </div>
   )
 }
