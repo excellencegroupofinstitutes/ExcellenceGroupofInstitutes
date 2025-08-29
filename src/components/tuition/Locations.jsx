@@ -27,7 +27,7 @@ const Locations = () => {
             </a>
 
             {/* Gallery for Location 1 */}
-            <div className="grid grid-cols-2 gap-3 mt-4">
+            {/* <div className="grid grid-cols-2 gap-3 mt-4">
               <img
                 src="/images/demo.jpg"
                 alt="Basant City Branch 1"
@@ -43,7 +43,7 @@ const Locations = () => {
                 alt="Basant City Branch 3"
                 className="w-full h-32 object-cover rounded-lg col-span-2"
               />
-            </div>
+            </div> */}
           </div>
 
           {/* Location 2 */}
@@ -63,7 +63,7 @@ const Locations = () => {
             </a>
 
             {/* Gallery for Location 2 */}
-            <div className="grid grid-cols-2 gap-3 mt-4">
+            {/* <div className="grid grid-cols-2 gap-3 mt-4">
               <img
                 src="/images/demo.jpg"
                 alt="Rajguru Nagar Branch 1"
@@ -79,7 +79,7 @@ const Locations = () => {
                 alt="Rajguru Nagar Branch 3"
                 className="w-full h-32 object-cover rounded-lg col-span-2"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

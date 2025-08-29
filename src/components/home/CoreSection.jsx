@@ -27,7 +27,7 @@ const CoreSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="relative">
             <img
-              src="/images/tuition-blob.png"
+              src="/images/coretuition.png"
               alt="tuition"
               className="w-full max-w-[600px] h-auto max-h-[600px] object-cover"
             />
@@ -67,7 +67,7 @@ const CoreSection = () => {
           </div>
           <div className="relative">
             <img
-              src="/images/tuition-blob.png"
+              src="/images/corecomputer.png"
               alt="web services"
               className="w-full max-w-[600px] h-auto max-h-[600px] object-cover "
             />

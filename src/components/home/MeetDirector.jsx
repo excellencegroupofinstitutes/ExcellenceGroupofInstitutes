@@ -21,13 +21,13 @@ const MeetDirector = () => {
         {/* Right Image */}
         <div className="relative flex justify-center items-center">
           {/* Yellow Diamond Background */}
-          <div className="absolute w-64 h-60 bg-secondary transform rotate-45 rounded-lg "></div>
+          <div className="absolute w-72 h-66 bg-secondary transform rotate-45 rounded-lg "></div>
 
           {/* Director Image */}
           <img
             src="/images/director.png"
             alt="Director"
-            className="relative w-68 h-98 object-cover rounded-lg grayscale"
+            className="relative w-68 h-102 object-cover rounded-lg grayscale"
           />
         </div>
       </div>
