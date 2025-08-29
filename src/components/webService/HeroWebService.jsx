@@ -14,8 +14,7 @@ const HeroWebService = () => {
           <div className="flex items-start gap-5 mt-10">
             <div className="self-stretch w-[5px] bg-secondary"></div>
             <p className="text-lg text-gray-700">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Eius similique deserunt qui, optio suscipit soluta rerum?
+              Our mission is simple: to provide high-quality web services with complete transparency and trust. 
             </p>
           </div>
           <div className="flex flex-col gap-2 mt-9">

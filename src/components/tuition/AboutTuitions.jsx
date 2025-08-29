@@ -45,8 +45,7 @@ const AboutTuitions = () => {
           </p>
           <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             At Excellence Tuitions, we believe that learning should be about gaining 
-            <b> conceptual knowledge</b>, not just memorizing facts. We use <b>innovative teaching methods</b> 
-            that make complex topics easy to grasp, ensuring you can apply what you learn. 
+            <b> conceptual knowledge</b>, not just memorizing facts. We use <b>innovative teaching methods </b> that make complex topics easy to grasp, ensuring you can apply what you learn. 
           </p>
           <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             Our goal is to equip you with the skills to think critically and solve problems independently, 

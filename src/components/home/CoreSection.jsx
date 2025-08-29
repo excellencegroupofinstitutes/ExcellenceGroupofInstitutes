@@ -1,7 +1,10 @@
 import React from "react";
 import FancyButton from "../FancyButton"
+import { useNavigate } from "react-router-dom";
 
 const CoreSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="text-black py-16 relative overflow-hidden">
       {/* Subtle dot pattern background */}
@@ -40,12 +43,10 @@ const CoreSection = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30 rounded-3xl -m-8 -z-10"></div>
             <h2 className="text-3xl font-bold mb-4">Tuition</h2>
             <p className="text-lg mt-2 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              pretium suscipit ligula, id placerat eros euismod vel. Integer
-              bibendum mauris in sem blandit, nec luctus lacus luctus.
+              At Excellence Tuitions, we believe that learning should be about gaining conceptual knowledge, not just memorizing facts. We use innovative teaching methods that make complex topics easy to grasp, ensuring you can apply what you learn.
             </p>
             <div className="mt-5">
-              <FancyButton>Read More</FancyButton>
+              <FancyButton navigation = {()=>{navigate('/tuition')}}>Read More</FancyButton>
             </div>
           </div>
         </div>
@@ -57,12 +58,10 @@ const CoreSection = () => {
             <div className="absolute inset-0 bg-gradient-to-bl from-green-50/30 to-teal-50/30 rounded-3xl -m-8 -z-10"></div>
             <h2 className="text-3xl font-bold mb-4">Web Services</h2>
             <p className="text-lg mt-2 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              pretium suscipit ligula, id placerat eros euismod vel. Integer
-              bibendum mauris in sem blandit, nec luctus lacus luctus.
+              From stunning websites to robust e-commerce platforms and effective digital marketing strategies, we don’t just create solutions — we build lasting partnerships. With us, you gain the peace of mind that comes from working with true professionals.
             </p>
             <div className="mt-5">
-              <FancyButton>Read More</FancyButton>
+              <FancyButton navigation = {()=>{navigate('/web-services')}}>Read More</FancyButton>
             </div>
           </div>
           <div className="relative">
@@ -94,12 +93,10 @@ const CoreSection = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-orange-50/30 to-red-50/30 rounded-3xl -m-8 -z-10"></div>
             <h2 className="text-3xl font-bold mb-4">Computer Center</h2>
             <p className="text-lg mt-2 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              pretium suscipit ligula, id placerat eros euismod vel. Integer
-              bibendum mauris in sem blandit, nec luctus lacus luctus.
+              Our courses go far beyond simple theory. We immerse you in real-world, industry-demanding projectsfrom day one. Instead of just memorizing concepts from a book, you'll be coding, designing, and troubleshooting, gaining the essential practical knowledge that employers are looking for.
             </p>
             <div className="mt-5">
-              <FancyButton>Read More</FancyButton>
+              <FancyButton navigation = {()=>{navigate('/computer-services')}}>Read More</FancyButton>
             </div>
           </div>
         </div>
