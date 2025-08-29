@@ -3,7 +3,7 @@
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid black;   /* black border */
+  border: 1px solid #f8cb21;   /* black border */
   outline: none;
   position: relative;
   transition: 1s ease-in-out;
@@ -14,7 +14,7 @@
   left: 0;
   top: 0;
   fill: none;
-  stroke: black;             /* black stroke */
+  stroke: #f8cb21;             /* black stroke */
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
@@ -22,8 +22,6 @@
 
 .btn:hover {
   background: black;         /* hover background black */
-
-
 }
 
 .btn:hover svg {
