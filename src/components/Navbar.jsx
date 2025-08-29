@@ -45,12 +45,17 @@ const Navbar = () => {
     <>
       <header className="shadow-md max-w-[1560px] mx-auto fixed top-0 right-0 left-0 z-50 bg-white transition-all duration-300">
         <div
-          className={`flex justify-between items-center px-4 md:px-20 py-6 ${isScrolled ? "md:hidden" : ""
+          className={`flex justify-between items-center px-4 md:px-20 py-2 ${isScrolled ? "md:hidden" : ""
             }`}
         >
           <div className="text-[38px] font-bold text-primary">
-            <Link to="/">
+            <Link to="/" className="flex items-center">
               <img src="/images/logo.png" alt="logo" className="w-20" />
+              <div>
+              <h2 className="text-3xl">Excellence</h2>
+              <p className="text-[16px] text-gray-900 font-[400] ">Group</p>
+
+              </div>
             </Link>
           </div>
 
@@ -79,7 +84,9 @@ const Navbar = () => {
         >
           {isScrolled && (
             <div className="flex items-center gap-4">
+              <Link to='/' className="flex items-center" >
               <img src="/images/logo.png" alt="logo" className="w-16" />
+              </Link>
             </div>
           )}
 
