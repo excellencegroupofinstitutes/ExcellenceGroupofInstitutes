@@ -40,7 +40,7 @@ const AboutTuitions = () => {
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             Welcome to <b>Excellence Tuitions</b>, a part of the <b>Excellence Group of Institutes</b>, 
-            located right here in Ludhiana. Our core philosophy is built on a commitment to practical, 
+            located in the heart of Ludhiana. Our core philosophy is built on a commitment to practical, 
             result-oriented teaching that focuses on what truly matters: <b>your understanding</b>.
           </p>
           <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">

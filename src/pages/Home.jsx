@@ -6,7 +6,7 @@ import ChooseUsCard from '../components/home/ChooseUsCard'
 import InstituteAchievements from '../components/home/InstituteAchievements'
 
 import CoreSection from '../components/home/CoreSection'
-import Gallery from '../components/home/Gallery'
+import GalleryMarquee from '../components/GalleryMarquee'
 import Testimonials from '../components/home/Testimonials'
 import BookDemoForm from '../components/home/BookDemoForm'
 import OurVision from '../components/home/OurVision'
@@ -21,7 +21,7 @@ const Home = () => {
         <MeetDirector/>
         <ChooseUsCard/>
         <InstituteAchievements/>
-        <Gallery/>
+        <GalleryMarquee/>
         <Testimonials/>   
         <BookDemoForm/>  
 

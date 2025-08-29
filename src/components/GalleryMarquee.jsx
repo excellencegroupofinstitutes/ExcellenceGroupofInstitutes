@@ -2,14 +2,12 @@ import React from "react";
 
 // Sample image arrays - replace with your actual images
 const row1 = [
-  "https://picsum.photos/400/225?random=1",
-  "https://picsum.photos/400/225?random=2",
-  "https://picsum.photos/400/225?random=3",
-  "https://picsum.photos/400/225?random=4",
-  "https://picsum.photos/400/225?random=5",
-  "https://picsum.photos/400/225?random=6",
-  "https://picsum.photos/400/225?random=7",
-  "https://picsum.photos/400/225?random=8",
+  "/images/corecomputer.png",
+  "/images/corecomputer.png",
+  "/images/corecomputer.png",
+  "/images/corecomputer.png",
+  "/images/core-tuition.jpeg",
+  "/images/coretuition.png",
 ];
 
 const row2 = [
