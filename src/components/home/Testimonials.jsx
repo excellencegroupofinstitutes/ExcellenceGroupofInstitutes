@@ -36,11 +36,19 @@ const Testimonials = () => {
       </div>
 
       {/* Testimonials Grid */}
-      <div className="grid gap-8 md:grid-cols-3">
+      <div className=" md:grid md:grid-cols-3 md:gap-8
+    flex md:flex-none overflow-x-auto  p-7
+    snap-x snap-mandatory scrollbar-hide">
         {testimonials.map((t, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl p-8 transition duration-500 group"
+            className="rrelative bg-white rounded-2xl shadow-lg hover:shadow-2xl
+              transition duration-500 group
+              md:p-8 md:transform-none md:scale-100
+              flex-shrink-0 w-[85%] sm:w-[90%]
+              snap-center p-6
+              transform scale-95 opacity-80
+              first:ml-4 last:mr-4"
           >
             {/* Quote Icon */}
             <FaQuoteLeft className="text-yellow-400 text-3xl absolute -top-5 -left-5 opacity-80 group-hover:scale-110 transition duration-300" />
@@ -72,3 +80,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
