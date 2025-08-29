@@ -1,89 +1,49 @@
-import { useState, useEffect } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
-const slides = [
-  {
-    heading: "Expert Tuition Centers",
-    paragraph: "Personalized tutoring for academic excellence and growth.",
-    imgSrc: "https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg",
-    imgAlt: "Tuition Center Image",
-  },
-  {
-    heading: "Professional Web Services",
-    paragraph: "Responsive web design and development for your business.",
-    imgSrc: "https://images.pexels.com/photos/162622/facebook-login-office-laptop-business-162622.jpeg",
-    imgAlt: "Web Services Image",
-  },
-  {
-    heading: "Advanced Computer Centers",
-    paragraph: "Modern tech courses in programming and IT skills.",
-    imgSrc: "https://images.pexels.com/photos/5538618/pexels-photo-5538618.jpeg",
-    imgAlt: "Computer Center Image",
-  },
-];
+import React from "react";
+import {ReactTyped} from "react-typed";
 
 const HeroSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  };
-
-  const { heading, paragraph, imgSrc, imgAlt } = slides[currentIndex];
-
   return (
-    <section
-      className="relative h-[80vh] bg-cover bg-center max-w-[1560px] mx-auto overflow-hidden"
-      style={{ backgroundImage: `url(${imgSrc})` }}
-      aria-label={imgAlt}
-    >
-      <div className="max-w-[1560px] mx-auto backdrop-blur-[2px] flex items-center justify-center h-full px-4 md:px-20 py-10">
-        <div className="text-center bg-black/50 py-8 px-12 rounded-lg w-fit">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-10">
-            {heading}
-          </h1>
-          <p className="text-base md:text-lg text-white">{paragraph}</p>
+    <section className="bg-gradient-to-r from-secondary via-secondary-light to-secondary text-primary py-20">
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Headline */}
+        <h1 className="text-4xl md:text-6xl text-center font-extrabold mb-6 leading-tight">
+          Shaping Excellence,  
+          <br /> Empowering Your Future
+        </h1>
+
+        {/* Typed text */}
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4 ml-28">
+          We Specialize In{" "}
+          <span className="bg-black/70 text-yellow-400 px-2 py-1 rounded-md">
+            <ReactTyped
+              strings={[
+                "Excellence Tuitions",
+                "Excellence Computer Centre",
+                "Excellence Web Services",
+              ]}
+              typeSpeed={50}
+              backSpeed={40}
+              loop
+            />
+          </span>
+        </h2>
+
+        {/* Description */}
+        <p className="text-lg md:text-lg mb-8 text-gray-700 max-w-3xl mx-auto text-center">
+          Since 2020, <span className="font-bold text-yellow-800">Excellence Group of Institutes</span> has been 
+          redefining learning and technology in Ludhiana. With integrity, innovation, 
+          and a passion for quality, we prepare you to lead in academics, IT, and the digital world.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex justify-center gap-4">
+          <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium hover:bg-yellow-500 transition shadow-md">
+            Explore Our Services
+          </button>
+          <button className="border border-black px-6 py-3 rounded-lg font-medium hover:bg-secondary-hover hover:text-white transition shadow-md">
+            Get in Touch
+          </button>
         </div>
-      </div>
-
-      <button
-        onClick={goToPrevious}
-        className="absolute left-4 top-1/2 cursor-pointer transform -translate-y-1/2 bg-white bg-opacity-70 p-3 rounded-full text-primary hover:bg-opacity-90 hover:scale-[1.1] transition"
-        aria-label="Previous slide"
-      >
-        <FaChevronLeft size={18} />
-      </button>
-      <button
-        onClick={goToNext}
-        className="absolute right-4 top-1/2 cursor-pointer transform -translate-y-1/2 bg-white bg-opacity-70 p-3 rounded-full text-primary hover:bg-opacity-90 hover:scale-[1.1] transition"
-        aria-label="Next slide"
-      >
-        <FaChevronRight size={18} />
-      </button>
-
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? "bg-white" : "bg-gray-400"
-            }`}
-          ></div>
-        ))}
       </div>
     </section>
   );
