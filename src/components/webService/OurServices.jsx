@@ -53,7 +53,7 @@ const services = [
   {
     title: "YouTube Ads & Monetisation",
     description:
-"Unlock the power of YouTube with targeted ads to grow your audience and drive revenue.",
+      "Unlock the power of YouTube with targeted ads to grow your audience and drive revenue.",
     img: "/images/sample-service.png",
   }
 ];
@@ -103,35 +103,35 @@ const OurServices = () => {
         </div>
 
         {/* Mobile PointCards */}
-        <div className="block md:hidden grid gap-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              ref={(el) => (cardRefs.current[index] = el)}
-              className={`group transition-all duration-700 ease-in-out transform rounded-xl p-5 border-l-4 shadow-md hover:shadow-lg hover:scale-[1.02] bg-white 
-                ${
-                  readCards.includes(index)
+        <div className="block md:hidden">
+          <div className=" grid gap-6">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                ref={(el) => (cardRefs.current[index] = el)}
+                className={`group transition-all duration-700 ease-in-out transform rounded-xl p-5 border-l-4 shadow-md hover:shadow-lg hover:scale-[1.02] bg-white 
+                ${readCards.includes(index)
                     ? "border-secondary bg-gradient-to-r from-yellow-100 to-white"
                     : "border-gray-300"
-                }`}
-            >
-              <div className="flex items-start gap-4">
-                <FaCheckCircle
-                  className={`text-2xl mt-1 transition-colors duration-300 ${
-                    readCards.includes(index)
-                      ? "text-secondary"
-                      : "text-gray-400"
                   }`}
-                />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {service.title}
-                  </h3>
-                  {/* <p className="text-gray-700 mt-1">{service.description}</p> */}
+              >
+                <div className="flex items-start gap-4">
+                  <FaCheckCircle
+                    className={`text-2xl mt-1 transition-colors duration-300 ${readCards.includes(index)
+                        ? "text-secondary"
+                        : "text-gray-400"
+                      }`}
+                  />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {service.title}
+                    </h3>
+                    {/* <p className="text-gray-700 mt-1">{service.description}</p> */}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

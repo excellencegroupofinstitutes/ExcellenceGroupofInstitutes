@@ -57,6 +57,15 @@ const router = createBrowserRouter([
       <Footer/>
     </>
   },
+  {
+    path:'/*',
+    element:<>
+      <Navbar/>
+      <ScrollToTop />
+      <h1 className='mt-62 mb-25 text-center text-6xl'>Page Not Found</h1>
+      <Footer/>
+    </>
+  },
 ])
 
 const App = () => {
