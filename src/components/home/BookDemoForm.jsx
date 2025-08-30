@@ -16,6 +16,7 @@ export default function BookDemoForm() {
     email: "",
     contactNumber: "",
     preferredTiming: "",
+    reason:"Demo Class",
   });
 
   const [loading, setLoading] = useState(false);
@@ -65,7 +66,7 @@ export default function BookDemoForm() {
     setLoading(true);
     try {
       await api.post("/book-demo", formData);
-      toast.success("Demo booked successfully! 🎉");
+      toast.success("Demo booked successfully!");
       setFormData({
         name: "",
         email: "",

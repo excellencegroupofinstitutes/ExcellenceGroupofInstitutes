@@ -49,7 +49,7 @@ const AboutComputerCentres = () => {
 
           <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             Our courses go far beyond simple theory. We immerse you in{" "}
-            <b>real-world, industry-demanding projects</b>
+            <b>real-world, industry-demanding projects </b>
             from day one. Instead of just memorizing concepts from a book,
             you&apos;ll be coding, designing, and troubleshooting, gaining the
             essential practical knowledge that employers are looking for.
