@@ -1,4 +1,5 @@
 import { FaArrowRight, FaPhone } from "react-icons/fa";
+import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
 const HeroWebService = () => {
   return (
     <section className="relative">
@@ -22,11 +23,12 @@ const HeroWebService = () => {
             <div className="flex justify-around">
               <div className="flex gap-5 items-center">
                 <img src="/images/yellow-support-icon.png" alt="support" className="w-[50px] md:w-[100px]" />
-                <h3 className="text-[14px] md:text-[16px]">Support <br /> Feature </h3>
+                <h3 className="text-[14px] md:text-[16px]">IT <br /> Services </h3>
               </div>
               <div className="flex gap-5 items-center">
-                <img src="/images/yellow-support-icon.png" alt="support" className="w-[50px] md:w-[100px]" />
-                <h3 className="text-[14px] md:text-[16px]">Support <br /> Feature </h3>
+                {/* <img src="/images/yellow-support-icon.png" alt="support" className="w-[50px] md:w-[100px]" /> */}
+                <TfiLayoutMediaRightAlt  className="text-secondary size-13 md:size-23 " />
+                <h3 className="text-[14px] md:text-[16px]">Digital <br /> Marketing </h3>
               </div>
             </div>
             <hr className="text-gray-300 mt-2" />

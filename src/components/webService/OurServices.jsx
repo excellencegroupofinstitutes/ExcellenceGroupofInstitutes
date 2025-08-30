@@ -6,7 +6,7 @@ const services = [
     title: "Website Designing",
     description:
       "We craft modern, responsive, and visually appealing designs that perfectly align with your brand identity.",
-    img: "/images/sample-service.png",
+    img: "/images/website-design.png",
   },
   {
     title: "Web Development",
@@ -18,43 +18,43 @@ const services = [
     title: "IT Services",
     description:
       "From troubleshooting to complete IT management, we provide reliable services that keep your systems running.",
-    img: "/images/sample-service.png",
+    img: "/images/ItServices.jpeg",
   },
   {
     title: "Digital Marketing",
     description:
       "Boost your brand visibility with tailored digital marketing strategies that reach the right audience.",
-    img: "/images/sample-service.png",
+    img: "/images/digital-marketing.png",
   },
   {
     title: "SEO Services",
     description:
       "We optimize your website with proven SEO techniques that improve rankings, traffic, and credibility.",
-    img: "/images/sample-service.png",
+    img: "/images/seo1.png",
   },
   {
     title: "Google Listing",
     description:
       "Ensure your business gets noticed with a verified Google listing that improves local visibility.",
-    img: "/images/sample-service.png",
+    img: "/images/google-listing.jpeg",
   },
   {
     title: "Social Media Marketing",
     description:
       "Grow your brand with engaging campaigns on popular platforms that build trust and loyalty.",
-    img: "/images/sample-service.png",
+    img: "/images/social-media.png",
   },
   {
     title: "Facebook & Instagram Ads",
     description:
       "Maximize reach and conversions with data-driven ad campaigns tailored to your business objectives.",
-    img: "/images/sample-service.png",
+    img: "/images/FI-ads.png",
   },
   {
     title: "YouTube Ads & Monetisation",
     description:
       "Unlock the power of YouTube with targeted ads to grow your audience and drive revenue.",
-    img: "/images/sample-service.png",
+    img: "/images/youTube-ads.png",
   }
 ];
 
@@ -90,11 +90,11 @@ const OurServices = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
 
         {/* Desktop Grid */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col p-3">
-              <div className="shadow-lg">
-                <img src={service.img} alt={service.title} />
+              <div className="shadow-lg h-[250px] ">
+                <img src={service.img} alt={service.title}  className=" w-full h-full object-cover"/>
               </div>
               <h3 className="text-2xl mt-6">{service.title}</h3>
               <p className="mt-5 text-gray-700">{service.description}</p>

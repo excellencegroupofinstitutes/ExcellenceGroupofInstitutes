@@ -1,12 +1,12 @@
-import React from "react";
+import React,{forwardRef} from "react";
 import FancyButton from "../FancyButton"
 import { useNavigate } from "react-router-dom";
 
-const CoreSection = () => {
+const CoreSection = forwardRef((props, ref) => {
   const navigate = useNavigate();
 
   return (
-    <section className="text-black py-16 relative overflow-hidden mb-0 ">
+    <section ref={ref}  className="text-black py-16 relative overflow-hidden mb-0 ">
       {/* Subtle dot pattern background */}
       <div
         className="absolute hidden md:block inset-0 opacity-10"
@@ -139,6 +139,6 @@ const CoreSection = () => {
       </div>
     </section>
   );
-};
+});
 
 export default CoreSection;

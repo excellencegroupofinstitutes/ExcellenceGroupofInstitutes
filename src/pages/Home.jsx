@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import HeroSection from '../components/home/HeroSection'
 
 import MeetDirector from '../components/home/MeetDirector'
@@ -13,10 +13,15 @@ import OurVision from '../components/home/OurVision'
 
 
 const Home = () => {
+   const coreSectionRef = useRef(null);
+
+  const scrollToServices = () => {
+    coreSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className='mt-32 md:mt-39 overflow-clip'>
-        <HeroSection/>
-        <CoreSection/>
+        <HeroSection onExploreClick={scrollToServices} />
+        <CoreSection ref={coreSectionRef} />
         <OurVision/>
         <MeetDirector/>
         <ChooseUsCard/>

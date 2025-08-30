@@ -2,27 +2,17 @@ const WebProjects = () => {
   const projects = [
     {
       id: "01",
-      title: "Share tools quickly and confidently in minutes",
-      desc: "This powerful tool eliminates the need to leave Salesforce...",
-      img: "/images/feature-01.png",
+      title: "Mytuitionapp ",
+      desc: "Experience the world’s first Personalized Chapter Model (PCM) for CBSE students in India",
+      img: "/images/project-1.png",
+      hyperlink:"https://mytuitionapp.com/",
     },
     {
       id: "02",
-      title: "Automate dynamic proposals",
-      desc: "Create proposals with dynamic pricing tables in seconds...",
-      img: "/images/feature-01.png",
-    },
-    {
-      id: "03",
-      title: "Seamless integration",
-      desc: "Works directly inside Salesforce without switching apps...",
-      img: "/images/feature-01.png",
-    },
-    {
-      id: "04",
-      title: "Boost team productivity",
-      desc: "Customize and share proposals faster than ever...",
-      img: "/images/feature-01.png",
+      title: "AcaBrain",
+      desc: "Frontend template for Institutions",
+      img: "/images/project-2.png",
+      hyperlink:"https://kitpro.site/acabrain/?storefront=envato-elements",
     },
   ];
 
@@ -39,15 +29,19 @@ const WebProjects = () => {
               style={{ zIndex: index + 1 }}
             >
               <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row p-6 lg:p-10 shadow-2xl rounded-2xl bg-white">
-                <div className="py-8 pl-7 lg:px-10 w-4/5">
+                <div className="py-8 pl-7 lg:px-10 w-full md:w-4/5">
                   <h2 className="text-4xl xl:text-6xl font-[500] mb-8">
                     <span className="text-green-500">{project.id}.</span>{" "}
+                    <a href={project.hyperlink} target="_blank">
                     {project.title}
+                    </a>
                   </h2>
                   <p>{project.desc}</p>
                 </div>
-                <div className="max-w-[350px] mx-auto lg:min-w-[500px] xl:max-w-[640px] rounded-3xl overflow-hidden">
+                <div className="max-w-[350px] mx-auto lg:min-w-[500px] xl:max-w-[600px] rounded-3xl overflow-hidden">
+                  <a href={project.hyperlink} target="_blank">
                   <img src={project.img} alt="project" />
+                  </a>
                 </div>
               </div>
             </div>
