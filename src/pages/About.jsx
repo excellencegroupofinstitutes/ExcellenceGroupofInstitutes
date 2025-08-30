@@ -1,5 +1,8 @@
+import ContactUs from "../components/ContactUs";
+
 const About = () => {
   return (
+    <>
     <section className="mt-42 md:mt-55 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-12 relative overflow-hidden">
       {/* Animated gradient background */}
       <div
@@ -104,6 +107,8 @@ const About = () => {
         }
       `}</style>
     </section>
+    <ContactUs/>
+        </>
   );
 };
 

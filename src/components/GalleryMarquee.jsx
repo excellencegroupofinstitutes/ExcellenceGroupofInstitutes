@@ -2,23 +2,21 @@ import React from "react";
 
 // Sample image arrays - replace with your actual images
 const row1 = [
-  "/images/corecomputer.png",
-  "/images/corecomputer.png",
-  "/images/corecomputer.png",
-  "/images/corecomputer.png",
+  "/images/comp.JPG",
+  "/images/team.jpg",
+  "/images/outside.jpeg",
+  "/images/home-tuition.jpg",
   "/images/core-tuition.jpeg",
-  "/images/coretuition.png",
+  "/images/batch.jpg",
+  "/images/outside_students.jpg",
+  "/images/sample-service.png",
 ];
 
 const row2 = [
-  "https://picsum.photos/400/225?random=9",
-  "https://picsum.photos/400/225?random=10",
-  "https://picsum.photos/400/225?random=11",
-  "https://picsum.photos/400/225?random=12",
-  "https://picsum.photos/400/225?random=13",
-  "https://picsum.photos/400/225?random=14",
-  "https://picsum.photos/400/225?random=15",
-  "https://picsum.photos/400/225?random=16",
+  "/images/tuition.jpeg",
+  "/images/group.jpg",
+  "/images/director2.jpg",
+  "images/"
 ];
 
 export default function GalleryMarquee({
@@ -95,7 +93,7 @@ export default function GalleryMarquee({
                 key={`r1-${i}`}
                 src={src}
                 alt={`Gallery image ${i + 1}`}
-                className="h-full w-auto aspect-video object-cover rounded-2xl shadow transition-transform duration-300 hover:scale-[1.03] flex-shrink-0"
+                className="h-[12rem] w-auto aspect-video object-cover rounded-2xl shadow transition-transform duration-300 hover:scale-[1.03] flex-shrink-0"
                 loading="lazy"
                 draggable="false"
               />
@@ -121,7 +119,7 @@ export default function GalleryMarquee({
                 key={`r2-${i}`}
                 src={src}
                 alt={`Gallery image ${i + 1}`}
-                className="h-full w-auto aspect-video object-cover rounded-2xl shadow transition-transform duration-300 hover:scale-[1.03] flex-shrink-0"
+                className="h-[12rem] w-auto aspect-video object-cover rounded-2xl shadow transition-transform duration-300 hover:scale-[1.03] flex-shrink-0"
                 loading="lazy"
                 draggable="false"
               />
