@@ -16,7 +16,7 @@ export default function BookDemoForm() {
     email: "",
     contactNumber: "",
     preferredTiming: "",
-    reason:"Demo Class",
+    reason: "Demo Class",
   });
 
   const [loading, setLoading] = useState(false);
@@ -72,6 +72,7 @@ export default function BookDemoForm() {
         email: "",
         contactNumber: "",
         preferredTiming: "",
+        reason: "Demo Class",
       });
     } catch (error) {
       console.error("Error booking demo:", error);
