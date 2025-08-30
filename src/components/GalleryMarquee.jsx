@@ -16,7 +16,7 @@ const row2 = [
   "/images/tuition.jpeg",
   "/images/group.jpg",
   "/images/director2.jpg",
-  "images/"
+  "images/computer.jpg"
 ];
 
 export default function GalleryMarquee({
