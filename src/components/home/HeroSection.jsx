@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {ReactTyped} from "react-typed";
 
-const HeroSection = () => {
+const HeroSection = ({onExploreClick}) => {
+  const navigate = useNavigate();
   return (
     <section className="bg-gradient-to-r from-secondary via-secondary-light to-secondary text-primary py-20">
       <div className="max-w-5xl mx-auto px-6">
@@ -37,10 +39,10 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex justify-center gap-4">
-          <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium hover:bg-yellow-500 transition shadow-md">
+          <button onClick={onExploreClick} className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium hover:cursor-pointer hover:bg-yellow-500 transition shadow-md">
             Explore Our Services
           </button>
-          <button className="border border-black px-6 py-3 rounded-lg font-medium hover:bg-secondary-hover hover:text-white transition shadow-md">
+          <button onClick={()=>navigate('/about')} className="border hover:cursor-pointer border-black px-6 py-3 rounded-lg font-medium hover:bg-secondary-hover hover:text-white transition shadow-md">
             Get in Touch
           </button>
         </div>
