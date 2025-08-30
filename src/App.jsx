@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop'
 import { ToastContainer} from "react-toastify";
 import About from './pages/About'
 import WhatsApp from './components/WhatsApp'
+import PageNotFound from './pages/PageNotFound'
 
 
 const router = createBrowserRouter([
@@ -62,7 +63,8 @@ const router = createBrowserRouter([
     element:<>
       <Navbar/>
       <ScrollToTop />
-      <h1 className='mt-62 mb-25 text-center text-6xl'>Page Not Found</h1>
+      {/* <h1 className='mt-62 mb-25 text-center text-6xl'>Page Not Found</h1> */}
+      <PageNotFound/>
       <Footer/>
     </>
   },

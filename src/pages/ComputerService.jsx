@@ -12,7 +12,7 @@ const ComputerService = () => {
       <HeroComputer />
       <Course />
       <ComputerAmenities/>
-      <GalleryMarquee/>
+      {/* <GalleryMarquee/> */}
       <AboutComputerCentres/>
 
     </div>
