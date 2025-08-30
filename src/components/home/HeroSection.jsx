@@ -12,7 +12,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Typed text */}
-        <h2 className="text-2xl md:text-4xl font-semibold mb-4 ml-28">
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-center md:text-left lg:ml-28">
           We Specialize In{" "}
           <span className="bg-black/70 text-yellow-400 px-2 py-1 rounded-md">
             <ReactTyped

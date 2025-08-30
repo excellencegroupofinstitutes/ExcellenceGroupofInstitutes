@@ -115,7 +115,7 @@ export default function BookDemoForm() {
         {/* Left - Form */}
         <div className="w-full md:w-1/2 p-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Book a Free Demo
+            Book a Free Demo Class
           </h2>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>

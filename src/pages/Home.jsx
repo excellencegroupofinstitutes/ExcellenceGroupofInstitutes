@@ -14,7 +14,7 @@ import OurVision from '../components/home/OurVision'
 
 const Home = () => {
   return (
-    <div className='mt-32 md:mt-39'>
+    <div className='mt-32 md:mt-39 overflow-clip'>
         <HeroSection/>
         <CoreSection/>
         <OurVision/>
