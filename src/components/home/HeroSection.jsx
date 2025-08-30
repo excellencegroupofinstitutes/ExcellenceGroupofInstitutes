@@ -3,6 +3,13 @@ import { useNavigate } from "react-router-dom";
 import {ReactTyped} from "react-typed";
 
 const HeroSection = ({onExploreClick}) => {
+    const contactUsClick = () => {
+
+      navigate("/about");
+      setTimeout(() => {
+        document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+  };
   const navigate = useNavigate();
   return (
     <section className="bg-gradient-to-r from-secondary via-secondary-light to-secondary text-primary py-20">
@@ -42,7 +49,7 @@ const HeroSection = ({onExploreClick}) => {
           <button onClick={onExploreClick} className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium hover:cursor-pointer hover:bg-yellow-500 transition shadow-md">
             Explore Our Services
           </button>
-          <button onClick={()=>navigate('/about')} className="border hover:cursor-pointer border-black px-6 py-3 rounded-lg font-medium hover:bg-secondary-hover hover:text-white transition shadow-md">
+          <button onClick={contactUsClick} className="border hover:cursor-pointer border-black px-6 py-3 rounded-lg font-medium hover:bg-secondary-hover hover:text-white transition shadow-md">
             Get in Touch
           </button>
         </div>

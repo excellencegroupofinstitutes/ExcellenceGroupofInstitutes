@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 
 const ContactUs = () => {
   return (
-    <section className="bg-gradient-to-br from-yellow-50 to-white pt-16 px-6">
+    <section id='contact-form' className="bg-gradient-to-br from-yellow-50 to-white pt-16 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left: Contact Info */}
@@ -68,7 +68,7 @@ const ContactUs = () => {
             <textarea
               rows="4"
               placeholder="Your Message"
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-3 resize-none border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
             ></textarea>
             <button
               type="submit"
