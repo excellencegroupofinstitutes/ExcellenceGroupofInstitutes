@@ -401,7 +401,7 @@ const Course = () => {
   };
 
   return (
-    <section className="relative p-4 mt-15">
+    <section id="computer-courses" className="relative p-4 mt-15">
       <div className="max-w-[1080px] grid place-items-center space-y-6 gap-9 md:gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto">
         {courses.map((course, index) => (
           <div
