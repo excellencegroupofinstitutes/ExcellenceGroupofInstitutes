@@ -8,7 +8,7 @@ import AboutComputerCentres from "../components/computerService/AboutComputerCen
 
 const ComputerService = () => {
   return (
-    <div className="mt-32 md:mt-49">
+    <div className="mt-17 md:mt-40">
       <HeroComputer />
       <Course />
       <ComputerAmenities/>

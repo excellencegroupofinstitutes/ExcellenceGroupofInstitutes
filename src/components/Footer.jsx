@@ -1,14 +1,39 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
+  const handleBookDemoClick = () => {
+
+    navigate("/");
+    setTimeout(() => {
+      document.getElementById("book-demo")?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  };
+  const contactUsClick = () => {
+
+    navigate("/about");
+    setTimeout(() => {
+      document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  };
+  const testimonialClick = () => {
+
+    navigate("/");
+    setTimeout(() => {
+      document.getElementById("testimonial")?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  };
+
+
   return (
-    <footer className="relative max-w-[1560px] mx-auto bg-gradient-to-r from-secondary via-secondary/40 to-secondary text-primary py-12 mt-16 rounded-t-[1rem] shadow-2xl">
+    <footer className="relative max-w-[1560px] mx-auto bg-gradient-to-r from-secondary via-secondary/40 to-secondary text-primary py-12  shadow-2xl">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] opacity-10"></div>
 
-      <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="container max-w-[1380px] mx-auto px-6 relative z-10 grid md:place-items-center grid-cols-1 md:grid-cols-3 gap-10">
         {/* Branding */}
-        <div>
+        <div className="self-start" >
           <h2 className="text-2xl font-bold mb-2">Excellence Group of Institutes</h2>
           <p className="text-sm italic">An IAF ISO 9001:2015 Certified Institute</p>
           <p className="mt-4 text-sm text-primary">
@@ -17,29 +42,38 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="self-start">
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-primary">
-            <li><a href="#services" className="hover:text-yellow-700 transition">Services</a></li>
-            <li><a href="#about" className="hover:text-yellow-700 transition">About Us</a></li>
-            <li><a href="#testimonials" className="hover:text-yellow-700 transition">Testimonials</a></li>
-            <li><a href="#book-demo" className="hover:text-yellow-700 transition">Book a Demo</a></li>
-            <li><a href="#contact" className="hover:text-yellow-700 transition">Contact</a></li>
+            <li>
+              <button onClick={() => navigate('/web-services')} className="hover:text-yellow-700 hover:cursor-pointer transition"
+              >Web Services</button>
+            </li>
+            <li>
+              <button onClick={() => navigate('/about')} className="hover:text-yellow-700 transition hover:cursor-pointer">About Us</button >
+            </li>
+            <li>
+              <button onClick={testimonialClick} className="hover:text-yellow-700 transition hover:cursor-pointer"
+              >Testimonials</button>
+            </li>
+            <li>
+              <button onClick={handleBookDemoClick} className="hover:text-yellow-700 transition hover:cursor-pointer"
+              >Book a Demo</button>
+            </li>
+            <li>
+              <button onClick={contactUsClick} className="hover:text-yellow-700 transition hover:cursor-pointer">Contact</button >
+            </li>
           </ul>
+
         </div>
 
         {/* Contact Info */}
-        <div>
+        <div className="self-start">
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <div className="space-y-3 text-primary">
-            <p className="flex items-center gap-2"><FaMapMarkerAlt /> Near XYZ Road, City, State</p>
-            <p className="flex items-center gap-2"><FaPhoneAlt /> +91 98765 43210</p>
-            <p className="flex items-center gap-2"><FaEnvelope /> info@suryanshsirs.com</p>
-          </div>
-          <div className="flex gap-4 mt-5">
-            <a href="#" className="hover:text-yellow-700 transition"><FaFacebookF size={22} /></a>
-            <a href="#" className="hover:text-yellow-700 transition"><FaInstagram size={22} /></a>
-            <a href="#" className="hover:text-yellow-700 transition"><FaLinkedinIn size={22} /></a>
+          <div className="space-y-3 text-primary ">
+            <p className="flex items-center gap-2 break-words"><FaMapMarkerAlt /> Kashish Colony, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
+            <p className="flex items-center gap-2 break-all"><FaPhoneAlt /> +91 8557081922, +91 9914179771</p>
+            <p className="flex items-center gap-2 break-all"><FaEnvelope /> excellencegroupofinstitutes@gmail.com</p>
           </div>
         </div>
       </div>

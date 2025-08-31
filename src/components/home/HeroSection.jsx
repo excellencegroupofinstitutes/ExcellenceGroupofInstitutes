@@ -12,7 +12,7 @@ const HeroSection = ({onExploreClick}) => {
   };
   const navigate = useNavigate();
   return (
-    <section className="bg-gradient-to-r from-secondary via-secondary-light to-secondary text-primary py-20">
+    <section className="bg-gradient-to-r from-secondary via-secondary-light to-secondary text-primary py-13 md:py-25">
       <div className="max-w-5xl mx-auto px-6">
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl text-center font-extrabold mb-6 leading-tight">
@@ -21,7 +21,7 @@ const HeroSection = ({onExploreClick}) => {
         </h1>
 
         {/* Typed text */}
-        <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-center md:text-left lg:ml-28">
+        <h2 className="text-2xl h-20 leading-12 md:text-4xl mt-10 font-semibold mb-4 text-center lg:text-left lg:ml-28">
           We Specialize In{" "}
           <span className="bg-black/70 text-yellow-400 px-2 py-1 rounded-md">
             <ReactTyped

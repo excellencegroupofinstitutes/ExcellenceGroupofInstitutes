@@ -25,7 +25,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-gradient-to-r max-w-[1560px] mx-auto from-yellow-50 via-white to-yellow-50 py-20 px-6">
+    <section id="testimonial" className="bg-gradient-to-r max-w-[1560px] mx-auto from-yellow-50 via-white to-yellow-50 py-20 px-6">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-extrabold text-gray-900">
           What Our Students Say

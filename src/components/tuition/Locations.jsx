@@ -8,7 +8,7 @@ const Locations = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
           Our Tuition Locations
         </h2>
-          <p> We are currently operating in two locations in Ludhiana, Punjab</p>
+          <p className="mb-7"> We are currently operating in two locations in Ludhiana, Punjab</p>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Location 1 */}
           <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-100">

@@ -10,7 +10,7 @@ import AboutTuitions from '../components/tuition/AboutTuitions'
 
 const Tuition = () => {
   return (
-    <div className='mt-32 md:mt-49'>
+    <div className='mt-17 md:mt-49'>
         <TuitionHero/>
         <TuitionCourses/>  
         <TuitionAmenities/>    

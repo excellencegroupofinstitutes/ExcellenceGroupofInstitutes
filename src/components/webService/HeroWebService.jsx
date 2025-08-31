@@ -1,6 +1,15 @@
 import { FaArrowRight, FaPhone } from "react-icons/fa";
 import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
+import { useNavigate } from "react-router-dom";
 const HeroWebService = () => {
+  const navigate= useNavigate()
+    const contactUsClick = () => {
+
+    navigate("/about");
+    setTimeout(() => {
+      document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  };
   return (
     <section className="relative">
       <div className="flex max-w-[1280px] mx-auto flex-col lg:flex-row">
@@ -35,7 +44,7 @@ const HeroWebService = () => {
           </div>
           <div className="flex mt-8 flex-col gap-5 md:gap-0 md:flex-row md:items-center">
             {/* CTA */}
-            <button className="group w-fit rounded-4xl flex items-center gap-2.5 py-3 pl-6 pr-5 cursor-pointer active:scale-[0.95] font-bold bg-secondary text-white">
+            <button onClick={contactUsClick} className="group w-fit rounded-4xl flex items-center gap-2.5 py-3 pl-6 pr-5 cursor-pointer active:scale-[0.95] font-bold bg-secondary text-white">
               Contact Us!
               <FaArrowRight
                 className="w-8 h-8 p-2 bg-white rounded-full text-secondary transform rotate-90 transition-transform duration-300 group-hover:rotate-0"
