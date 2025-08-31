@@ -54,7 +54,7 @@ const ContactUs = () => {
     setLoading(true);
     try {
       await api.post("/book-demo", formData);
-      toast.success("Demo booked successfully!");
+      toast.success("We will contact you shortly!");
       setFormData({
         name: "",
         email: "",
