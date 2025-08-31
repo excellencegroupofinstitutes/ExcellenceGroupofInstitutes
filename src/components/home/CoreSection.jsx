@@ -32,7 +32,7 @@ const CoreSection = forwardRef((props, ref) => {
         <BeakerIcon className= " hidden md:block absolute top-1/4 right-1/7 w-28 h-28 text-yellow-400 opacity-50 rotate-28" />
         <StarIcon className= " hidden md:block absolute top-[63%] left-[80%] w-28 h-28 text-yellow-400 opacity-50" />
         <ArchiveBoxIcon className= " hidden md:block absolute top-[35%] left-[20%] w-28 h-28 text-yellow-400 opacity-50 -rotate-12" />
-        <ComputerDesktopIcon className=" hidden md:block absolute bottom-125 left-102 w-30 h-30 text-yellow-400 opacity-50 -rotate-25" />
+        <ComputerDesktopIcon className=" hidden md:block absolute bottom-125 left-[35%] w-30 h-30 text-yellow-400 opacity-50 -rotate-25" />
         <BookOpenIcon className=" hidden md:block absolute bottom-20 right-42 w-40 h-40 text-yellow-400 opacity-50 -rotate-15" />
 
         <div className="max-w-[1280px] hidden md:block mx-auto px-6 space-y-16 relative z-10">
