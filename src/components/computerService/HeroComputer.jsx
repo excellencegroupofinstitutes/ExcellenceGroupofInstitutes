@@ -15,7 +15,7 @@ const HeroComputer = () => {
     document.getElementById("computer-courses")?.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <section className='bg-secondary relative py-12'>
+    <section className='bg-secondary max-w-[1560px] mx-auto relative py-12'>
         <div className='max-w-[1560px] text-black mx-auto p-4 md:p-10 flex flex-col-reverse md:flex-row justify-evenly items-center'>
             <div className='mt-10 md:mt-0'>
                 {/* text */}

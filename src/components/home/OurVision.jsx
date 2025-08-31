@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const OurVision = () => {
   return (
-    <section className="relative bg-yellow-400 py-16 px-4 sm:px-6 lg:px-12">
+    <section className="relative max-w-[1560px] mx-auto bg-yellow-400 py-16 px-4 sm:px-6 lg:px-12">
       <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden grid md:grid-cols-2 gap-10 p-6 sm:p-10">
         {/* Left Side - Text */}
         <motion.div

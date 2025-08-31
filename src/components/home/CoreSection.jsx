@@ -10,7 +10,7 @@ const CoreSection = forwardRef((props, ref) => {
   return (
     <section ref={ref}
 
-      className="text-black relative overflow-hidden mb-0 ">
+      className="text-black max-w-[1560px] mx-auto relative overflow-hidden mb-0 ">
       {/* Subtle dot pattern background */}
       <div
         className="absolute hidden md:block inset-0 opacity-10"

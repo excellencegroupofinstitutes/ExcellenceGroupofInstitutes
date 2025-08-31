@@ -74,7 +74,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section id='contact-form' className="bg-gradient-to-br from-yellow-50 to-white py-16 px-6 ">
+    <section id='contact-form' className="bg-gradient-to-br max-w-[1560px] mx-auto from-yellow-50 to-white py-16 px-6 ">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         {/* Left: Contact Info */}

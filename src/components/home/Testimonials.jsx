@@ -1,23 +1,23 @@
 import React from "react";
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft,FaRegUser } from "react-icons/fa";
 
 // Sample testimonials data
 const testimonials = [
   {
-    name: "Sophia Johnson",
+    name: "Sourav",
     role: "Student",
     image: "https://randomuser.me/api/portraits/women/50.jpg",
     text: "This institute changed my life! The teaching style, the support, and the resources were all beyond my expectations.",
   },
   {
-    name: "Michael Smith",
+    name: "Sushil Kumar",
     role: "Parent",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     text: "I’ve seen tremendous growth in my child’s confidence and performance. Highly recommend to all parents!",
   },
   {
-    name: "Emma Brown",
-    role: "Alumni",
+    name: "Deepanshu",
+    role: "Student",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     text: "The best place to learn and grow. The mentors are inspiring, and the community feels like family.",
   },
@@ -55,11 +55,13 @@ const Testimonials = () => {
 
             {/* User Image */}
             <div className="flex justify-center -mt-12">
-              <img
+              {/* <img
                 src={t.image}
                 alt={t.name}
                 className="w-20 h-20 rounded-full border-4 border-yellow-400 shadow-md"
-              />
+              /> */}
+              <FaRegUser className="w-20 h-20 rounded-full border-3 p-4 border-yellow-400 shadow-md" />
+
             </div>
 
             {/* Testimonial Text */}

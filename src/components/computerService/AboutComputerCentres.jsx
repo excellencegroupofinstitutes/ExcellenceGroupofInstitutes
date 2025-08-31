@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const AboutComputerCentres = () => {
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
+    <section className="relative max-w-[1560px] mx-auto py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
       {/* Background gradient + patterns */}
       <div
         className="absolute inset-0 opacity-30"

@@ -7,7 +7,7 @@ const InstituteAchievements = () => {
   const { ref: counterRef, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section className="relative bg-white max-w-[1280px] mx-auto pt-16 pb-36 px-6">
+    <section className="relative bg-white max-w-[1280px] mx-auto py-16 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         {/* Left: Image */}
         <div className="relative z-10">
@@ -45,7 +45,7 @@ const InstituteAchievements = () => {
       {/* Stats Box */}
       <div
         ref={counterRef}
-        className="mx-auto transform w-[90%] md:w-[70%] bg-gradient-to-r from-primary to-primary/70 text-white rounded-xl shadow-xl py-6 px-6 mt-6 grid grid-cols-2 md:grid-cols-4 justify-between text-center z-20 space-y-6 md:space-y-0"
+        className="mx-auto transform mt-20 w-[90%] md:w-[70%] bg-gradient-to-r from-primary to-primary/70 text-white rounded-xl shadow-xl py-6 px-6 grid grid-cols-2 md:grid-cols-4 justify-between text-center z-20 space-y-6 md:space-y-0"
       >
         <div>
           <h3 className="text-4xl font-extrabold">

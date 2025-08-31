@@ -87,7 +87,7 @@ export default function BookDemoForm() {
   return (
     <div
       id="book-demo"
-      className="relative py-40 flex min-h-screen items-center justify-center bg-gray-50 overflow-hidden"
+      className="relative max-w-[1560px] mx-auto py-40 flex items-center justify-center bg-gray-50 overflow-hidden"
     >
       {/* Toast container */}
       <ToastContainer position="top-right" autoClose={3000} />
