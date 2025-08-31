@@ -10,6 +10,7 @@ const MeetDirector = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Meet Our Director
           </h2>
+          <p className="text-gray-500 text-sm">Suryansh Wadhwa, Director-Excellence Group of Institutes</p>
           <p className="mt-6 text-lg text-gray-700">
             Our director has over 7 years of experience in driving innovation,
             building scalable businesses, and leading teams to success. With a

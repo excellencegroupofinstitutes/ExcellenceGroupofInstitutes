@@ -52,8 +52,8 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <img src="/images/logo.png" alt="logo" className=" w-12 md:w-20" />
               <div>
-              <h2 className="text-2xl">Excellence</h2>
-              <p className="text-[13px] text-gray-900 font-[400] ">Group</p>
+              {/* <h2 className="text-[16px] md:text-2xl">Excellence</h2>
+              <p className="text-[10px] md:text-[13px] text-gray-900 font-[400] ">Group</p> */}
 
               </div>
             </Link>

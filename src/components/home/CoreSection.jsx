@@ -40,7 +40,7 @@ const CoreSection = forwardRef((props, ref) => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="relative">
               <img
-                src="/images/coretuition.png"
+                src="/images/core-tuition-1.png"
                 alt="tuition"
                 className="w-full max-w-[600px] h-auto max-h-[600px] object-cover"
               />
@@ -72,7 +72,7 @@ const CoreSection = forwardRef((props, ref) => {
             </div>
             <div className="relative">
               <img
-                src="/images/corecomputer.png"
+                src="/images/core-website-1.png"
                 alt="web services"
                 className="w-full max-w-[600px] h-auto max-h-[600px] object-cover "
               />
@@ -84,7 +84,7 @@ const CoreSection = forwardRef((props, ref) => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="relative">
               <img
-                src="/images/tuition-blob.png"
+                src="/images/core-computer-center-1.png"
                 alt="computer center"
                 className="w-full max-w-[600px] h-auto max-h-[600px] object-cover"
               />
@@ -111,7 +111,7 @@ const CoreSection = forwardRef((props, ref) => {
         {/* cards */}
         <div className="flex gap-3 flex-col mx-2 shadow-2xl my-5">
           <div className="w-full h-[175px]" >
-            <img src="/images/home-tuition.jpg" className="object-cover w-full h-full" alt="img" />
+            <img src="/images/core-tuition-1.png" className="object-cover w-full h-full" alt="img" />
           </div>
           <div className="p-6">
             <h2 className="text-3xl font-bold mb-4">Tuition</h2>
@@ -124,7 +124,7 @@ const CoreSection = forwardRef((props, ref) => {
 
         <div className="flex gap-3 flex-col mx-2 shadow-2xl my-5">
           <div className="w-full h-[175px]" >
-            <img src="/images/sample-service.png" className="object-cover w-full h-full" alt="img" />
+            <img src="/images/core-website-1.png" className="object-cover w-full h-full" alt="img" />
           </div>
           <div className="p-6">
             <h2 className="text-3xl font-bold mb-4">Web Services</h2>
@@ -138,7 +138,7 @@ const CoreSection = forwardRef((props, ref) => {
 
         <div className="flex gap-3 flex-col mx-2 shadow-2xl my-5">
           <div className="w-full h-[175px]" >
-            <img src="/images/home-computer.jpg" className="object-cover w-full h-full" alt="img" />
+            <img src="/images/core-computer-center-1.png" className="object-cover w-full h-full" alt="img" />
           </div>
           <div className="p-6">
             <h2 className="text-3xl font-bold mb-4">Computer Center</h2>

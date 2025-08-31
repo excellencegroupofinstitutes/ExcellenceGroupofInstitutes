@@ -25,6 +25,11 @@ const HeroSection = ({ onExploreClick }) => {
 
 
       <div className="max-w-5xl mx-auto px-6">
+        <div className="flex justify-center gap-1 relative">
+          <img src="/images/undraw_fun-star.svg" alt="arrow" className="opacity-50 size-7" />
+        <h2 className="text-center text-xl pb-4 w-fit " >Welcome to Excellence Group</h2>
+          <img src="/images/undraw_fun-star.svg" alt="arrow" className="opacity-50 size-7 transform scale-x-[-1]" />
+        </div>
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl text-center font-extrabold mb-6 leading-tight">
           Shaping Excellence,
@@ -32,7 +37,7 @@ const HeroSection = ({ onExploreClick }) => {
         </h1>
 
         {/* Typed text */}
-        <h2 className="text-2xl h-20 leading-12 md:text-4xl mt-10 font-semibold mb-4 text-center lg:text-left lg:ml-28">
+        <h2 className="text-2xl h-[125px] [@media(min-width:450px)]:h-auto leading-12 md:text-4xl mt-10 font-semibold mb-4 text-center lg:text-left lg:ml-28">
           We Specialize In{" "}
           <span className="bg-black/70 text-yellow-400 px-2 py-1 rounded-md">
             <ReactTyped
@@ -51,8 +56,9 @@ const HeroSection = ({ onExploreClick }) => {
         {/* Description */}
         <p className="text-lg md:text-lg mb-8 text-gray-700 max-w-3xl mx-auto text-center">
           Since 2020, <span className="font-bold text-yellow-800">Excellence Group of Institutes</span> has been
-          redefining learning and technology in Ludhiana. With integrity, innovation,
-          and a passion for quality, we prepare you to lead in academics, IT, and the digital world.
+          redefining learning and technology in Ludhiana. 
+          {/* With integrity, innovation,
+          and a passion for quality, we prepare you to lead in academics, IT, and the digital world. */}
         </p>
 
         {/* CTA Buttons */}

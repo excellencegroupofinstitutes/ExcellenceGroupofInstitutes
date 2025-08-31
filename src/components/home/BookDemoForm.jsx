@@ -188,7 +188,8 @@ export default function BookDemoForm() {
         {/* Right - Gradient Area with Text */}
         <div className="hidden md:flex w-1/2 items-center justify-center text-gray-600 p-10 relative z-50">
           <div className="text-center">
-            <h2 className="text-4xl font-extrabold">SURYANSH SIR’S</h2>
+            <h2 className="text-4xl font-extrabold break-words">SURYANSH SIR’S</h2>
+            <p className="text-[17px] mt-1 text-gray-700 break-words text-left">Excellence Group of Institutes</p>
             <p className="mt-4 text-lg">
               An IAF ISO 9001:2015 Certified Institute
             </p>
