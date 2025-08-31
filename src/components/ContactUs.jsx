@@ -80,7 +80,7 @@ const ContactUs = () => {
         {/* Left: Contact Info */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
-            Get in Touch With
+            Get in Touch
           </h2>
           <p className="text-gray-600 mb-8">
             We’re here to answer your queries and guide you. Whether you’re a student, parent, or partner — feel free to reach out.
@@ -89,20 +89,20 @@ const ContactUs = () => {
           <div className="space-y-5">
             <div className="flex items-center gap-4">
               <Phone className="text-secondary" />
-              <p className="text-gray-700">+91 98765 43210</p>
+              <p className="text-gray-700">+91 8557081922, +91 9914179771 </p>
             </div>
             <div className="flex items-center gap-4">
               <Mail className="text-secondary" />
-              <p className="text-gray-700">info@institutesgroup.com</p>
+              <p className="text-gray-700">excellencegroupofinstitutes@gmail.com</p>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="text-secondary" />
-              <p className="text-gray-700">123 Education Lane, City, State</p>
+              <p className="text-gray-700">Kashish Colony, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
             </div>
           </div>
 
           {/* Social Links */}
-          <div className="flex gap-4 mt-8">
+          {/* <div className="flex gap-4 mt-8">
             <a href="#" className="p-3 bg-secondary text-white rounded-full hover:bg-blue-700 transition">
               <Facebook size={20} />
             </a>
@@ -112,7 +112,7 @@ const ContactUs = () => {
             <a href="#" className="p-3 bg-secondary text-white rounded-full hover:bg-blue-700 transition">
               <Linkedin size={20} />
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Right: Contact Form */}
