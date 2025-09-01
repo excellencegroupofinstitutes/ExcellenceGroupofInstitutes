@@ -63,7 +63,7 @@ const staggerContainer = {
   }
 };
 
-export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cream via-white to-brand-muted/30 py-20" }) {
+export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cream via-white to-brand-muted/30 mb-10 py-10 px-4" }) {
   // Store which FAQs are open (multiple allowed)
   const [openIndexes, setOpenIndexes] = useState(new Set([0]));
 
@@ -89,20 +89,19 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          <motion.div 
+          <motion.div
             variants={fadeInUp}
             className="text-center mb-16"
           >
-            <h2 className="section-title mt-4 text-5xl font-extrabold text-gray-900 mb-6">
+            <h2 className="section-title mt-4 text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
               Frequently Asked Questions
             </h2>
-            <p className="section-subtitle text-xl text-gray-500  max-w-3xl mx-auto leading-relaxed">
+            <p className="section-subtitle text-base md:text-lg text-gray-500  max-w-3xl mx-auto leading-relaxed">
               Everything you need to know about Excellence WebServices
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-brand to-brand-light mx-auto mt-6 rounded-full"></div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={fadeInUp}
             className="max-w-4xl mx-auto"
           >
@@ -116,7 +115,7 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
                     variants={fadeInUp}
                     whileHover={{ y: -2 }}
                     className="
-                      rounded-2xl 
+                      rounded-lg 
                       border border-secondary 
                       shadow-lg hover:shadow-2xl
                       bg-white/80 backdrop-blur-sm 
@@ -127,16 +126,16 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
                     "
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-muted/20 to-orange-50/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                    
+
                     <button
-                      className="relative w-full text-left p-8 focus:outline-none focus:ring-2 focus:ring-brand/20 rounded-2xl"
+                      className="relative w-full text-left p-5 md:p-7"
                       onClick={() => toggleFAQ(index)}
                       aria-expanded={isOpen}
                       aria-controls={`faq-answer-${index}`}
                       id={`faq-question-${index}`}
                     >
                       <div className="flex items-center justify-between hover:cursor-pointer">
-                        <h3 className="text-xl font-bold text-gray-900 pr-4 transition-colors duration-300">
+                        <h3 className="text-base md:text-xl font-bold text-gray-900 pr-4 transition-colors duration-300">
                           {faq.question}
                         </h3>
                         <div className={`w-10 h-10 rounded-full bg-gradient-to-r from-brand to-brand-light flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen ? 'rotate-180' : ''}`}>
@@ -161,7 +160,7 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
                     >
                       <div className="px-8 pb-8 relative">
                         <div className="w-full h-px bg-gradient-to-r from-transparent via-orange-200 to-transparent mb-6"></div>
-                        <p className="text-gray-600 text-lg leading-relaxed">
+                        <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                           {faq.answer}
                         </p>
                       </div>

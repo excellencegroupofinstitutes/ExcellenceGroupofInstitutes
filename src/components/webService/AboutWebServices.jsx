@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const AboutWebServices = () => {
   return (
-    <section className="relative max-w-[1560px] mx-auto py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
+    <section className="relative max-w-[1560px] mx-auto py-12 md:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
       {/* Background gradient + patterns */}
       <div
         className="absolute inset-0 opacity-30"
@@ -33,13 +33,13 @@ const AboutWebServices = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 space-y-6 text-center md:text-left"
+          className="flex-1 space-y-6 text-left"
         >
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-secondary relative">
+          <h2 className="text-3xl md:text-4xl sm:text-5xl pl-5 md:pl-0 font-extrabold text-secondary relative">
             About Excellence Web Services
           </h2>
 
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             Welcome to <b>Excellence Web Services</b>, a trusted vertical of the
             <b> Excellence Group of Institutes</b>, based in the heart of
             Ludhiana with a physical office in the prominent{" "}
@@ -47,7 +47,7 @@ const AboutWebServices = () => {
             partner for all things digital.
           </p>
 
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             Our mission is simple: to provide <b>high-quality web services</b>{" "}
             with complete
             <b> transparency and trust</b>. We proudly operate on a unique
@@ -56,7 +56,7 @@ const AboutWebServices = () => {
             and trust we want to build with you from the very beginning.
           </p>
 
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             From <b>stunning websites</b> to <b>robust e-commerce platforms</b>{" "}
             and
             <b> effective digital marketing strategies</b>, we don’t just create

@@ -27,18 +27,18 @@ const HeroSection = ({ onExploreClick }) => {
       <div className="max-w-5xl mx-auto px-6">
         <div className="flex justify-center gap-1 relative">
           <img src="/images/undraw_fun-star.svg" alt="arrow" className="opacity-50 size-7" />
-        <h2 className="text-center text-xl pb-4 w-fit " >Welcome to Excellence Group</h2>
+          <h2 className="text-center text-xl pb-4 w-fit " >Welcome to Excellence Group</h2>
           <img src="/images/undraw_fun-star.svg" alt="arrow" className="opacity-50 size-7 transform scale-x-[-1]" />
         </div>
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl text-center font-bold mb-6 leading-tight">
           We believe that Excellence should <br />
-           reflect in every work we do
-          
+          reflect in every work we do
+
         </h1>
 
         {/* Typed text */}
-        <h2 className="text-2xl h-[170px] [@media(min-width:450px)]:h-auto leading-12 md:text-3xl mt-10 font-[500] mb-8 text-center lg:text-centre mx-auto  ">
+        <h2 className="text-2xl h-[170px] [@media(min-width:375px)]:h-auto leading-12 md:text-3xl mt-10 font-[500] mb-8 text-center lg:text-centre mx-auto  ">
           We work on three verticals{" "} <br />
           <span className="bg-secondary text-primary px-2 py-1 rounded-md">
             <ReactTyped
@@ -55,41 +55,41 @@ const HeroSection = ({ onExploreClick }) => {
         </h2>
 
         {/* Description */}
-        <p className="text-lg md:text-lg mb-8 text-gray-700 max-w-3xl mx-auto text-center">
+        <p className="text-base md:text-lg mb-8 text-gray-700 max-w-3xl mx-auto text-center">
           Since 2020, <span className="font-bold text-yellow-800">Excellence Group of Institutes</span> has been
-          redefining learning and technology in Ludhiana. 
+          redefining learning and technology in Ludhiana.
           {/* With integrity, innovation,
           and a passion for quality, we prepare you to lead in academics, IT, and the digital world. */}
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col px-8 md:flex-row justify-center gap-4">
-  {/* Primary Button */}
-  <button
-    onClick={onExploreClick}
-    className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium 
+          {/* Primary Button */}
+          <button
+            onClick={onExploreClick}
+            className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium 
                border-2 border-black shadow-[0.15em_0.15em_0px_black] 
                transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
                hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
                active:shadow-[0.05em_0.05em_0px_black] hover:cursor-pointer"
-  >
-    Explore Our Services
-  </button>
+          >
+            Explore Our Services
+          </button>
 
-  {/* Secondary Button */}
-  <button
-    onClick={contactUsClick}
-    className="border-2 border-black text-black px-6 py-3 rounded-lg font-medium 
+          {/* Secondary Button */}
+          <button
+            onClick={contactUsClick}
+            className="border-2 border-black text-black px-6 py-3 rounded-lg font-medium 
                shadow-[0.15em_0.15em_0px_black] 
                transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
                hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
                active:shadow-[0.05em_0.05em_0px_black] hover:bg-secondary hover:text-black hover:cursor-pointer"
-  >
-    Get in Touch
-  </button>
-</div>
+          >
+            Get in Touch
+          </button>
+        </div>
 
-        
+
       </div>
     </section>
   );
