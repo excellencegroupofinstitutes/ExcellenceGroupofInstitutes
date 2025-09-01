@@ -15,7 +15,7 @@ const OurVision = () => {
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
             Our Vision
           </h2>
-          <p className="text-gray-600 leading-relaxed text-justify text-base sm:text-lg">
+          <p className="text-gray-600 leading-relaxed text-left text-base sm:text-lg">
             At Excellence Group of Institutes, we believe that{" "}
             <b className="font-[700]">you</b> are the center of everything we do.
             Our vision is to be a leader in providing top-tier educational and
