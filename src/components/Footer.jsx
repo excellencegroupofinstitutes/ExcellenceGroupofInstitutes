@@ -50,7 +50,7 @@ export default function Footer() {
               >Web Services</button>
             </li>
             <li>
-              <button onClick={() => navigate('/tuition')} className="hover:text-yellow-700 transition hover:cursor-pointer">Tuitions</button >
+              <button onClick={() => navigate('/tuition')} className="hover:text-yellow-700 transition hover:cursor-pointer">Excellence Institutes</button >
             </li>
             <li>
               <button onClick={() => navigate('/compute-services')} className="hover:text-yellow-700 transition hover:cursor-pointer">Computer Centre</button >
@@ -82,7 +82,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-500 mt-10 pt-6 text-center text-primary text-sm relative z-10">
-        © {new Date().getFullYear()} Excellence Group Of Institute. All rights reserved.
+        © {new Date().getFullYear()} Excellence Group Of Institutes. All rights reserved.
       </div>
     </footer>
   );

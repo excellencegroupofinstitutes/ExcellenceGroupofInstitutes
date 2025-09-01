@@ -53,7 +53,7 @@ const HeroSection = ({ onExploreClick }) => {
 
         {/* Typed text */}
         <h2 className="text-xl h-[170px] [@media(min-width:375px)]:h-auto leading-12 md:text-3xl mt-10 font-[500] mb-8 text-center lg:text-centre mx-auto  ">
-          We work on three verticals <br />
+          We have three verticals <br />
           <span className="bg-secondary text-primary px-2 py-1 rounded-md">
             <ReactTyped
               strings={[
