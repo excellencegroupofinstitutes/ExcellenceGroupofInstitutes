@@ -72,7 +72,7 @@ const AboutComputerCentres = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 flex justify-center"
+          className="flex-1 pl-5 md:pl-0 flex justify-center"
         >
           <div className="relative w-full max-w-md">
             {/* Background card accent */}

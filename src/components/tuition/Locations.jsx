@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react";
 
 const Locations = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-15 px-5 bg-white">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
           Our Tuition Locations
@@ -11,7 +11,7 @@ const Locations = () => {
           <p className="mb-7"> We are currently operating in two locations in Ludhiana, Punjab</p>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Location 1 */}
-          <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-100">
+          <div className="p-6 bg-white rounded-md shadow-md border border-gray-100">
             <a
               href="https://maps.app.goo.gl/qw15nJCX47ysHUhe9"
               target="_blank"
@@ -19,7 +19,7 @@ const Locations = () => {
               className="bg-white block"
             >
               <MapPin className="w-8 h-8 text-secondary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Basant City, Ludhiana</h3>
+              <h3 className=" text-lg md:text-xl font-semibold mb-2">Basant City, Ludhiana</h3>
               <p className="text-gray-600 mb-4">
                 Jk center, 1, Sua Rd, Rajguru Nagar Extension, Rajguru Nagar Extension
                 Part-1, Rajguru Nagar, Ludhiana, Punjab 141012
@@ -47,7 +47,7 @@ const Locations = () => {
           </div>
 
           {/* Location 2 */}
-          <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-100">
+          <div className="p-6 bg-white rounded-md shadow-md border border-gray-100">
             <a
               href="https://maps.app.goo.gl/c6hhsEn5yCEzJkuX7"
               target="_blank"
@@ -55,7 +55,7 @@ const Locations = () => {
               className="bg-white block"
             >
               <MapPin className="w-8 h-8 text-secondary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Rajguru Nagar, Ludhiana</h3>
+              <h3 className="text-lg md:text-xl font-semibold mb-2">Rajguru Nagar, Ludhiana</h3>
               <p className="text-gray-600 mb-4">
                 SCO 44C, market, near Sindhi bakery, Rajguru Nagar, Ludhiana,
                 Punjab 141012

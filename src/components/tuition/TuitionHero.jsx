@@ -33,12 +33,12 @@ const TuitionHero = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b max-w-[1560px] mx-auto from-white to-secondary-hover min-h-[500px] pb-15 px-9">
+    <section className="bg-gradient-to-b max-w-[1560px] mx-auto from-white to-secondary-hover pb-15 px-9">
       <div className="mb-8">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl py-10 text-center font-[200]">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl py-10 text-center font-[300]">
           Strive for excellence <br /> success will follow
         </h2>
-        <p className="text-center text-lg text-gray-700 font-[200]">
+        <p className="text-center md:text-lg text-gray-700 font-[300]">
           We believe every student has the potential to excel. Our mission is to
           nurture that potential with personalized tuition for lasting success
         </p>
