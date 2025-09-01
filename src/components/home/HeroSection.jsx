@@ -33,7 +33,7 @@ const HeroSection = ({ onExploreClick }) => {
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl text-center font-bold mb-6 leading-tight">
           We believe that Excellence should <br />
-           reflect in every work we do
+           reflect in every service we provide
           
         </h1>
 
@@ -56,8 +56,8 @@ const HeroSection = ({ onExploreClick }) => {
 
         {/* Description */}
         <p className="text-lg md:text-lg mb-8 text-gray-700 max-w-3xl mx-auto text-center">
-          Since 2020, <span className="font-bold text-yellow-800">Excellence Group of Institutes</span> has been
-          redefining learning and technology in Ludhiana. 
+          <span className="font-bold text-yellow-800">Excellence Group of Institutes</span> has been
+          redefining learning and technology in Ludhiana. <br /> Estd. 2020
           {/* With integrity, innovation,
           and a passion for quality, we prepare you to lead in academics, IT, and the digital world. */}
         </p>
