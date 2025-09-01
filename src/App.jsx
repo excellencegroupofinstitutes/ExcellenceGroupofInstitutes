@@ -1,12 +1,12 @@
 import Navbar from './components/Navbar'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import WebService from './pages/WebService'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import ComputerService from './pages/ComputerService'
 import Tuition from './pages/Tuition'
 import ScrollToTop from './components/ScrollToTop'
-import { ToastContainer} from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import About from './pages/About'
 import WhatsApp from './components/WhatsApp'
 import PageNotFound from './pages/PageNotFound'
@@ -14,58 +14,57 @@ import PageNotFound from './pages/PageNotFound'
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<>
-      <Navbar/>
+    path: '/',
+    element: <>
+      <Navbar />
       <ScrollToTop />
-      <Home/>
-      <Footer/>
+      <Home />
+      <Footer />
     </>
   },
   {
-    path:'/tuition',
-    element:<>
-      <Navbar/>
+    path: '/tuition',
+    element: <>
+      <Navbar />
       <ScrollToTop />
-      <Tuition/>
-      <Footer/>
+      <Tuition />
+      <Footer />
     </>
   },
   {
-    path:'/computer-services',
-    element:<>
-      <Navbar/>
+    path: '/computer-services',
+    element: <>
+      <Navbar />
       <ScrollToTop />
-      <ComputerService/>
-      <Footer/>
+      <ComputerService />
+      <Footer />
     </>
   },
   {
-    path:'/web-services',
-    element:<>
-      <Navbar/>
+    path: '/web-services',
+    element: <>
+      <Navbar />
       <ScrollToTop />
-      <WebService/>
-      <Footer/>
+      <WebService />
+      <Footer />
     </>
   },
   {
-    path:'/about',
-    element:<>
-      <Navbar/>
+    path: '/about',
+    element: <>
+      <Navbar />
       <ScrollToTop />
-      <About/>
-      <Footer/>
+      <About />
+      <Footer />
     </>
   },
   {
-    path:'/*',
-    element:<>
-      <Navbar/>
+    path: '/*',
+    element: <>
+      <Navbar />
       <ScrollToTop />
-      {/* <h1 className='mt-62 mb-25 text-center text-6xl'>Page Not Found</h1> */}
-      <PageNotFound/>
-      <Footer/>
+      <PageNotFound />
+      <Footer />
     </>
   },
 ])
@@ -73,9 +72,9 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <>
-    <ToastContainer position="top-right" autoClose={3000}/>
-    <RouterProvider router={router} />
-    <WhatsApp/>
+      <ToastContainer position="top-right" autoClose={3000} />
+      <RouterProvider router={router} />
+      <WhatsApp />
     </>
   )
 }

@@ -2,9 +2,9 @@ import React from 'react'
 
 const ComputerAmenities = () => {
     return (
-        <section className='mt-20'>
+        <section className='my-20'>
             <div
-                className="w-11/12 max-w-[1080px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 p-4 mt-10"
+                className="w-11/12 max-w-[1080px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 p-4 md:p-0 mt-10"
             >
 
                 <div className="cursor-pointer w-full min-h-[15rem] relative">
