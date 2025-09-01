@@ -38,7 +38,7 @@ const HeroSection = ({ onExploreClick }) => {
         </h1>
 
         {/* Typed text */}
-        <h2 className="text-2xl h-[125px] [@media(min-width:450px)]:h-auto leading-12 md:text-3xl mt-10 font-[500] mb-8 text-center lg:text-centre mx-auto  ">
+        <h2 className="text-2xl h-[170px] [@media(min-width:450px)]:h-auto leading-12 md:text-3xl mt-10 font-[500] mb-8 text-center lg:text-centre mx-auto  ">
           We work on three verticals{" "} <br />
           <span className="bg-secondary text-primary px-2 py-1 rounded-md">
             <ReactTyped
@@ -63,14 +63,33 @@ const HeroSection = ({ onExploreClick }) => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex justify-center gap-4">
-          <button onClick={onExploreClick} className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium hover:cursor-pointer hover:bg-yellow-500 transition shadow-md">
-            Explore Our Services
-          </button>
-          <button onClick={contactUsClick} className="border hover:cursor-pointer border-black px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-white transition shadow-md">
-            Get in Touch
-          </button>
-        </div>
+        <div className="flex flex-col px-8 md:flex-row justify-center gap-4">
+  {/* Primary Button */}
+  <button
+    onClick={onExploreClick}
+    className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium 
+               border-2 border-black shadow-[0.15em_0.15em_0px_black] 
+               transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
+               hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
+               active:shadow-[0.05em_0.05em_0px_black] hover:cursor-pointer"
+  >
+    Explore Our Services
+  </button>
+
+  {/* Secondary Button */}
+  <button
+    onClick={contactUsClick}
+    className="border-2 border-black text-black px-6 py-3 rounded-lg font-medium 
+               shadow-[0.15em_0.15em_0px_black] 
+               transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
+               hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
+               active:shadow-[0.05em_0.05em_0px_black] hover:bg-secondary hover:text-black hover:cursor-pointer"
+  >
+    Get in Touch
+  </button>
+</div>
+
+        
       </div>
     </section>
   );

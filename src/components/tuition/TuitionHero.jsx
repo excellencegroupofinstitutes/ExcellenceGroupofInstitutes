@@ -35,7 +35,7 @@ const TuitionHero = () => {
   return (
     <section className="bg-gradient-to-b max-w-[1560px] mx-auto from-white to-secondary-hover min-h-[500px] pb-15 px-9">
       <div className="mb-8">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl p-10 text-center font-[200]">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl py-10 text-center font-[200]">
           Strive for excellence <br /> success will follow
         </h2>
         <p className="text-center text-2xl text-gray-700 font-[200]">
