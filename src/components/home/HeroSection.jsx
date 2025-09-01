@@ -31,15 +31,16 @@ const HeroSection = ({ onExploreClick }) => {
           <img src="/images/undraw_fun-star.svg" alt="arrow" className="opacity-50 size-7 transform scale-x-[-1]" />
         </div>
         {/* Headline */}
-        <h1 className="text-4xl md:text-6xl text-center font-extrabold mb-6 leading-tight">
-          Shaping Excellence,
-          <br /> Empowering Your Future
+        <h1 className="text-4xl md:text-5xl text-center font-bold mb-6 leading-tight">
+          We believe that Excellence should <br />
+           reflect in every work we do
+          
         </h1>
 
         {/* Typed text */}
-        <h2 className="text-2xl h-[125px] [@media(min-width:450px)]:h-auto leading-12 md:text-4xl mt-10 font-semibold mb-4 text-center lg:text-left lg:ml-28">
-          We Specialize In{" "}
-          <span className="bg-black/70 text-yellow-400 px-2 py-1 rounded-md">
+        <h2 className="text-2xl h-[125px] [@media(min-width:450px)]:h-auto leading-12 md:text-3xl mt-10 font-[500] mb-8 text-center lg:text-centre mx-auto  ">
+          We work on three verticals{" "} <br />
+          <span className="bg-secondary text-primary px-2 py-1 rounded-md">
             <ReactTyped
               strings={[
                 "Excellence Tuitions",

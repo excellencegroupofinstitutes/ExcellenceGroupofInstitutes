@@ -86,10 +86,10 @@ const ContactUs = () => {
             We’re here to answer your queries and guide you. Whether you’re a student, parent, or partner — feel free to reach out.
           </p>
 
-          <div className="space-y-5">
+          <div className="space-y-8">
             <div className="flex items-center gap-4">
               <Phone className="text-secondary" />
-              <p className="text-gray-700">+91 8557081922, +91 9914179771 </p>
+              <p className="text-gray-700">+91 8557081922, +91 9115112585 </p>
             </div>
             <div className="flex items-center gap-4">
               <Mail className="text-secondary" />
@@ -97,7 +97,11 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="text-secondary" />
-              <p className="text-gray-700">Kashish Colony, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
+              <p className="text-gray-700">JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>    
+            </div>
+            <div className="flex items-center gap-4">
+              <MapPin className="text-secondary w-8 h-12" />
+              <p className="text-gray-700">SCF 44-C, Rajguru nagar market, Rajguru nagar, D Block, Master Properties Road, Ludhiana, Punjab</p>
             </div>
           </div>
 

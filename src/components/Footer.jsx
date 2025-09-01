@@ -50,12 +50,15 @@ export default function Footer() {
               >Web Services</button>
             </li>
             <li>
-              <button onClick={() => navigate('/about')} className="hover:text-yellow-700 transition hover:cursor-pointer">About Us</button >
+              <button onClick={() => navigate('/tuition')} className="hover:text-yellow-700 transition hover:cursor-pointer">Tuitions</button >
             </li>
             <li>
+              <button onClick={() => navigate('/compute-services')} className="hover:text-yellow-700 transition hover:cursor-pointer">Computer Centre</button >
+            </li>
+            {/* <li>
               <button onClick={testimonialClick} className="hover:text-yellow-700 transition hover:cursor-pointer"
               >Testimonials</button>
-            </li>
+            </li> */}
             <li>
               <button onClick={handleBookDemoClick} className="hover:text-yellow-700 transition hover:cursor-pointer"
               >Book a Demo</button>
@@ -71,8 +74,8 @@ export default function Footer() {
         <div className="self-start">
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <div className="space-y-3 text-primary ">
-            <p className="flex items-center gap-2 break-words"><FaMapMarkerAlt /> Kashish Colony, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
-            <p className="flex items-center gap-2 break-all"><FaPhoneAlt /> +91 8557081922, +91 9914179771</p>
+            <p className="flex items-center gap-2 break-words"><FaMapMarkerAlt /> JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
+            <p className="flex items-center gap-2 break-all"><FaPhoneAlt /> +91 8557081922, +91 9115112585</p>
             <p className="flex items-center gap-2 break-all"><FaEnvelope /> excellencegroupofinstitutes@gmail.com</p>
           </div>
         </div>
