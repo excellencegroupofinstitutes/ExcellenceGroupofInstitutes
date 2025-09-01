@@ -8,7 +8,7 @@ import AboutWebServices from '../components/webService/AboutWebServices'
 
 const WebService = () => {
   return (
-    <div className='mt-45 md:mt-65'>
+    <div className='mt-20 md:mt-55'>
         <HeroWebService />
         <OurServices />
         <WebProjects />

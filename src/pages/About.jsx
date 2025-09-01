@@ -3,7 +3,7 @@ import ContactUs from "../components/ContactUs";
 const About = () => {
   return (
     <>
-    <section className="mt-24 md:mt-55 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-12 relative overflow-hidden">
+    <section className="mt-10 md:mt-40 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-12 relative overflow-hidden">
       {/* Animated gradient background */}
       <div
         className="absolute inset-0 opacity-30"
@@ -63,8 +63,8 @@ const About = () => {
 
         <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
           {/* Text Section */}
-          <div className="md:w-1/2 pt-10 text-gray-800 text-lg leading-relaxed text-justify space-y-6">
-            <p className="max-w-[600px] mx-auto backdrop-blur-sm p-5 rounded-xl border border-white/20">
+          <div className="md:w-1/2 text-gray-800 text-base md:text-lg leading-relaxed text ">
+            <p className="max-w-[600px] mx-auto backdrop-blur-sm px-5 py-3 md:p-5 rounded-xl border border-white/20">
               <b>Excellence Group of Institutes</b> is a premier educational and technical
               enterprise with its headquarters in Ludhiana, Punjab. We are dedicated to providing
               high-quality services through our three distinct verticals:{" "}
@@ -73,7 +73,7 @@ const About = () => {
               Market, Ludhiana, we cater to the diverse needs of our clients with a commitment to
               excellence.
             </p>
-            <p className="backdrop-blur-sm p-5 rounded-xl border border-white/20">
+            <p className="backdrop-blur-sm px-5 py-3 md:p-5 rounded-xl border border-white/20">
               Our group is built on a foundation of integrity and a passion for providing the
               highest-quality services. <b>Estd. 2020</b>
             </p>

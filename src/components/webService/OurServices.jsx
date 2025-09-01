@@ -84,10 +84,10 @@ const OurServices = () => {
   }, [readCards]);
 
   return (
-    <section className="relative py-16">
+    <section className="relative pt-16">
       <div className="max-w-[1360px] mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
 
         {/* Desktop Grid */}
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-10">
@@ -123,7 +123,7 @@ const OurServices = () => {
                       }`}
                   />
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">
+                    <h3 className="text-md font-semibold text-gray-900">
                       {service.title}
                     </h3>
                     {/* <p className="text-gray-700 mt-1">{service.description}</p> */}

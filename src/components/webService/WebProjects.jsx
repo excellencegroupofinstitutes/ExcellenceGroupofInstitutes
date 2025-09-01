@@ -17,9 +17,9 @@ const WebProjects = () => {
   ];
 
   return (
-    <section className="mt-20 relative">
+    <section className="mt-12 relative">
       <div className="max-w-[1280px] mx-auto p-4">
-        <h2 className="text-6xl font-bold mb-20">Our Projects</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-12">Our Projects</h2>
 
         <div className="relative">
           {projects.map((project, index) => (
@@ -30,13 +30,13 @@ const WebProjects = () => {
             >
               <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row p-6 lg:p-10 shadow-2xl rounded-2xl bg-white">
                 <div className="py-8 pl-7 lg:px-10 w-full md:w-4/5">
-                  <h2 className="text-4xl xl:text-6xl font-[500] mb-8">
+                  <h2 className="text-3xl xl:text-4xl md:font-[400] font-[500] mb-8">
                     <span className="text-green-500">{project.id}.</span>{" "}
                     <a href={project.hyperlink} target="_blank">
                     {project.title}
                     </a>
                   </h2>
-                  <p>{project.desc}</p>
+                  <p className="text-base md:text-lg" >{project.desc}</p>
                 </div>
                 <div className="max-w-[350px] mx-auto lg:min-w-[500px] xl:max-w-[600px] rounded-3xl overflow-hidden">
                   <a href={project.hyperlink} target="_blank">

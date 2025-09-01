@@ -20,10 +20,10 @@ const HeroWebService = () => {
         </div>
         <div className="max-w-[550px] flex flex-col mt-10 md:mt-0 mx-auto px-7">
           {/* right */}
-          <h2 className="text-4xl mx-auto md:text-5xl font-[600]">Choose the best <span className="text-secondary">Web Services</span> company</h2>
+          <h2 className="text-3xl mx-auto md:text-5xl font-[600]">Choose the best <span className="text-secondary">Web Services</span> company</h2>
           <div className="flex items-start gap-5 mt-10">
             <div className="self-stretch w-[5px] bg-secondary"></div>
-            <p className="text-lg text-gray-700">
+            <p className="text-base text-gray-700">
               Our mission is simple: to provide high-quality web services with complete transparency and trust. 
             </p>
           </div>
@@ -32,12 +32,11 @@ const HeroWebService = () => {
             <div className="flex justify-around">
               <div className="flex gap-5 items-center">
                 <img src="/images/yellow-support-icon.png" alt="support" className="w-[50px] md:w-[100px]" />
-                <h3 className="text-[14px] md:text-[16px]">IT <br /> Services </h3>
+                <h3 className="text-sm md:text-base">IT <br /> Services </h3>
               </div>
               <div className="flex gap-5 items-center">
-                {/* <img src="/images/yellow-support-icon.png" alt="support" className="w-[50px] md:w-[100px]" /> */}
                 <TfiLayoutMediaRightAlt  className="text-secondary size-13 md:size-23 " />
-                <h3 className="text-[14px] md:text-[16px]">Digital <br /> Marketing </h3>
+                <h3 className="text-sm md:text-base">Digital <br /> Marketing </h3>
               </div>
             </div>
             <hr className="text-gray-300 mt-2" />
@@ -54,7 +53,7 @@ const HeroWebService = () => {
               <FaPhone className="text-secondary ring-animation border-2 rotate-90 border-gray-200 p-4 rounded-full w-15 h-15"/>
               <div className="flex flex-col">
                 <span className="text-gray-700 ml-2">Call for Help</span>
-                <p className="font-bold text-xl tracking-wide">+91 9876543210</p>
+                <p className="font-bold text-md tracking-wide">+91 9876543210</p>
               </div>
             </div>
 

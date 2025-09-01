@@ -28,6 +28,7 @@ const HeroSection = ({ onExploreClick }) => {
 
       <div className="max-w-5xl mx-auto px-6">
         <div className="flex justify-center gap-1 relative">
+
           <img
             src="/images/undraw_fun-star.svg"
             alt="arrow"
@@ -41,10 +42,12 @@ const HeroSection = ({ onExploreClick }) => {
             alt="arrow"
             className="opacity-50 size-7 transform scale-x-[-1]"
           />
+
         </div>
         {/* Headline */}
         <h1 className="text-3xl md:text-5xl text-center font-bold mb-6 leading-tight">
           We believe that Excellence should <br />
+
           reflect in every service we provide
         </h1>
 
@@ -66,6 +69,7 @@ const HeroSection = ({ onExploreClick }) => {
         </h2>
 
         {/* Description */}
+
         <p className="text-sm sm:text-base px-4 md:text-lg mb-8 text-gray-700 max-w-3xl mx-auto text-center">
           <span className="font-bold text-yellow-800">
             Excellence Group of Institutes
@@ -79,6 +83,7 @@ const HeroSection = ({ onExploreClick }) => {
           <button
             onClick={onExploreClick}
             className="bg-yellow-400 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium 
+
                border-2 border-black shadow-[0.15em_0.15em_0px_black] 
                transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
                hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
@@ -90,7 +95,9 @@ const HeroSection = ({ onExploreClick }) => {
           {/* Secondary Button */}
           <button
             onClick={contactUsClick}
+
             className="border-2 border-black text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium 
+
                shadow-[0.15em_0.15em_0px_black] 
                transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
                hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
@@ -99,6 +106,7 @@ const HeroSection = ({ onExploreClick }) => {
             Get in Touch
           </button>
         </div>
+
       </div>
     </section>
   );

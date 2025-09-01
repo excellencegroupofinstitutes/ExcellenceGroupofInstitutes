@@ -33,21 +33,21 @@ const AboutTuitions = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 space-y-6 text-center md:text-left"
+          className="flex-1 space-y-3 text-left"
         >
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-secondary relative">
+          <h2 className="text-3xl md:text-4xl pl-5 md:pl-0 font-extrabold text-secondary relative">
             About Excellence Tuitions
           </h2>
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             Welcome to <b>Excellence Tuitions</b>, a part of the <b>Excellence Group of Institutes</b>, 
             located in the heart of Ludhiana. Our core philosophy is built on a commitment to practical, 
             result-oriented teaching that focuses on what truly matters: <b>your understanding</b>.
           </p>
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             At Excellence Tuitions, we believe that learning should be about gaining 
             <b> conceptual knowledge</b>, not just memorizing facts. We use <b>innovative teaching methods </b> that make complex topics easy to grasp, ensuring you can apply what you learn. 
           </p>
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
             Our goal is to equip you with the skills to think critically and solve problems independently, 
             preparing you for success not just in exams but in your future.
           </p>
@@ -59,7 +59,7 @@ const AboutTuitions = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 flex justify-center"
+          className="flex-1 pl-5 md:pl-0 flex justify-center"
         >
           <div className="relative w-full max-w-md">
             {/* Background card accent */}

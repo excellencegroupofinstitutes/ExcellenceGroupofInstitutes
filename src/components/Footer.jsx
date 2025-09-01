@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Quick Links */}
         <div className="self-start">
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-primary">
+          <ul className="space-y-2 text-base text-primary">
             <li>
               <button onClick={() => navigate('/web-services')} className="hover:text-yellow-700 hover:cursor-pointer transition"
               >Web Services</button>

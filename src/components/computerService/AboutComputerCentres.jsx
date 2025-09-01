@@ -33,13 +33,13 @@ const AboutComputerCentres = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 space-y-6 text-center md:text-left"
+          className="flex-1 space-y-4 md:space-y-6 text-left"
         >
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-secondary relative">
+          <h2 className="text-3xl md:text-4xl pl-5 md:p-0 font-extrabold text-secondary relative">
             About Excellence Computer Centre
           </h2>
 
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700  md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20">
             At <b>Excellence Computer Centre</b>, we believe that the best way
             to learn is by <b>doing</b>. As a proud vertical of the{" "}
             <b>Excellence Group of Institutes</b>, we are committed to providing
@@ -47,7 +47,7 @@ const AboutComputerCentres = () => {
             today&apos;s fast-paced digital world.
           </p>
 
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20">
             Our courses go far beyond simple theory. We immerse you in{" "}
             <b>real-world, industry-demanding projects </b>
             from day one. Instead of just memorizing concepts from a book,
@@ -55,7 +55,7 @@ const AboutComputerCentres = () => {
             essential practical knowledge that employers are looking for.
           </p>
 
-          <p className="text-gray-700 text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20">
             We are also proud to announce that our institute is{" "}
             <b>IAF and ISO 9001:2015 certified</b>. This means that the
             certificates you earn with us are <b>accepted internationally</b>,
@@ -72,7 +72,7 @@ const AboutComputerCentres = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 flex justify-center"
+          className="flex-1 pl-5 md:pl-0 flex justify-center"
         >
           <div className="relative w-full max-w-md">
             {/* Background card accent */}

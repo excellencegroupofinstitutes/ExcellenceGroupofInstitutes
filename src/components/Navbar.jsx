@@ -77,7 +77,7 @@ const Navbar = () => {
         {!isScrolled && <hr className="mx-auto" width="1400" />}
 
         <nav
-          className={`hidden md:flex items-center px-8  transition-all duration-300 ${isScrolled
+          className={`hidden md:flex items-center px-1 lg:px-8 transition-all duration-300 ${isScrolled
               ? "justify-between py-4"
               : "justify-center py-4"
             }`}
@@ -90,7 +90,7 @@ const Navbar = () => {
             </div>
           )}
 
-          <ul className="flex gap-6 text-primary text-[18px]">
+          <ul className="flex gap-4 text-primary text-[18px]">
             <Link to="/" className="hover:text-primary-hover list-item px-2 py-1">Home</Link>
             <Link to="/tuition" className="hover:text-primary-hover list-item px-2 py-1">Tuitions</Link>
             <Link to="/computer-services" className="hover:text-primary-hover list-item px-2 py-1">Computer Centres</Link>
