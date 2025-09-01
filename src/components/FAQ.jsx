@@ -91,7 +91,7 @@ export default function Faqs({ ctaParentClass = "bg-gradient-to-br from-brand-cr
         >
           <motion.div
             variants={fadeInUp}
-            className="text-center mb-16"
+            className="text-center mb-10"
           >
             <h2 className="section-title mt-4 text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
               Frequently Asked Questions
