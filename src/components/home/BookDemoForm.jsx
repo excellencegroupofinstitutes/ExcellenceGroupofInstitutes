@@ -87,15 +87,17 @@ export default function BookDemoForm() {
   return (
     <div
       id="book-demo"
-      className="relative max-w-[1560px] mx-auto py-40 flex items-center justify-center bg-gray-50 overflow-hidden"
+      className="relative max-w-[1560px] mx-auto py-20 sm:py-40 flex items-center justify-center bg-gray-50 overflow-hidden"
     >
       {/* Toast container */}
       <ToastContainer position="top-right" autoClose={3000} />
 
       {/* Curved Gradient Background */}
       <div className="absolute inset-0">
+        <div className="sm:hidden w-full h-full bg-gradient-to-b from-yellow-200/40 via-yellow-100/30 to-gray-50"></div>
+
         <svg
-          className="absolute right-0 top-0 h-full w-1/2 z-10"
+          className="hidden sm:block absolute right-0 top-0 h-full w-1/2 z-0"
           viewBox="0 0 500 800"
           preserveAspectRatio="none"
         >
@@ -106,17 +108,17 @@ export default function BookDemoForm() {
           <defs>
             <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="1">
               <stop offset="0%" stopColor="#f8cb21" />
-              <stop offset="100%" stopColor="#00000" />
+              <stop offset="100%" stopColor="#000000" />
             </linearGradient>
           </defs>
         </svg>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex w-11/12 max-w-6xl rounded-2xl shadow-2xl bg-white overflow-hidden">
+      <div className="relative z-10 flex flex-col md:flex-row w-11/12 max-w-6xl rounded-2xl shadow-2xl bg-white overflow-hidden">
         {/* Left - Form */}
-        <div className="w-full md:w-1/2 p-10">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+        <div className="w-full md:w-1/2 p-6 sm:p-10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
             Book a Free Demo Class
           </h2>
           <form className="space-y-4" onSubmit={handleSubmit}>
@@ -185,15 +187,21 @@ export default function BookDemoForm() {
           </form>
         </div>
 
-        {/* Right - Gradient Area with Text */}
-        <div className="hidden md:flex w-1/2 items-center justify-center text-gray-600 p-10 relative z-50">
+        {/* Right - Info Section */}
+        <div className="hidden md:flex w-1/2 items-center justify-center text-gray-600 p-10">
           <div className="text-center">
-            <h2 className="text-4xl font-extrabold break-words">SURYANSH SIR’S</h2>
-            <p className="text-[17px] mt-1 text-gray-700 break-words text-left">Excellence Group of Institutes</p>
-            <p className="mt-4 text-lg">
+            <h2 className="text-3xl sm:text-4xl font-extrabold">
+              SURYANSH SIR’S
+            </h2>
+            <p className="text-base sm:text-lg mt-1 text-gray-700">
+              Excellence Group of Institutes
+            </p>
+            <p className="mt-4 text-base sm:text-lg">
               An IAF ISO 9001:2015 Certified Institute
             </p>
-            <p className="mt-2">Tuitions • Computer Courses • Web Services</p>
+            <p className="mt-2 text-sm sm:text-base">
+              Tuitions • Computer Courses • Web Services
+            </p>
           </div>
         </div>
       </div>
