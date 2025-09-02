@@ -2,19 +2,19 @@ import React from "react";
 
 // Sample image arrays - replace with your actual images
 const row1 = [
-  "/images/comp.JPG",
+  // "/images/comp.JPG",
   "/images/team.jpg",
   "/images/director_3.jpg",
   "/images/home-tuition.jpg",
-  "images/team_2.jpg", 
+  // "images/team_2.jpg", 
   "/images/Computer_students.jpg",
   "/images/director_office.jpg",
 ];
 
 const row2 = [
   "/images/group.jpg",
-  "/images/director2.jpg",
-  "images/computer.jpg",
+  // "/images/director2.jpg",
+  // "images/computer.jpg",
   "/images/outside_students.jpg",
     "/images/compView.jpeg",
   "/images/banner.jpg",
