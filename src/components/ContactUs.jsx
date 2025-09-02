@@ -96,12 +96,18 @@ const ContactUs = () => {
               <p className="text-gray-700">excellencegroupofinstitutes@gmail.com</p>
             </div>
             <div className="flex items-center gap-4">
+              <a href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9">
               <MapPin className="text-secondary" />
-              <p className="text-gray-700">JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>    
+              <p className="text-gray-700">JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
+              </a>
+                 
             </div>
             <div className="flex items-center gap-4">
-              <MapPin className="text-secondary w-8 h-12" />
+              <a href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9">
+                <MapPin className="text-secondary w-8 h-12" />
               <p className="text-gray-700">SCF 44-C, Rajguru nagar market, Rajguru nagar, D Block, Master Properties Road, Ludhiana, Punjab</p>
+              </a>
+              
             </div>
           </div>
 
