@@ -19,7 +19,7 @@ const Home = () => {
     coreSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className='mt-8 md:mt-39 overflow-clip'>
+    <div className='mt-8 md:mt-24 overflow-clip'>
         <HeroSection onExploreClick={scrollToServices} />
         <CoreSection ref={coreSectionRef} />
         <OurVision/>
