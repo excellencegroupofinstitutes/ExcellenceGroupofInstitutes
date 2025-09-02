@@ -84,13 +84,13 @@ export default function Footer() {
         <div className="text-left md:text-left">
           <h3 className="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
           <div className="space-y-3 text-sm sm:text-base text-primary">
-            <p className="flex items-center justify-center md:justify-start gap-2 break-words">
-              <a href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9">
+            <p>
+              <a className=" break-words flex items-center justify-start gap-2" href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9" target="_blank">
               <FaMapMarkerAlt /> JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab
               </a>
             </p>
-            <p className="flex items-center justify-center md:justify-start gap-2 break-words">
-              <a href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9">
+            <p>
+              <a className="flex items-center justify-start gap-2 break-words" href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9" target="_blank" >
               <FaMapMarkerAlt /> SCF 44-C, Rajguru nagar market, Rajguru nagar, D Block, Ludhiana, Punjab
               </a>
             </p>
