@@ -1,4 +1,6 @@
 import ContactUs from "../components/ContactUs";
+// import TuitionMap from "../components/Maps";
+// import Maps from "../components/Maps";
 
 const About = () => {
   return (
@@ -108,6 +110,7 @@ const About = () => {
       `}</style>
     </section>
     <ContactUs/>
+
         </>
   );
 };

@@ -31,9 +31,6 @@ export default function Footer() {
         <div className="text-left md:text-left">
           <h2 className="text-xl sm:text-2xl font-bold mb-2">Excellence Group of Institutes</h2>
           <p className="text-xs sm:text-sm italic">An IAF ISO 9001:2015 Certified Institute</p>
-          <p className="mt-4 text-sm sm:text-base text-primary leading-relaxed">
-            Empowering students with education, skills, and career-oriented training.
-          </p>
         </div>
 
         {/* Quick Links */}
@@ -88,7 +85,14 @@ export default function Footer() {
           <h3 className="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
           <div className="space-y-3 text-sm sm:text-base text-primary">
             <p className="flex items-center justify-center md:justify-start gap-2 break-words">
+              <a href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9">
               <FaMapMarkerAlt /> JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab
+              </a>
+            </p>
+            <p className="flex items-center justify-center md:justify-start gap-2 break-words">
+              <a href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9">
+              <FaMapMarkerAlt /> SCF 44-C, Rajguru nagar market, Rajguru nagar, D Block, Ludhiana, Punjab
+              </a>
             </p>
             <p className="flex items-center md:justify-start gap-2 break-all">
               <FaPhoneAlt /> +91 8557081922, +91 9115112585
