@@ -6,7 +6,7 @@ import Amenities from "../components/Amenities";
 
 const ComputerService = () => {
   return (
-    <div className="mt-16 md:mt-40">
+    <div className="mt-16 md:mt-37">
       <HeroComputer />
       <Course />
       <Amenities/>
