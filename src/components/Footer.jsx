@@ -40,7 +40,7 @@ export default function Footer() {
             <li>
               <button 
                 onClick={() => navigate('/web-services')} 
-                className="hover:text-yellow-700 transition"
+                className="hover:text-yellow-700 transition hover:cursor-pointer"
               >
                 Web Services
               </button>
@@ -48,7 +48,7 @@ export default function Footer() {
             <li>
               <button 
                 onClick={() => navigate('/tuition')} 
-                className="hover:text-yellow-700 transition"
+                className="hover:text-yellow-700 transition hover:cursor-pointer"
               >
                 Excellence Institutes
               </button>
@@ -56,7 +56,7 @@ export default function Footer() {
             <li>
               <button 
                 onClick={() => navigate('/compute-services')} 
-                className="hover:text-yellow-700 transition"
+                className="hover:text-yellow-700 transition hover:cursor-pointer"
               >
                 Computer Centre
               </button>
@@ -64,7 +64,7 @@ export default function Footer() {
             <li>
               <button 
                 onClick={handleBookDemoClick} 
-                className="hover:text-yellow-700 transition"
+                className="hover:text-yellow-700 transition hover:cursor-pointer"
               >
                 Book a Demo
               </button>
@@ -72,7 +72,7 @@ export default function Footer() {
             <li>
               <button 
                 onClick={contactUsClick} 
-                className="hover:text-yellow-700 transition"
+                className="hover:text-yellow-700 transition hover:cursor-pointer"
               >
                 Contact
               </button>
