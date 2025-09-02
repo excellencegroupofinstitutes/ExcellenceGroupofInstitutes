@@ -40,29 +40,23 @@ const AboutWebServices = () => {
           </h2>
 
           <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
-            Welcome to <b>Excellence Web Services</b>, a trusted vertical of the
-            <b> Excellence Group of Institutes</b>, based in the heart of
-            Ludhiana with a physical office in the prominent{" "}
-            <b>Rajguru Nagar Market</b>, Punjab, India. We are your dedicated
-            partner for all things digital.
-          </p>
+            Welcome to <b>Excellence Web Services</b>, a vertical of the{" "}
+            <b>Excellence Group of Institutes</b>, based in Ludhiana’s{" "}
+            <b>Rajguru Nagar Market</b>. We are your trusted partner for all
+            things digital.
+          {/* </p>
 
-          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
-            Our mission is simple: to provide <b>high-quality web services</b>{" "}
-            with complete
-            <b> transparency and trust</b>. We proudly operate on a unique
-            <b> 'Pay after Service is Completed'</b> model, ensuring you only
-            pay once we deliver results. This approach reflects the confidence
-            and trust we want to build with you from the very beginning.
-          </p>
+          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
+            Our mission is to deliver <b>high-quality web services</b> with{" "}
+            <b>transparency and trust</b>. With our unique{" "}
+            <b>‘Pay after Service’</b> model, you pay only after results are
+            delivered.
+          {/* </p>
 
-          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
-            From <b>stunning websites</b> to <b>robust e-commerce platforms</b>{" "}
-            and
-            <b> effective digital marketing strategies</b>, we don’t just create
-            solutions — we build lasting partnerships. With us, you gain the{" "}
-            <b>peace of mind</b> that comes from working with true
-            professionals.
+          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
+            From <b>stunning websites</b> to <b>e-commerce platforms</b> and{" "}
+            <b>digital marketing</b>, we provide solutions that create impact
+            and build lasting partnerships.
           </p>
         </motion.div>
 

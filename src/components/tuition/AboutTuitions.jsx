@@ -39,17 +39,19 @@ const AboutTuitions = () => {
             About Excellence Tuitions
           </h2>
           <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
-            Welcome to <b>Excellence Tuitions</b>, a part of the <b>Excellence Group of Institutes</b>, 
-            located in the heart of Ludhiana. Our core philosophy is built on a commitment to practical, 
-            result-oriented teaching that focuses on what truly matters: <b>your understanding</b>.
-          </p>
-          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
-            At Excellence Tuitions, we believe that learning should be about gaining 
-            <b> conceptual knowledge</b>, not just memorizing facts. We use <b>innovative teaching methods </b> that make complex topics easy to grasp, ensuring you can apply what you learn. 
-          </p>
-          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20">
-            Our goal is to equip you with the skills to think critically and solve problems independently, 
-            preparing you for success not just in exams but in your future.
+            Welcome to <b>Excellence Tuitions</b>, part of the{" "}
+            <b>Excellence Group of Institutes</b> in Ludhiana. We focus on
+            practical, result-oriented teaching that strengthens{" "}
+            <b>your understanding</b>.
+          {/* </p> */}
+          {/* <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
+            Learning here means building <b>conceptual knowledge</b> through{" "}
+            <b>innovative methods</b> that make complex topics simple and
+            applicable.
+          {/* </p>
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
+            Our aim is to help you think critically, solve problems
+            independently, and succeed in exams and beyond.
           </p>
         </motion.div>
 

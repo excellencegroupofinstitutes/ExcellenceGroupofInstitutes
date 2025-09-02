@@ -39,30 +39,23 @@ const AboutComputerCentres = () => {
             About Excellence Computer Centre
           </h2>
 
-          <p className="text-gray-700  md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20">
-            At <b>Excellence Computer Centre</b>, we believe that the best way
-            to learn is by <b>doing</b>. As a proud vertical of the{" "}
-            <b>Excellence Group of Institutes</b>, we are committed to providing
-            you with the practical, hands-on skills you need to succeed in
-            today&apos;s fast-paced digital world.
-          </p>
-
           <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20">
-            Our courses go far beyond simple theory. We immerse you in{" "}
-            <b>real-world, industry-demanding projects </b>
-            from day one. Instead of just memorizing concepts from a book,
-            you&apos;ll be coding, designing, and troubleshooting, gaining the
-            essential practical knowledge that employers are looking for.
-          </p>
+            At <b>Excellence Computer Centre</b>, a proud vertical of the{" "}
+            <b>Excellence Group of Institutes</b>, we believe the best way to
+            learn is by <b>doing</b>. Our focus is on practical, hands-on skills
+            for today’s fast-paced digital world.
+          {/* </p>
 
-          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20">
-            We are also proud to announce that our institute is{" "}
-            <b>IAF and ISO 9001:2015 certified</b>. This means that the
-            certificates you earn with us are <b>accepted internationally</b>,
-            opening up a world of opportunities for you. With a certification
-            from Excellence Computer Centre, you are not only prepared to work
-            in the domestic market but are also eligible for the{" "}
-            <b>international job market</b>.
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20"> */}
+            From day one, you’ll work on <b>real-world projects</b>—coding,
+            designing, and troubleshooting—so you gain the practical knowledge
+            employers seek.
+          {/* </p>
+
+          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20"> */}
+            As an <b>IAF and ISO 9001:2015 certified</b> institute, our
+            internationally accepted certificates open doors to both domestic
+            and <b>global opportunities</b>.
           </p>
         </motion.div>
 
