@@ -31,9 +31,6 @@ export default function Footer() {
         <div className="text-left md:text-left">
           <h2 className="text-xl sm:text-2xl font-bold mb-2">Excellence Group of Institutes</h2>
           <p className="text-xs sm:text-sm italic">An IAF ISO 9001:2015 Certified Institute</p>
-          <p className="mt-4 text-sm sm:text-base text-primary leading-relaxed">
-            Empowering students with education, skills, and career-oriented training.
-          </p>
         </div>
 
         {/* Quick Links */}
