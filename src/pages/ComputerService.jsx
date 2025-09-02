@@ -1,7 +1,7 @@
 import HeroComputer from "../components/computerService/HeroComputer";
 import Course from "../components/computerService/Course";
-import ComputerAmenities from "../components/computerService/ComputerAmenities";
 import AboutComputerCentres from "../components/computerService/AboutComputerCentres";
+import Amenities from "../components/Amenities";
 
 
 const ComputerService = () => {
@@ -9,7 +9,7 @@ const ComputerService = () => {
     <div className="mt-16 md:mt-40">
       <HeroComputer />
       <Course />
-      <ComputerAmenities/>
+      <Amenities/>
       <AboutComputerCentres/>
     </div>
   );

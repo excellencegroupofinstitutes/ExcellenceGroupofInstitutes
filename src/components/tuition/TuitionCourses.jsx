@@ -155,6 +155,35 @@ const TuitionCourses = () => {
         ))}
       </div>
 
+
+        {/* <div className="max-w-[1080px] grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto">
+          {courses.map((course, index) => (
+            <div
+              key={index}
+              className="w-full h-[280px] shadow-lg flex flex-col justify-between py-3 pb-7 px-5 transform transition-transform duration-300 hover:scale-105"
+            >
+              <div>
+                <div className="w-[45px] h-[45px] rounded-full bg-secondary-light p-3 mb-4 flex items-center justify-center">
+                  {course.icon}
+                </div>
+                <h3 className="text-[17px] font-[500] mb-2">{course.title}</h3>
+                <p className="text-gray-400 text-sm">{course.desc}</p>
+              </div>
+              <div>
+                <hr className="text-gray-300 my-4" />
+                <button
+                  onClick={() => openModal(course.title)}
+                  className="text-white bg-secondary transform transition-all rounded-sm duration-300 font-[500] py-[5px] hover:translate-y-1 hover:cursor-pointer w-full"
+                >
+                  Enquire Now
+                </button>
+              </div>
+            </div>
+          ))}
+        </div> */}
+
+
+
       {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-lg z-50">
