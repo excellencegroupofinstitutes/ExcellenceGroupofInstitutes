@@ -4,84 +4,104 @@ import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
   const navigate = useNavigate();
-  const handleBookDemoClick = () => {
 
+  const handleBookDemoClick = () => {
     navigate("/");
     setTimeout(() => {
       document.getElementById("book-demo")?.scrollIntoView({ behavior: "smooth" });
     }, 300);
   };
-  const contactUsClick = () => {
 
+  const contactUsClick = () => {
     navigate("/about");
     setTimeout(() => {
       document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
     }, 300);
   };
-  const testimonialClick = () => {
-
-    navigate("/");
-    setTimeout(() => {
-      document.getElementById("testimonial")?.scrollIntoView({ behavior: "smooth" });
-    }, 300);
-  };
-
 
   return (
-    <footer className="relative max-w-[1560px] mx-auto bg-gradient-to-r from-secondary via-secondary/40 to-secondary text-primary py-12  shadow-2xl">
+    <footer className="relative max-w-[1560px] mx-auto bg-gradient-to-r from-secondary via-secondary/40 to-secondary text-primary py-10 md:py-12 shadow-2xl">
+      {/* Subtle pattern overlay */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] opacity-10"></div>
 
-      <div className="container max-w-[1380px] mx-auto px-6 relative z-10 grid md:place-items-center grid-cols-1 md:grid-cols-3 gap-10">
+      {/* Footer Content */}
+      <div className="container max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+        
         {/* Branding */}
-        <div className="self-start" >
-          <h2 className="text-2xl font-bold mb-2">Excellence Group of Institutes</h2>
-          <p className="text-sm italic">An IAF ISO 9001:2015 Certified Institute</p>
-          <p className="mt-4 text-sm text-primary">
+        <div className="text-left md:text-left">
+          <h2 className="text-xl sm:text-2xl font-bold mb-2">Excellence Group of Institutes</h2>
+          <p className="text-xs sm:text-sm italic">An IAF ISO 9001:2015 Certified Institute</p>
+          <p className="mt-4 text-sm sm:text-base text-primary leading-relaxed">
             Empowering students with education, skills, and career-oriented training.
           </p>
         </div>
 
         {/* Quick Links */}
-        <div className="self-start">
-          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-base text-primary">
+        <div className="text-left md:text-left">
+          <h3 className="text-lg sm:text-xl font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2 text-sm sm:text-base text-primary">
             <li>
-              <button onClick={() => navigate('/web-services')} className="hover:text-yellow-700 hover:cursor-pointer transition"
-              >Web Services</button>
+              <button 
+                onClick={() => navigate('/web-services')} 
+                className="hover:text-yellow-700 transition"
+              >
+                Web Services
+              </button>
             </li>
             <li>
-              <button onClick={() => navigate('/tuition')} className="hover:text-yellow-700 transition hover:cursor-pointer">Excellence Institutes</button >
+              <button 
+                onClick={() => navigate('/tuition')} 
+                className="hover:text-yellow-700 transition"
+              >
+                Excellence Institutes
+              </button>
             </li>
             <li>
-              <button onClick={() => navigate('/compute-services')} className="hover:text-yellow-700 transition hover:cursor-pointer">Computer Centre</button >
-            </li>
-            {/* <li>
-              <button onClick={testimonialClick} className="hover:text-yellow-700 transition hover:cursor-pointer"
-              >Testimonials</button>
-            </li> */}
-            <li>
-              <button onClick={handleBookDemoClick} className="hover:text-yellow-700 transition hover:cursor-pointer"
-              >Book a Demo</button>
+              <button 
+                onClick={() => navigate('/compute-services')} 
+                className="hover:text-yellow-700 transition"
+              >
+                Computer Centre
+              </button>
             </li>
             <li>
-              <button onClick={contactUsClick} className="hover:text-yellow-700 transition hover:cursor-pointer">Contact</button >
+              <button 
+                onClick={handleBookDemoClick} 
+                className="hover:text-yellow-700 transition"
+              >
+                Book a Demo
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={contactUsClick} 
+                className="hover:text-yellow-700 transition"
+              >
+                Contact
+              </button>
             </li>
           </ul>
-
         </div>
 
         {/* Contact Info */}
-        <div className="self-start">
-          <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <div className="space-y-3 text-primary ">
-            <p className="flex items-center gap-2 break-words"><FaMapMarkerAlt /> JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
-            <p className="flex items-center gap-2 break-all"><FaPhoneAlt /> +91 8557081922, +91 9115112585</p>
-            <p className="flex items-center gap-2 break-all"><FaEnvelope /> excellencegroupofinstitutes@gmail.com</p>
+        <div className="text-left md:text-left">
+          <h3 className="text-lg sm:text-xl font-semibold mb-4">Contact Us</h3>
+          <div className="space-y-3 text-sm sm:text-base text-primary">
+            <p className="flex items-center justify-center md:justify-start gap-2 break-words">
+              <FaMapMarkerAlt /> JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab
+            </p>
+            <p className="flex items-center md:justify-start gap-2 break-all">
+              <FaPhoneAlt /> +91 8557081922, +91 9115112585
+            </p>
+            <p className="flex items-center md:justify-start gap-2 break-all">
+              <FaEnvelope /> excellencegroupofinstitutes@gmail.com
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-gray-500 mt-10 pt-6 text-center text-primary text-sm relative z-10">
+      {/* Footer Bottom */}
+      <div className="border-t border-gray-500 mt-8 pt-4 text-center text-xs sm:text-sm text-primary relative z-10">
         © {new Date().getFullYear()} Excellence Group Of Institutes. All rights reserved.
       </div>
     </footer>
