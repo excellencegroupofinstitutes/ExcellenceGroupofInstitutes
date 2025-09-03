@@ -78,16 +78,11 @@ const HeroSection = ({ onExploreClick }) => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col px-4 md:flex-row justify-center gap-4">
+        <div className="flex flex-col items-center px-4 md:flex-row md:justify-center gap-4">
           {/* Primary Button */}
           <button
             onClick={onExploreClick}
-            className="bg-yellow-400 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium 
-
-               border-2 border-black shadow-[0.15em_0.15em_0px_black] 
-               transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
-               hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
-               active:shadow-[0.05em_0.05em_0px_black] hover:cursor-pointer"
+            className="text-white w-full max-w-[200px] bg-secondary transform transition-all rounded-sm duration-300 font-[500] py-3 hover:translate-y-1 hover:cursor-pointer"
           >
             Explore Our Services
           </button>
@@ -95,13 +90,7 @@ const HeroSection = ({ onExploreClick }) => {
           {/* Secondary Button */}
           <button
             onClick={contactUsClick}
-
-            className="border-2 border-black text-black px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium 
-
-               shadow-[0.15em_0.15em_0px_black] 
-               transition-all duration-150 hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] 
-               hover:shadow-[0.25em_0.25em_0px_black] active:translate-x-[0.05em] active:translate-y-[0.05em] 
-               active:shadow-[0.05em_0.05em_0px_black] hover:bg-secondary hover:text-black hover:cursor-pointer"
+            className="text-black bg-transparent border transform transition-all rounded-sm duration-300 font-[500] py-3 max-w-[200px] md:max-w-[150px] hover:translate-y-1 hover:cursor-pointer w-full"
           >
             Get in Touch
           </button>

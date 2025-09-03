@@ -30,7 +30,7 @@ const HeroComputer = () => {
           className="opacity-50 size-7 transform scale-x-[-1]"
         />
       </div>
-      <div className='max-w-[1560px] text-black mx-auto p-4 md:p-10 flex flex-col-reverse md:flex-row justify-evenly items-center'>
+      <div className='max-w-[1560px] text-black mx-auto p-10 flex flex-col-reverse md:flex-row justify-evenly items-center'>
         <div className='mt-10 md:mt-0'>
           {/* text */}
           <div className="md:flex hidden gap-1 relative">

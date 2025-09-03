@@ -88,23 +88,23 @@ const ContactUs = () => {
 
           <div className="space-y-8">
             <div className="flex items-center gap-4">
-              <Phone className="text-secondary" />
+              <Phone className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
               <p className="text-gray-700">+91 8557081922, +91 9115112585 </p>
             </div>
             <div className="flex items-center gap-4">
-              <Mail className="text-secondary" />
+              <Mail className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
               <p className="text-gray-700">excellencegroupofinstitutes@gmail.com</p>
             </div>
-            <div className="flex items-center gap-4">
-              <a href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9">
-              <MapPin className="text-secondary" />
+            <div>
+              <a className="flex items-center gap-4" href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9" target="_blank" >
+              <MapPin className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
               <p className="text-gray-700">JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
               </a>
                  
             </div>
-            <div className="flex items-center gap-4">
-              <a href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9">
-                <MapPin className="text-secondary w-8 h-12" />
+            <div >
+              <a href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9" className="flex items-center gap-4" target="_blank" >
+                <MapPin className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
               <p className="text-gray-700">SCF 44-C, Rajguru nagar market, Rajguru nagar, D Block, Master Properties Road, Ludhiana, Punjab</p>
               </a>
               

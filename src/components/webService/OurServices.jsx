@@ -1,5 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
-import { FaCheckCircle } from "react-icons/fa";
+import {
+  Layout,
+  Code,
+  Monitor,
+  Megaphone,
+  Search,
+  MapPin,
+  Share2,
+  ThumbsUp,
+} from "lucide-react";
+import { FaYoutube } from "react-icons/fa";
 
 const services = [
   {
@@ -7,56 +17,68 @@ const services = [
     description:
       "We craft modern, responsive, and visually appealing designs that perfectly align with your brand identity.",
     img: "/images/website-design.png",
+    icon: Layout,
   },
   {
     title: "Web Development",
     description:
       "Our development team builds secure, scalable, and high-performance websites using the latest technologies.",
     img: "/images/sample-service.png",
+    icon: Code,
   },
   {
     title: "IT Services",
     description:
       "From troubleshooting to complete IT management, we provide reliable services that keep your systems running.",
     img: "/images/ItServices.jpeg",
+    icon: Monitor,
   },
   {
     title: "Digital Marketing",
     description:
       "Boost your brand visibility with tailored digital marketing strategies that reach the right audience.",
     img: "/images/digital-marketing.png",
+    icon: Megaphone,
   },
   {
     title: "SEO Services",
     description:
       "We optimize your website with proven SEO techniques that improve rankings, traffic, and credibility.",
     img: "/images/seo1.png",
+    icon: Search,
   },
   {
     title: "Google Listing",
     description:
       "Ensure your business gets noticed with a verified Google listing that improves local visibility.",
     img: "/images/google-listing.jpeg",
+    icon: MapPin,
   },
   {
     title: "Social Media Marketing",
     description:
       "Grow your brand with engaging campaigns on popular platforms that build trust and loyalty.",
     img: "/images/social-media.png",
+    icon: Share2,
   },
   {
     title: "Facebook & Instagram Ads",
     description:
       "Maximize reach and conversions with data-driven ad campaigns tailored to your business objectives.",
     img: "/images/FI-ads.png",
+    icon: ThumbsUp,
   },
   {
     title: "YouTube Ads & Monetisation",
     description:
       "Unlock the power of YouTube with targeted ads to grow your audience and drive revenue.",
     img: "/images/youTube-ads.png",
-  }
+    icon: FaYoutube,
+  },
 ];
+
+
+
 
 const OurServices = () => {
   const cardRefs = useRef([]);
@@ -116,7 +138,7 @@ const OurServices = () => {
                   }`}
               >
                 <div className="flex items-start gap-4">
-                  <FaCheckCircle
+                  <service.icon
                     className={`text-2xl mt-1 transition-colors duration-300 ${readCards.includes(index)
                         ? "text-secondary"
                         : "text-gray-400"
