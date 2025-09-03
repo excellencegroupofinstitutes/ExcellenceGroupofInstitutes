@@ -19,10 +19,6 @@ const Vision = () => {
       caption: "Interactive learning sessions with local students",
     },
     {
-      src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop",
-      caption: "Celebrating achievements with our vision batch students",
-    },
-    {
       src: "images/group.jpg",
       caption: "Providing free educational resources and materials",
     },

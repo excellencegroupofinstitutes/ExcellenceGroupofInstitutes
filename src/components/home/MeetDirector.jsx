@@ -13,7 +13,7 @@ const MeetDirector = () => {
             Suryansh Wadhwa, Director – Excellence Group of Institutes
           </p>
           <p className="mt-4 sm:mt-6 text-sm sm:text-lg text-gray-700 leading-relaxed">
-            Our director has over 7 years of experience in driving innovation,
+            Our director has over 5 years of experience in driving innovation,
             building scalable businesses, and leading teams to success. With a
             strong vision and commitment to excellence, they continue to guide
             our organization towards a bright and sustainable future.

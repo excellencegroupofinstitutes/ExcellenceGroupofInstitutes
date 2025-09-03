@@ -53,10 +53,9 @@ const HeroWebService = () => {
               <FaPhone className="text-secondary ring-animation border-2 rotate-90 border-gray-200 p-4 rounded-full w-15 h-15"/>
               <div className="flex flex-col">
                 <span className="text-gray-700 ml-2">Call for Help</span>
-                <p className="font-bold text-md tracking-wide">+91 9876543210</p>
+                <p className="font-bold text-md tracking-wide">+91 8557081922</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

@@ -66,7 +66,7 @@ const InstituteAchievements = () => {
         </div>
         <div>
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold">
-            {inView ? <CountUp end={7} duration={3} /> : 0}+
+            {inView ? <CountUp end={5} duration={3} /> : 0}+
           </h3>
           <p className="font-medium text-sm sm:text-base">Years of Excellence</p>
         </div>
