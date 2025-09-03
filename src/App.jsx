@@ -78,7 +78,7 @@ const App = () => {
 
   if (showSplash) {
     return <SplashScreen onFinish={() => setShowSplash(false)} />;
-  }
+  } 
 
   return (
     <>
