@@ -10,7 +10,8 @@ import { ToastContainer } from "react-toastify";
 import About from './pages/About'
 import WhatsApp from './components/WhatsApp'
 import PageNotFound from './pages/PageNotFound'
-// import "leaflet/dist/leaflet.css";
+import SplashScreen from './components/SplashScreen'
+import { useState } from 'react';
 
 
 
@@ -72,8 +73,16 @@ const router = createBrowserRouter([
 ])
 
 const App = () => {
+
+    const [showSplash, setShowSplash] = useState(true);
+
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+  }
+
   return (
     <>
+      {/* <SplashScreen /> */}
       <ToastContainer position="top-right" autoClose={3000} />
       <RouterProvider router={router} />
       <WhatsApp />
