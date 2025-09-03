@@ -18,10 +18,10 @@ const Vision = () => {
       src: "/images/batch.jpg",
       caption: "Interactive learning sessions with local students",
     },
-    {
-      src: "images/group.jpg",
-      caption: "Providing free educational resources and materials",
-    },
+    // {
+    //   src: "images/group.jpg",
+    //   caption: "Providing free educational resources and materials",
+    // },
   ];
 
   const nextImage = () => {
@@ -98,7 +98,7 @@ const Vision = () => {
             initial={{ opacity: 0.5, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="w-full h-72 md:h-[500px] object-cover"
+            className="w-full h-72 md:h-[500px] object-cover object-top"
           />
 
           {/* Caption */}
