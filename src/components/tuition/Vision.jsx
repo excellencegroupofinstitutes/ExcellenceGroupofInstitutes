@@ -18,10 +18,10 @@ const Vision = () => {
       src: "/images/batch.jpg",
       caption: "Interactive learning sessions with local students",
     },
-    // {
-    //   src: "images/group.jpg",
-    //   caption: "Providing free educational resources and materials",
-    // },
+    {
+      src: "images/vision.jpg",
+      caption: "Providing free educational resources and materials",
+    },
   ];
 
   const nextImage = () => {

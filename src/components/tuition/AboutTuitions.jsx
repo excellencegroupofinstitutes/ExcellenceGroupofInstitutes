@@ -67,9 +67,9 @@ const AboutTuitions = () => {
             {/* Background card accent */}
             <div className="absolute -top-6 -left-6 w-full h-full bg-yellow-300 rounded-2xl shadow-xl z-0"></div>
             <img
-              src="/images/image.png"
+              src="/images/abouttuitions.png"
               alt="Excellence Tuitions"
-              className="relative z-10 w-full h-[380px] object-cover rounded-2xl shadow-2xl border-4 border-white/40"
+              className="relative z-10 w-full h-[380px] object-cover object-top rounded-2xl shadow-2xl border-4 border-white/40"
             />
           </div>
         </motion.div>
