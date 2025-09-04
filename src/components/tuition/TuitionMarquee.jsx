@@ -5,6 +5,7 @@ const row1 = [
     "/images/tuition1.jpg",
     "/images/tuition2.jpg",
     "/images/tuition3.jpg",
+    "/images/tuition4.jpeg",
     "/images/tuition5.jpg",
     "/images/banner.jpg",
 ];
