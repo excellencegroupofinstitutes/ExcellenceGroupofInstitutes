@@ -57,7 +57,7 @@ const HeroComputer = () => {
         </div>
         <div>
           {/* img */}
-          <div className='max-w-[450px] max-h-[450px] rounded-full relative bg-black'>
+          <div className='max-w-[450px] max-h-[450px] rounded-full relative bg-gray-100'>
             <img src="/images/computer_center.webp" alt="student" className='h-full overflow-clip object-contain ' />
           </div>
         </div>

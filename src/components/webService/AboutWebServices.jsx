@@ -43,19 +43,15 @@ const AboutWebServices = () => {
             Welcome to <b>Excellence Web Services</b>, a vertical of the{" "}
             <b>Excellence Group of Institutes</b>, based in Ludhiana’s{" "}
             <b>Rajguru Nagar Market</b>. We are your trusted partner for all
-            things digital.
-          {/* </p>
+            things digital. 
 
-          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
             Our mission is to deliver <b>high-quality web services</b> with{" "}
             <b>transparency and trust</b>. With our unique{" "}
             <b>‘Pay after Service’</b> model, you pay only after results are
-            delivered.
-          {/* </p>
+            delivered. 
 
-          <p className="text-gray-700 m-0 text-base md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
-            From <b>stunning websites</b> to <b>e-commerce platforms</b> and{" "}
-            <b>digital marketing</b>, we provide solutions that create impact
+             From <b>stunning websites</b> to <b>e-commerce platforms</b> and{" "}
+            <b>digital marketing</b>, we provide <b>pan India</b> solutions that create impact
             and build lasting partnerships.
           </p>
         </motion.div>
@@ -72,7 +68,7 @@ const AboutWebServices = () => {
             {/* Background card accent */}
             <div className="absolute -top-6 -left-6 w-full h-full bg-yellow-300 rounded-2xl shadow-xl z-0"></div>
             <img
-              src="/images/director2.jpg"
+              src="/images/director_office.jpg"
               alt="Excellence Tuitions"
               className="relative z-10 w-full h-[380px] object-cover rounded-2xl shadow-2xl border-4 border-white/40"
             />

@@ -93,7 +93,7 @@ const Navbar = () => {
           <ul className="flex gap-4 text-primary text-[18px]">
             <Link to="/" className="hover:text-primary-hover list-item px-2 py-1">Home</Link>
             <Link to="/tuition" className="hover:text-primary-hover list-item px-2 py-1">Tuitions</Link>
-            <Link to="/computer-services" className="hover:text-primary-hover list-item px-2 py-1">Computer Centres</Link>
+            <Link to="/computer-services" className="hover:text-primary-hover list-item px-2 py-1">Computer Centre</Link>
             <Link to="/web-services" className="hover:text-primary-hover px-2 list-item py-1">Web Services</Link>
             <Link to="/about" className="hover:text-primary-hover px-2 list-item py-1">About</Link>
           </ul>
@@ -130,7 +130,7 @@ const Navbar = () => {
                   <span className="block hover:text-primary-hover px-2 py-1">Tuitions</span>
                 </Link>
                 <Link to="/computer-services" onClick={() => setIsMenuOpen(false)}>
-                  <span className="block hover:text-primary-hover px-2 py-1">Computer Centres</span>
+                  <span className="block hover:text-primary-hover px-2 py-1">Computer Centre</span>
                 </Link>
                 <Link to="/web-services" onClick={() => setIsMenuOpen(false)}>
                   <span className="block hover:text-primary-hover px-2 py-1">Web Services</span>

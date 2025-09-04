@@ -36,7 +36,7 @@ const AboutComputerCentres = () => {
           className="flex-1 space-y-4 md:space-y-6 text-left"
         >
           <h2 className="text-3xl md:text-4xl pl-5 md:p-0 font-extrabold text-secondary relative">
-            About Excellence Computer Centre
+            About Us
           </h2>
 
           <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 pl-5 py-3 rounded-xl border border-white/20">
@@ -71,7 +71,7 @@ const AboutComputerCentres = () => {
             {/* Background card accent */}
             <div className="absolute -top-6 -left-6 w-full h-full bg-yellow-300 rounded-2xl shadow-xl z-0"></div>
             <img
-              src="/images/director_office.jpg"
+              src="/images/computer_about.jpg"
               alt="Excellence Tuitions"
               className="relative z-10 w-full h-[380px] object-cover rounded-2xl shadow-2xl border-4 border-white/40"
             />
