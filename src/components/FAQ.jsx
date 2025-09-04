@@ -7,7 +7,7 @@ const faqsData = [
   {
     question: "Where is Excellence Web Services located?",
     answer:
-      "We are based in Ludhiana, Punjab, with a physical office in the prominent Rajguru Nagar Market. You can visit us directly for any assistance.",
+      "We provide services pan India. Our headquarters are based in Ludhiana, Punjab, with a physical office in the prominent Rajguru Nagar Market. You can visit us directly for any assistance.",
   },
   {
     question: "Do I need to pay in advance for services?",
