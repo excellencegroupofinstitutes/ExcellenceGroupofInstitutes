@@ -6,6 +6,7 @@ import Locations from '../components/tuition/Locations'
 import AboutTuitions from '../components/tuition/AboutTuitions'
 import Vision from '../components/tuition/Vision'
 import Amenities from '../components/Amenities'
+import GalleryMarquee from '../components/tuition/TuitionMarquee'
 
 
 const Tuition = () => {
@@ -16,8 +17,9 @@ const Tuition = () => {
         <Amenities/>    
         <OurResults/>
         <QuoteSection/>
-        <Locations/>
         <Vision/>
+        <GalleryMarquee/>
+        <Locations/>
         <AboutTuitions/>
     </div>
   )
