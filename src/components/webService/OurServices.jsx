@@ -109,14 +109,81 @@ const OurServices = () => {
     <section className="relative pt-16">
       <div className="max-w-[1360px] mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+        <div className="md:hidden text-center mb-12">
+          <h2 className="text-4xl font-bold tracking-tight">
+            <span className="text-black">Our </span>
+            <span className="relative inline-block">
+              <span
+                className="bg-gradient-to-br from-[#f8cb21] to-[#edca4d] bg-clip-text text-transparent"
+              >
+                Services
+              </span>
+              <span
+                className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#f8cb21] rounded-sm"
+              ></span>
+            </span>
+          </h2>
+        </div>
 
+
+        <div className="hidden md:block">
+          <svg viewBox="0 0 800 150" className="w-full">
+            <defs>
+              <pattern
+                id="wave"
+                x="0"
+                y="0"
+                width="200"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M-40 20 Q-20 0 0 20 T40 20 T80 20 T120 20 T160 20 T200 20 V40 H-40z"
+                  fill="var(--color-secondary)"
+                />
+              </pattern>
+            </defs>
+
+            <text
+              x="50"
+              y="100"
+              fontSize="100"
+              fontWeight="bold"
+              fill="url(#wave)"
+            >
+              <tspan className="letter" x="50">
+                S
+              </tspan>
+              <tspan className="letter" x="100">
+                E
+              </tspan>
+              <tspan className="letter" x="150">
+                R
+              </tspan>
+              <tspan className="letter" x="210">
+                V
+              </tspan>
+              <tspan className="letter" x="275">
+                I
+              </tspan>
+              <tspan className="letter" x="301">
+                C
+              </tspan>
+              <tspan className="letter" x="357">
+                E
+              </tspan>
+              <tspan className="letter" x="407">
+                S
+              </tspan>
+            </text>
+          </svg>
+        </div>
         {/* Desktop Grid */}
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col p-3">
               <div className="shadow-lg h-[250px] ">
-                <img src={service.img} alt={service.title}  className=" w-full h-full object-cover"/>
+                <img src={service.img} alt={service.title} className=" w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl mt-6">{service.title}</h3>
               <p className="mt-5 text-gray-700">{service.description}</p>
@@ -140,8 +207,8 @@ const OurServices = () => {
                 <div className="flex items-start gap-4">
                   <service.icon
                     className={`text-2xl mt-1 transition-colors duration-300 ${readCards.includes(index)
-                        ? "text-secondary"
-                        : "text-gray-400"
+                      ? "text-secondary"
+                      : "text-gray-400"
                       }`}
                   />
                   <div>
