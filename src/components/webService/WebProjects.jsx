@@ -20,7 +20,7 @@ const WebProjects = () => {
     <section className="mt-12 relative">
       <div className="max-w-[1280px] mx-auto p-4">
         <div className="text-center mb-12">
-          <h2 className=" text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
             <span className="text-black">Our </span>
             <span className="relative inline-block">
               <span
