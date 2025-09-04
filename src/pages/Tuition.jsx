@@ -6,6 +6,8 @@ import Locations from '../components/tuition/Locations'
 import AboutTuitions from '../components/tuition/AboutTuitions'
 import Vision from '../components/tuition/Vision'
 import Amenities from '../components/Amenities'
+import BookDemoForm from '../components/BookDemoForm'
+import Video from '../components/tuition/Video'
 
 
 const Tuition = () => {
@@ -16,9 +18,12 @@ const Tuition = () => {
         <Amenities/>    
         <OurResults/>
         <QuoteSection/>
+        <Video/>
         <Locations/>
         <Vision/>
         <AboutTuitions/>
+        <BookDemoForm demoReason="Tuition"/>  
+        
     </div>
   )
 }

@@ -4,6 +4,7 @@ import OurServices from '../components/webService/OurServices'
 import FAQ from '../components/FAQ'
 import WebProjects from '../components/webService/WebProjects'
 import AboutWebServices from '../components/webService/AboutWebServices'
+import BookDemoForm from '../components/BookDemoForm'
 
 
 const WebService = () => {
@@ -14,6 +15,8 @@ const WebService = () => {
         <WebProjects />
         <AboutWebServices/>
         <FAQ/>
+        <BookDemoForm demoReason="Web service"/>  
+        
     </div>
   )
 }

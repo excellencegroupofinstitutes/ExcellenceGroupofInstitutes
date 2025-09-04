@@ -8,7 +8,6 @@ const ContactUs = () => {
     name: "",
     email: "",
     contactNumber: "",
-    preferredTiming: null,
     reason: "Contact",
     message: ""
   });
@@ -59,7 +58,6 @@ const ContactUs = () => {
         name: "",
         email: "",
         contactNumber: "",
-        preferredTiming: null,
         reason: "Contact",
         message: ""
       });

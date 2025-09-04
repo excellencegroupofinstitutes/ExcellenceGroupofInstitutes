@@ -2,6 +2,7 @@ import HeroComputer from "../components/computerService/HeroComputer";
 import Course from "../components/computerService/Course";
 import AboutComputerCentres from "../components/computerService/AboutComputerCentres";
 import Amenities from "../components/Amenities";
+import BookDemoForm from "../components/BookDemoForm";
 
 
 const ComputerService = () => {
@@ -11,6 +12,8 @@ const ComputerService = () => {
       <Course />
       <Amenities/>
       <AboutComputerCentres/>
+      <BookDemoForm demoReason="Computer center"/>  
+      
     </div>
   );
 };

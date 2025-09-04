@@ -2,21 +2,17 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import api from "../../service/api";
+import api from "../service/api";
 
-export default function BookDemoForm() {
-  const timingOptions = [
-    "Morning (9 AM - 12 PM)",
-    "Afternoon (12 PM - 4 PM)",
-    "Evening (4 PM - 8 PM)",
-  ];
+export default function BookDemoForm({ demoReason }) {
+
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     contactNumber: "",
-    preferredTiming: "",
-    reason: "Demo Class",
+    message: "",
+    reason: demoReason,
   });
 
   const [loading, setLoading] = useState(false);
@@ -28,7 +24,7 @@ export default function BookDemoForm() {
 
   // Validate inputs
   const validateForm = () => {
-    const { name, email, contactNumber, preferredTiming } = formData;
+    const { name, email, contactNumber, } = formData;
 
     if (!name.trim()) {
       toast.error("Name is required");
@@ -49,10 +45,7 @@ export default function BookDemoForm() {
       return false;
     }
 
-    if (!preferredTiming) {
-      toast.error("Please select a preferred timing");
-      return false;
-    }
+
 
     return true;
   };
@@ -71,8 +64,8 @@ export default function BookDemoForm() {
         name: "",
         email: "",
         contactNumber: "",
-        preferredTiming: "",
-        reason: "Demo Class",
+        message: "",
+        reason: demoReason,
       });
     } catch (error) {
       console.error("Error booking demo:", error);
@@ -119,7 +112,7 @@ export default function BookDemoForm() {
         {/* Left - Form */}
         <div className="w-full md:w-1/2 p-6 sm:p-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
-            Book a Free Demo Class
+            Book a Free Demo
           </h2>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
@@ -159,28 +152,23 @@ export default function BookDemoForm() {
             </div>
             <div>
               <label className="block text-gray-700 font-medium">
-                Preferred Timing
+                Message
               </label>
-              <select
-                name="preferredTiming"
-                value={formData.preferredTiming}
+              <textarea
+                rows="4"
+                placeholder="Your Message"
+                value={formData.message}
+                name="message"
                 onChange={handleChange}
-                className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:outline-none"
-              >
-                <option value="">Select an option</option>
-                {timingOptions.map((option, index) => (
-                  <option key={index} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
+                className="w-full px-4 py-3 resize-none border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
+              ></textarea>
             </div>
             <motion.button
               type="submit"
               disabled={loading}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full bg-primary text-white font-semibold py-3 rounded-lg shadow-lg hover:bg-primary-hover transition disabled:opacity-50"
+              className="w-full bg-primary hover:cursor-pointer text-white font-semibold py-3 rounded-lg shadow-lg hover:bg-primary-hover transition disabled:opacity-50"
             >
               {loading ? "Submitting..." : "Submit"}
             </motion.button>
