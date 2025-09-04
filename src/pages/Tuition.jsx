@@ -7,6 +7,7 @@ import AboutTuitions from '../components/tuition/AboutTuitions'
 import Vision from '../components/tuition/Vision'
 import Amenities from '../components/Amenities'
 import GalleryMarquee from '../components/tuition/TuitionMarquee'
+import ExcellenceCoCurricularRace from '../components/tuition/CoCurriculars'
 
 
 const Tuition = () => {
@@ -18,6 +19,7 @@ const Tuition = () => {
         <OurResults/>
         <QuoteSection/>
         <Vision/>
+        <ExcellenceCoCurricularRace/>
         <GalleryMarquee/>
         <Locations/>
         <AboutTuitions/>
