@@ -50,7 +50,7 @@ export default function Footer() {
                 onClick={() => navigate('/tuition')} 
                 className="hover:text-yellow-700 transition hover:cursor-pointer"
               >
-                Excellence Tuitions
+                Excellence Institutes
               </button>
             </li>
             <li>

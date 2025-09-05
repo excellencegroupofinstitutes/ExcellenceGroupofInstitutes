@@ -20,8 +20,8 @@ const Tuition = () => {
         <Amenities/>    
         <OurResults/>
         <QuoteSection/>
-        {/* <Video/> */}
-        {/* <Locations/> */}
+        <Video/>
+        <Locations/>
         <Vision/>
         <ExcellenceCoCurricularRace/>
         <GalleryMarquee/>
