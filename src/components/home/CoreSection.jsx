@@ -150,9 +150,9 @@ const CoreSection = forwardRef((props, ref) => {
             />
           </div>
           <div className="p-6">
-            <h2 className="text-3xl font-bold mb-4">Tuition</h2>
+            <h2 className="text-3xl font-bold mb-4">Educational Institute</h2>
             <p className="text-base mt-2 mb-6 leading-relaxed">
-              At Excellence Tuitions, we believe that learning should be about
+              At Excellence Institute, we believe that learning should be about
               gaining conceptual knowledge, not just memorizing facts.
             </p>
             <button

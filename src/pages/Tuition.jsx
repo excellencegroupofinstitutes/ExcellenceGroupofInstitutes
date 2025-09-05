@@ -8,6 +8,8 @@ import Vision from '../components/tuition/Vision'
 import Amenities from '../components/Amenities'
 import BookDemoForm from '../components/BookDemoForm'
 import Video from '../components/tuition/Video'
+import GalleryMarquee from '../components/tuition/TuitionMarquee'
+import ExcellenceCoCurricularRace from '../components/tuition/CoCurriculars'
 
 
 const Tuition = () => {
@@ -21,9 +23,11 @@ const Tuition = () => {
         <Video/>
         <Locations/>
         <Vision/>
+        <ExcellenceCoCurricularRace/>
+        <GalleryMarquee/>
+        <Locations/>
         <AboutTuitions/>
         <BookDemoForm demoReason="Tuition"/>  
-        
     </div>
   )
 }

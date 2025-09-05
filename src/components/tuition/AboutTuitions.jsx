@@ -43,13 +43,9 @@ const AboutTuitions = () => {
             <b>Excellence Group of Institutes</b> in Ludhiana. We focus on
             practical, result-oriented teaching that strengthens{" "}
             <b>your understanding</b>.
-          {/* </p> */}
-          {/* <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
             Learning here means building <b>conceptual knowledge</b> through{" "}
             <b>innovative methods</b> that make complex topics simple and
             applicable.
-          {/* </p>
-          <p className="text-gray-700 md:text-lg leading-relaxed backdrop-blur-sm bg-white/30 p-5 rounded-xl border border-white/20"> */}
             Our aim is to help you think critically, solve problems
             independently, and succeed in exams and beyond.
           </p>
@@ -67,9 +63,9 @@ const AboutTuitions = () => {
             {/* Background card accent */}
             <div className="absolute -top-6 -left-6 w-full h-full bg-yellow-300 rounded-2xl shadow-xl z-0"></div>
             <img
-              src="/images/abouttuitions.png"
+              src="/images/abouttuition.jpg"
               alt="Excellence Tuitions"
-              className="relative z-10 w-full h-[380px] object-cover object-top rounded-2xl shadow-2xl border-4 border-white/40"
+              className="relative z-10 w-full h-[400px] object-cover object-top rounded-2xl shadow-2xl border-4 border-white/40"
             />
           </div>
         </motion.div>
