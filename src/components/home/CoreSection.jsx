@@ -99,12 +99,12 @@ const CoreSection = forwardRef((props, ref) => {
           </div>
         </div>
 
-        {/* Computer Center */}
+        {/* Computer Centre */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="relative">
             <img
               src="/images/core-computer-center-1.png"
-              alt="computer center"
+              alt="Computer Centre"
               className="w-full max-w-[600px] h-auto max-h-[600px] object-cover"
             />
             <div
@@ -123,7 +123,7 @@ const CoreSection = forwardRef((props, ref) => {
           <div className="md:w-1/2 relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-orange-50/30 to-red-50/30 rounded-3xl -m-8 -z-10"></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Computer Center
+              Computer Centre
             </h2>
             <p className="text-base md:text-lg mt-2 leading-relaxed">
               Our courses go far beyond simple theory. We immerse you in
@@ -188,7 +188,7 @@ const CoreSection = forwardRef((props, ref) => {
           </div>
         </div>
 
-        {/* Computer Center card */}
+        {/* Computer Centre card */}
         <div className="flex gap-3 flex-col mx-2 shadow-2xl my-5">
           <div className="w-full h-[175px]">
             <img
@@ -198,7 +198,7 @@ const CoreSection = forwardRef((props, ref) => {
             />
           </div>
           <div className="p-6">
-            <h2 className="text-3xl font-bold mb-4">Computer Center</h2>
+            <h2 className="text-3xl font-bold mb-4">Computer Centre</h2>
             <p className="text-base mt-2 mb-6 leading-relaxed">
               Our courses go far beyond simple theory. We immerse you in
               real-world, industry-demanding projects from day one.
