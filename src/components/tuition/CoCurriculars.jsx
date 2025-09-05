@@ -15,8 +15,8 @@ const ExcellenceCoCurricularRace = () => {
   const [progress, setProgress] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handleTuitionDemo = () =>{
-      document.getElementById("tuition-demo-form")?.scrollIntoView({ behavior: "smooth" });
+  const handleTuitionDemo = () => {
+    document.getElementById("tuition-demo-form")?.scrollIntoView({ behavior: "smooth" });
 
   }
 
@@ -173,27 +173,24 @@ const ExcellenceCoCurricularRace = () => {
                 return (
                   <div
                     key={index}
-                    className={`group relative bg-white rounded-3xl p-8 border transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer ${
-                      isActive
-                        ? "border-yellow-400 shadow-2xl shadow-yellow-400/20 scale-105"
-                        : "border-gray-100 shadow-lg hover:border-yellow-200"
-                    }`}
+                    className={`group relative bg-white rounded-3xl p-8 border transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer ${isActive
+                      ? "border-yellow-400 shadow-2xl shadow-yellow-400/20 scale-105"
+                      : "border-gray-100 shadow-lg hover:border-yellow-200"
+                      }`}
                     onMouseEnter={() => setActiveCard(index)}
                   >
                     {/* Icon */}
                     <div
-                      className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 ${
-                        isActive
-                          ? "bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg shadow-yellow-400/30"
-                          : "bg-gray-50 group-hover:bg-yellow-50"
-                      }`}
+                      className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 ${isActive
+                        ? "bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg shadow-yellow-400/30"
+                        : "bg-gray-50 group-hover:bg-yellow-50"
+                        }`}
                     >
                       <IconComponent
-                        className={`w-8 h-8 transition-colors duration-300 ${
-                          isActive
-                            ? "text-white"
-                            : "text-gray-600 group-hover:text-yellow-600"
-                        }`}
+                        className={`w-8 h-8 transition-colors duration-300 ${isActive
+                          ? "text-white"
+                          : "text-gray-600 group-hover:text-yellow-600"
+                          }`}
                       />
                     </div>
 
@@ -223,11 +220,10 @@ const ExcellenceCoCurricularRace = () => {
 
                     {/* Hover Arrow */}
                     <ChevronRight
-                      className={`absolute top-6 right-6 w-5 h-5 transition-all duration-300 ${
-                        isActive
-                          ? "text-yellow-600 opacity-100 translate-x-0"
-                          : "text-gray-400 opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
-                      }`}
+                      className={`absolute top-6 right-6 w-5 h-5 transition-all duration-300 ${isActive
+                        ? "text-yellow-600 opacity-100 translate-x-0"
+                        : "text-gray-400 opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+                        }`}
                     />
                   </div>
                 );
@@ -238,9 +234,20 @@ const ExcellenceCoCurricularRace = () => {
 
         {/* Adaptive Image Gallery */}
         <section className="max-w-6xl mx-auto px-6 py-12 md:py-20">
+
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Our Journey in Pictures
+            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
+              <span className="text-black">Our Journey </span>
+              <span className="relative inline-block">
+                <span
+                  className="bg-gradient-to-br from-[#f8cb21] to-[#edca4d] bg-clip-text text-transparent"
+                >
+                  in Pictures
+                </span>
+                <span
+                  className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#f8cb21] rounded-sm"
+                ></span>
+              </span>
             </h2>
             <p className="mt-2 text-gray-600">
               Witness the impact of our programs through these memorable moments
@@ -252,11 +259,11 @@ const ExcellenceCoCurricularRace = () => {
             <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl">
               {/* Image Container with Dynamic Sizing */}
               <div className="relative w-full">
-                <div 
+                <div
                   className={`
                     relative w-full flex items-center justify-center bg-gray-50 transition-all duration-500
-                    ${visionImages[currentImageIndex].orientation === 'portrait' 
-                      ? 'h-[600px] md:h-[700px]' 
+                    ${visionImages[currentImageIndex].orientation === 'portrait'
+                      ? 'h-[600px] md:h-[700px]'
                       : 'h-[400px] md:h-[500px]'
                     }
                   `}
@@ -276,7 +283,7 @@ const ExcellenceCoCurricularRace = () => {
                       filter: 'brightness(0.95) contrast(1.05)',
                     }}
                   />
-                  
+
                   {/* Overlay gradient for better text readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
                 </div>
@@ -302,7 +309,7 @@ const ExcellenceCoCurricularRace = () => {
                 >
                   <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-yellow-600 transition-colors duration-200" />
                 </button>
-                
+
                 <button
                   onClick={nextImage}
                   className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group backdrop-blur-sm"
@@ -320,8 +327,8 @@ const ExcellenceCoCurricularRace = () => {
                   onClick={() => setCurrentImageIndex(index)}
                   className={`
                     relative overflow-hidden rounded-lg transition-all duration-300 border-2 group
-                    ${index === currentImageIndex 
-                      ? 'border-yellow-400 scale-110 shadow-lg shadow-yellow-400/20' 
+                    ${index === currentImageIndex
+                      ? 'border-yellow-400 scale-110 shadow-lg shadow-yellow-400/20'
                       : 'border-gray-200 hover:border-yellow-300 hover:scale-105'
                     }
                     ${image.orientation === 'portrait' ? 'w-12 h-16' : 'w-16 h-12'}

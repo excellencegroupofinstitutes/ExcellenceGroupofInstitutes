@@ -80,15 +80,31 @@ const Vision = () => {
 
       {/* Gallery Section */}
       <section className="max-w-6xl mx-auto px-6 py-12 md:py-20">
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Our Journey in Pictures
           </h2>
+          
+        </div> */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
+            <span className="text-black">Our Journey </span>
+            <span className="relative inline-block">
+              <span
+                className="bg-gradient-to-br from-[#f8cb21] to-[#edca4d] bg-clip-text text-transparent"
+              >
+                in Pictures
+              </span>
+              <span
+                className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#f8cb21] rounded-sm"
+              ></span>
+            </span>
+          </h2>
           <p className="mt-2 text-gray-600">
-            Witness the impact of our Vision Batch through these memorable
-            moments
+            Witness the impact of our Vision Batch through these memorable moments
           </p>
         </div>
+
 
         <div className="relative rounded-xl overflow-hidden shadow-xl bg-white">
           <motion.img
