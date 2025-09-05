@@ -42,7 +42,7 @@ const TuitionHero = () => {
             className="opacity-50 size-7"
           />
           <h2 className="text-center text-xl pb-4 w-fit ">
-            Welcome to Excellence Tuitions
+            Welcome to Excellence Educational Institute
           </h2>
           <img
             src="/images/undraw_fun-star.svg"

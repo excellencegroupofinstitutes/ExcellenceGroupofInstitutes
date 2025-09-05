@@ -6,7 +6,7 @@ const Locations = () => {
     <section className="py-15 px-5 bg-white">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-          Our Tuition Locations
+          Our Institute Locations
         </h2>
           <p className="mb-7"> We are currently operating in two locations in Ludhiana, Punjab</p>
         <div className="grid md:grid-cols-2 gap-8">

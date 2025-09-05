@@ -163,7 +163,7 @@ const ExcellenceCoCurricularRace = () => {
         </div>
 
         {/* Activities Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           <div className="lg:col-span-3">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {activities.map((activity, index) => {
@@ -179,7 +179,7 @@ const ExcellenceCoCurricularRace = () => {
                       }`}
                     onMouseEnter={() => setActiveCard(index)}
                   >
-                    {/* Icon */}
+                    Icon
                     <div
                       className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 ${isActive
                         ? "bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-lg shadow-yellow-400/30"
@@ -194,7 +194,7 @@ const ExcellenceCoCurricularRace = () => {
                       />
                     </div>
 
-                    {/* Content */}
+                    Content
                     <h4 className="text-xl font-bold text-gray-900 mb-3">
                       {activity.title}
                     </h4>
@@ -202,7 +202,7 @@ const ExcellenceCoCurricularRace = () => {
                       {activity.description}
                     </p>
 
-                    {/* Metrics */}
+                    Metrics
                     <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                       <div>
                         <div className="text-lg font-bold text-gray-900">
@@ -218,7 +218,7 @@ const ExcellenceCoCurricularRace = () => {
                       </div>
                     </div>
 
-                    {/* Hover Arrow */}
+                    Hover Arrow
                     <ChevronRight
                       className={`absolute top-6 right-6 w-5 h-5 transition-all duration-300 ${isActive
                         ? "text-yellow-600 opacity-100 translate-x-0"
@@ -230,7 +230,7 @@ const ExcellenceCoCurricularRace = () => {
               })}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Adaptive Image Gallery */}
         <section className="max-w-6xl mx-auto px-6 py-12 md:py-20">

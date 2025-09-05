@@ -57,7 +57,7 @@ const HeroSection = ({ onExploreClick }) => {
           <span className="bg-secondary text-primary px-2 py-1 rounded-md">
             <ReactTyped
               strings={[
-                "Excellence Tuitions",
+                "Excellence Educational Institute",
                 "Excellence Computer Centre",
                 "Excellence Web Services",
               ]}
