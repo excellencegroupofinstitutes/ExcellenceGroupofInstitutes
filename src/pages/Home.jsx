@@ -8,7 +8,7 @@ import InstituteAchievements from '../components/home/InstituteAchievements'
 import CoreSection from '../components/home/CoreSection'
 import GalleryMarquee from '../components/GalleryMarquee'
 import Testimonials from '../components/home/Testimonials'
-import BookDemoForm from '../components/home/BookDemoForm'
+import BookDemoForm from '../components/BookDemoForm'
 import OurVision from '../components/home/OurVision'
 
 
@@ -28,7 +28,7 @@ const Home = () => {
         <InstituteAchievements/>
         <GalleryMarquee/>
         <Testimonials/>   
-        <BookDemoForm/>  
+        <BookDemoForm demoReason="Demo Class"/>  
 
     </div>
 )
