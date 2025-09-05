@@ -27,7 +27,9 @@ const Tuition = () => {
         <GalleryMarquee/>
         <Locations/>
         <AboutTuitions/>
+        <div id='tuition-demo-form' >
         <BookDemoForm demoReason="Tuition"/>  
+        </div>
     </div>
   )
 }
