@@ -58,7 +58,7 @@ const CoreSection = forwardRef((props, ref) => {
           </div>
           <div className="md:w-1/2 relative">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30 rounded-3xl -m-8 -z-10"></div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Tuition</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Educational Institute</h2>
             <p className="text-base md:text-lg mt-2 leading-relaxed">
               At Excellence Tuitions, we believe that learning should be about
               gaining conceptual knowledge, not just memorizing facts.
