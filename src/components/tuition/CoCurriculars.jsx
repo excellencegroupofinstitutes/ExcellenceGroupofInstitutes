@@ -15,6 +15,11 @@ const ExcellenceCoCurricularRace = () => {
   const [progress, setProgress] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const handleTuitionDemo = () =>{
+      document.getElementById("tuition-demo-form")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+
   const visionImages = [
     {
       src: "/images/co_curricular/cc1.jpg",
@@ -348,7 +353,7 @@ const ExcellenceCoCurricularRace = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-4 bg-white rounded-full p-2 pr-6 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 group cursor-pointer">
+          <div onClick={handleTuitionDemo} className="inline-flex items-center gap-4 bg-white rounded-full p-2 pr-6 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 group cursor-pointer">
             <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Flag className="w-6 h-6 text-white" />
             </div>
