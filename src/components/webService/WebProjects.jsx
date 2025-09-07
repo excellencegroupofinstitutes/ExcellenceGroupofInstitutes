@@ -9,10 +9,10 @@ const WebProjects = () => {
     },
     {
       id: "02",
-      title: "AcaBrain",
-      desc: "Frontend template for Institutions",
+      title: "Aashiyana Greens",
+      desc: "Aashiyana Greens brings the serenity of nature into modern living with sustainable homes surrounded by lush green landscapes.",
       img: "/images/project-2.png",
-      hyperlink: "https://kitpro.site/acabrain/?storefront=envato-elements",
+      hyperlink: "https://aashiyanagreens.com/",
     },
   ];
 
