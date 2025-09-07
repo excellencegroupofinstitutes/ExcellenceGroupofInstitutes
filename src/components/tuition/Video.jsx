@@ -23,7 +23,7 @@ const Video = () => {
         </a>
 
         {/* Video Section */}
-        <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-lg border border-secondary-light">
+        {/* <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-lg border border-secondary-light">
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-2xl"
             src="https://www.youtube.com/embed/M2102KrfCR0?autoplay=1&mute=1&rel=0"
@@ -32,7 +32,7 @@ const Video = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </section>
   );
