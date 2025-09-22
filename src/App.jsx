@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     </>
   },
   {
-    path: '/tuition',
+    path: '/tuitions',
     element: <>
       <Navbar />
       <ScrollToTop />
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
     </>
   },
   {
-    path: '/computer-services',
+    path: '/computer-centre',
     element: <>
       <Navbar />
       <ScrollToTop />

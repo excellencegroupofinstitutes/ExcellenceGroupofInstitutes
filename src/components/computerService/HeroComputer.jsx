@@ -22,7 +22,7 @@ const HeroComputer = () => {
           className="opacity-50 size-7"
         />
         <h2 className="text-center text-xl pb-4 w-fit ">
-          Welcome to Excellence Computer Centres
+          Welcome to Excellence Computer Centre
         </h2>
         <img
           src="/images/undraw_fun-star.svg"
@@ -40,7 +40,7 @@ const HeroComputer = () => {
               className="opacity-50 size-7"
             />
             <h2 className="text-xl pb-4 w-fit ">
-              Welcome to Excellence Computer Centres
+              Welcome to Excellence Computer Centre
             </h2>
             <img
               src="/images/undraw_fun-star.svg"
