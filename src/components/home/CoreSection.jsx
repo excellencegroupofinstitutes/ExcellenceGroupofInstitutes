@@ -64,7 +64,7 @@ const CoreSection = forwardRef((props, ref) => {
               gaining conceptual knowledge, not just memorizing facts.
             </p>
             <div className="mt-5">
-              <FancyButton navigation={() => navigate("/tuition")}>
+              <FancyButton navigation={() => navigate("/tuitions")}>
                 Read More
               </FancyButton>
             </div>
@@ -157,7 +157,7 @@ const CoreSection = forwardRef((props, ref) => {
             </p>
             <button
               className="text-white bg-secondary transform transition-all rounded-sm duration-300 font-[500] py-[5px] hover:translate-y-1 hover:cursor-pointer w-full"
-              onClick={() => navigate("/tuition")}
+              onClick={() => navigate("/tuitions")}
             >
               Read More
             </button>
