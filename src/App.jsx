@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     </>
   },
   {
-    path: '/tuition',
+    path: '/tuitions',
     element: <>
       <Navbar />
       <ScrollToTop />
