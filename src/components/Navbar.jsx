@@ -126,7 +126,7 @@ const Navbar = () => {
                 <Link to="/" onClick={() => setIsMenuOpen(false)}>
                   <span className="block hover:text-primary-hover px-2 py-1">Home</span>
                 </Link>
-                <Link to="/tuition" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/tuitions" onClick={() => setIsMenuOpen(false)}>
                   <span className="block hover:text-primary-hover px-2 py-1">Tuitions</span>
                 </Link>
                 <Link to="/computer-centre" onClick={() => setIsMenuOpen(false)}>
