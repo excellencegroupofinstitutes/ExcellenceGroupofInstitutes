@@ -10,6 +10,7 @@ import BookDemoForm from '../components/BookDemoForm'
 import Video from '../components/tuition/Video'
 import GalleryMarquee from '../components/tuition/TuitionMarquee'
 import ExcellenceCoCurricularRace from '../components/tuition/CoCurriculars'
+import OurPromise from '../components/tuition/OurPromise'
 
 
 const Tuition = () => {
@@ -26,6 +27,7 @@ const Tuition = () => {
         <ExcellenceCoCurricularRace/>
         <GalleryMarquee/>
         <Locations/>
+        <OurPromise/>
         <AboutTuitions/>
         <div id='tuition-demo-form' >
         <BookDemoForm demoReason="Tuition"/>  

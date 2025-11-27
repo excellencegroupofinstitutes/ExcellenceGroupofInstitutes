@@ -11,7 +11,7 @@ import About from './pages/About'
 import WhatsApp from './components/WhatsApp'
 import PageNotFound from './pages/PageNotFound'
 import SplashScreen from './components/SplashScreen'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -72,17 +72,38 @@ const router = createBrowserRouter([
   },
 ])
 
-const App = () => {
+const SPLASH_KEY = 'splashShown' 
 
-    const [showSplash, setShowSplash] = useState(true);
+const App = () => {
+  const [showSplash, setShowSplash] = useState(false)
+  const splashDuration = 2000 
+
+  useEffect(() => {
+    try {
+      const wasShown = sessionStorage.getItem(SPLASH_KEY)
+      if (!wasShown) {
+        setShowSplash(true)
+        const t = setTimeout(() => {
+          setShowSplash(false)
+          try { sessionStorage.setItem(SPLASH_KEY, 'true') } catch(e) {}
+        }, splashDuration)
+
+        return () => clearTimeout(t)
+      } else {
+        setShowSplash(false)
+      }
+    } catch (err) {
+      console.warn('sessionStorage not available, skipping splash persistence', err)
+      setShowSplash(false)
+    }
+  }, [])
 
   if (showSplash) {
-    return <SplashScreen onFinish={() => setShowSplash(false)} />;
-  } 
+    return <SplashScreen />
+  }
 
   return (
     <>
-      {/* <SplashScreen /> */}
       <ToastContainer position="top-right" autoClose={3000} />
       <RouterProvider router={router} />
       <WhatsApp />
