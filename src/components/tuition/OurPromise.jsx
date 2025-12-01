@@ -58,7 +58,7 @@ const OurPromise = () => {
             }}
           >
             At <strong>Excellence Group of Institutes</strong>, our promise is simple —
-            to help students (classes 6th–12th) learn better, build confidence, and achieve
+            to help students learn better, build confidence, and achieve
             steady academic growth through structured teaching and caring mentorship.
           </p>
 
