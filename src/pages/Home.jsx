@@ -10,6 +10,7 @@ import GalleryMarquee from '../components/GalleryMarquee'
 import Testimonials from '../components/home/Testimonials'
 import BookDemoForm from '../components/BookDemoForm'
 import OurVision from '../components/home/OurVision'
+import OurPromise from '../components/home/Our Promise'
 
 
 const Home = () => {
@@ -23,7 +24,9 @@ const Home = () => {
         <HeroSection onExploreClick={scrollToServices} />
         <CoreSection ref={coreSectionRef} />
         <OurVision/>
+        <OurPromise/>
         <MeetDirector/>
+         
         <ChooseUsCard/>
         <InstituteAchievements/>
         <GalleryMarquee/>

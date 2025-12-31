@@ -91,7 +91,7 @@ export default function Footer() {
             </p>
             <p>
               <a className="flex items-center justify-start gap-2 break-words" href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9" target="_blank" >
-              <FaMapMarkerAlt /> SCF 44-C, Rajguru nagar market, Rajguru nagar, D Block, Ludhiana, Punjab
+              <FaMapMarkerAlt /> SCO 44-C, Rajguru nagar market, Rajguru nagar, D Block, Ludhiana, Punjab
               </a>
             </p>
             <p className="flex items-center md:justify-start gap-2 break-all">

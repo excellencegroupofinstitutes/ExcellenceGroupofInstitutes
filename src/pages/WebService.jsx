@@ -5,6 +5,7 @@ import FAQ from '../components/FAQ'
 import WebProjects from '../components/webService/WebProjects'
 import AboutWebServices from '../components/webService/AboutWebServices'
 import BookDemoForm from '../components/BookDemoForm'
+import OurPromise from '../components/webService/OurPromise'
 
 
 const WebService = () => {
@@ -13,6 +14,7 @@ const WebService = () => {
         <HeroWebService />
         <OurServices />
         <WebProjects />
+        <OurPromise/>
         <AboutWebServices/>
         <FAQ/>
         <BookDemoForm demoReason="Web service"/>  

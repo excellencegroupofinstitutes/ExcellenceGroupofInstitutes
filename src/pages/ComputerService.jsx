@@ -4,6 +4,7 @@ import AboutComputerCentres from "../components/computerService/AboutComputerCen
 import Amenities from "../components/Amenities";
 import BookDemoForm from "../components/BookDemoForm";
 import ComputerMarquee from "../components/computerService/ComputerMarquee";
+import OurPromiseComputer from "../components/computerService/OurPromise";
 
 
 const ComputerService = () => {
@@ -13,6 +14,7 @@ const ComputerService = () => {
       <Course />
       <Amenities/>
       <ComputerMarquee/>
+      <OurPromiseComputer/>
       <AboutComputerCentres/>
       <BookDemoForm demoReason="Computer center"/>  
       

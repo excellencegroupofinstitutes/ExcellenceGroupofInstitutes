@@ -3,7 +3,7 @@ const WebProjects = () => {
     {
       id: "01",
       title: "Mytuitionapp ",
-      subtext:"Academic Project",
+      subtext:"Academic Website",
       desc: "Experience the world’s first Personalized Chapter Model (PCM) for CBSE students in India",
       img: "/images/project-1.png",
       hyperlink: "https://mytuitionapp.com/",
@@ -11,7 +11,7 @@ const WebProjects = () => {
     {
       id: "02",
       title: "Aashiyana Greens",
-      subtext:"Real Estate",
+      subtext:"Real Estate Website",
       desc: "Aashiyana Greens brings the serenity of nature into modern living with sustainable homes surrounded by lush green landscapes.",
       img: "/images/project-2.png",
       hyperlink: "https://aashiyanagreens.com/",

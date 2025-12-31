@@ -103,7 +103,7 @@ const ContactUs = () => {
             <div >
               <a href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9" className="flex items-center gap-4" target="_blank" >
                 <MapPin className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
-              <p className="text-gray-700">SCF 44-C, Rajguru nagar market, Rajguru nagar, D Block, Master Properties Road, Ludhiana, Punjab</p>
+              <p className="text-gray-700">SCO 44-C, Rajguru nagar market, Rajguru nagar, D Block, Master Properties Road, Ludhiana, Punjab</p>
               </a>
               
             </div>

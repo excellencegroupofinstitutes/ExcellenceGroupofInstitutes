@@ -6,37 +6,33 @@ const OurPromise = () => {
       <div className="max-w-[1160px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 px-6 lg:px-0">
 
         {/* LEFT — Image */}
-        <div
-          className="flex-shrink-0"
-          style={{
-            width: 520,
-            maxWidth: "90vw",
-            padding: 20,
-            borderRadius: 9999,
-            border: "3px solid var(--color-secondary)",
-            background: "white",
-            boxShadow: "0 12px 34px rgba(0,0,0,0.06)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              overflow: "hidden",
-              borderRadius: "9999px",
-              width: "100%",
-              height: 520,
-              maxHeight: "70vh",
-            }}
-          >
-            <img
-              src="/images/Promise-hands.jpg"
-              alt="Excellence Group of Institutes - Promise"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
-          </div>
-        </div>
+<div
+  className="flex-shrink-0 w-[240px] sm:w-[360px] lg:w-[520px] mx-auto sm:mx-0 p-4 sm:p-6 rounded-full border-4"
+  style={{
+    borderColor: "var(--color-secondary)",
+    background: "white",
+    boxShadow: "0 12px 34px rgba(0,0,0,0.06)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
+  <div
+    className="rounded-full w-full"
+    style={{
+      overflow: "hidden",
+      height: "240px",          // smaller height on phone
+    }}
+  >
+    <img
+      src="/images/Promise-hands.jpg"
+      alt="Excellence Group of Institutes - Promise"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
+
 
         {/* RIGHT — Text */}
         <div className="flex-1">
