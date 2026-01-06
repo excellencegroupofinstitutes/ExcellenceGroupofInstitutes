@@ -16,6 +16,30 @@ const WebProjects = () => {
       img: "/images/project-2.png",
       hyperlink: "https://aashiyanagreens.com/",
     },
+    {
+      id: "03",
+      title: "Capital Store",
+      subtext:"E-Commerce Website",
+      desc: "A modern and user-friendly e-commerce platform offering a seamless shopping experience with secure payments, intuitive navigation, and a wide range of premium-quality products tailored to customer needs.",
+      img: "/images/project-3.png",
+      hyperlink: "https://www.capitalstorecs.com/",
+    },
+    {
+      id: "04",
+      title: "Divya Agro Traders",
+      subtext:"Agricultural Equipment Website",
+      desc: "A dedicated platform for farmers and agricultural businesses, providing reliable farming tools and advanced machinery to enhance productivity and support modern agricultural practices.",
+      img: "/images/project-4.png",
+      hyperlink: "https://www.divyaagrotraders.com/",
+    },
+    {
+      id: "05",
+      title: "Wow Kids Worksheets",
+      subtext:"Online Kids Worksheets Website",
+      desc: "An engaging learning platform designed for young learners, offering interactive and curriculum-based worksheets that make education fun, creative, and easily accessible for parents and teachers.",
+      img: "/images/project-5.png",
+      hyperlink: "https://www.wowkidsworksheets.in/",
+    },
   ];
 
   return (

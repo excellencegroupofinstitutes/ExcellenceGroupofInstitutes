@@ -8,6 +8,7 @@ import {
   MapPin,
   Share2,
   ThumbsUp,
+  Video,
 } from "lucide-react";
 import { FaYoutube } from "react-icons/fa";
 
@@ -75,10 +76,14 @@ const services = [
     img: "/images/youTube-ads.png",
     icon: FaYoutube,
   },
+  {
+    title: "Video Editing",
+    description:
+      "We create engaging, professional-quality videos with clean cuts, animations, effects, subtitles, and color grading to make your brand stand out.",
+    img: "/images/video-editing.png", 
+    icon: Video,
+  },
 ];
-
-
-
 
 const OurServices = () => {
   const cardRefs = useRef([]);
@@ -113,18 +118,13 @@ const OurServices = () => {
           <h2 className="text-4xl font-bold tracking-tight">
             <span className="text-black">Our </span>
             <span className="relative inline-block">
-              <span
-                className="bg-gradient-to-br from-[#f8cb21] to-[#edca4d] bg-clip-text text-transparent"
-              >
+              <span className="bg-gradient-to-br from-[#f8cb21] to-[#edca4d] bg-clip-text text-transparent">
                 Services
               </span>
-              <span
-                className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#f8cb21] rounded-sm"
-              ></span>
+              <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#f8cb21] rounded-sm"></span>
             </span>
           </h2>
         </div>
-
 
         <div className="hidden md:block">
           <svg viewBox="0 0 800 150" className="w-full">
@@ -183,7 +183,11 @@ const OurServices = () => {
           {services.map((service, index) => (
             <div key={index} className="flex flex-col p-3">
               <div className="shadow-lg h-[250px] ">
-                <img src={service.img} alt={service.title} className=" w-full h-full object-cover" />
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className=" w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mt-6">{service.title}</h3>
               <p className="mt-5 text-gray-700">{service.description}</p>
@@ -199,17 +203,19 @@ const OurServices = () => {
                 key={index}
                 ref={(el) => (cardRefs.current[index] = el)}
                 className={`group transition-all duration-700 ease-in-out transform rounded-xl p-5 border-l-4 shadow-md hover:shadow-lg hover:scale-[1.02] bg-white 
-                ${readCards.includes(index)
+                ${
+                  readCards.includes(index)
                     ? "border-secondary bg-gradient-to-r from-yellow-100 to-white"
                     : "border-gray-300"
-                  }`}
+                }`}
               >
                 <div className="flex items-start gap-4">
                   <service.icon
-                    className={`text-2xl mt-1 transition-colors duration-300 ${readCards.includes(index)
-                      ? "text-secondary"
-                      : "text-gray-400"
-                      }`}
+                    className={`text-2xl mt-1 transition-colors duration-300 ${
+                      readCards.includes(index)
+                        ? "text-secondary"
+                        : "text-gray-400"
+                    }`}
                   />
                   <div>
                     <h3 className="text-md font-semibold text-gray-900">
