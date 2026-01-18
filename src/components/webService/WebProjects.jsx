@@ -1,15 +1,8 @@
 const WebProjects = () => {
   const projects = [
+   
     {
       id: "01",
-      title: "Mytuitionapp ",
-      subtext:"Academic Website",
-      desc: "Experience the world’s first Personalized Chapter Model (PCM) for CBSE students in India",
-      img: "/images/project-1.png",
-      hyperlink: "https://mytuitionapp.com/",
-    },
-    {
-      id: "02",
       title: "Aashiyana Greens",
       subtext:"Real Estate Website",
       desc: "Aashiyana Greens brings the serenity of nature into modern living with sustainable homes surrounded by lush green landscapes.",
@@ -17,7 +10,7 @@ const WebProjects = () => {
       hyperlink: "https://aashiyanagreens.com/",
     },
     {
-      id: "03",
+      id: "02",
       title: "Capital Store",
       subtext:"E-Commerce Website",
       desc: "A modern and user-friendly e-commerce platform offering a seamless shopping experience with secure payments, intuitive navigation, and a wide range of premium-quality products tailored to customer needs.",
@@ -25,7 +18,7 @@ const WebProjects = () => {
       hyperlink: "https://www.capitalstorecs.com/",
     },
     {
-      id: "04",
+      id: "03",
       title: "Divya Agro Traders",
       subtext:"Agricultural Equipment Website",
       desc: "A dedicated platform for farmers and agricultural businesses, providing reliable farming tools and advanced machinery to enhance productivity and support modern agricultural practices.",
@@ -33,7 +26,7 @@ const WebProjects = () => {
       hyperlink: "https://www.divyaagrotraders.com/",
     },
     {
-      id: "05",
+      id: "04",
       title: "Wow Kids Worksheets",
       subtext:"Online Kids Worksheets Website",
       desc: "An engaging learning platform designed for young learners, offering interactive and curriculum-based worksheets that make education fun, creative, and easily accessible for parents and teachers.",

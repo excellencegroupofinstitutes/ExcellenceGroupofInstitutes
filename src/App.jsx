@@ -11,7 +11,9 @@ import About from './pages/About'
 import WhatsApp from './components/WhatsApp'
 import PageNotFound from './pages/PageNotFound'
 import SplashScreen from './components/SplashScreen'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 import { useEffect, useState } from 'react';
+import TermsAndConditions from './pages/TermsandConditions'
 
 
 
@@ -60,7 +62,26 @@ const router = createBrowserRouter([
       <About />
       <Footer />
     </>
+    },
+    {
+    path: '/privacy-policy',
+    element: <>
+    <Navbar />
+      <ScrollToTop />
+      <PrivacyPolicy />
+      <Footer />
+    </>
   },
+  {
+    path: '/terms-and-conditions',
+    element: <>
+    <Navbar />
+      <ScrollToTop />
+      <TermsAndConditions />
+      <Footer />
+    </>
+  },
+  
   {
     path: '/*',
     element: <>
@@ -70,6 +91,7 @@ const router = createBrowserRouter([
       <Footer />
     </>
   },
+
 ])
 
 const SPLASH_KEY = 'splashShown' 

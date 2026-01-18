@@ -1,23 +1,32 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import api from "../service/api";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+
 const ContactUs = () => {
-  const [loading,setLoading] = useState(false)
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     contactNumber: "",
     reason: "Contact",
-    message: ""
+    message: "",
+    consent: false,
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
   };
 
   const validateForm = () => {
-    const { name, email, contactNumber, message } = formData;
+    const { name, email, contactNumber, message, consent } = formData;
 
     if (!name.trim()) {
       toast.error("Name is required");
@@ -36,9 +45,14 @@ const ContactUs = () => {
       return false;
     }
 
-    if (!message) {
-      toast.error("Please fill message field")
-      return false
+    if (!message.trim()) {
+      toast.error("Please fill message field");
+      return false;
+    }
+
+    if (!consent) {
+      toast.error("You must agree to the Privacy Policy");
+      return false;
     }
 
     return true;
@@ -46,9 +60,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!validateForm()) return; // stop if validation fails
-
+    if (!validateForm()) return;
 
     setLoading(true);
     try {
@@ -59,12 +71,12 @@ const ContactUs = () => {
         email: "",
         contactNumber: "",
         reason: "Contact",
-        message: ""
+        message: "",
+        consent: false,
       });
     } catch (error) {
-      console.error("Error booking demo:", error);
       toast.error(
-        error.response?.data?.message || "Failed to book demo. Try again."
+        error.response?.data?.message || "Failed to submit. Try again."
       );
     } finally {
       setLoading(false);
@@ -72,107 +84,122 @@ const ContactUs = () => {
   };
 
   return (
-    <section id='contact-form' className="bg-gradient-to-br max-w-[1560px] mx-auto from-yellow-50 to-white py-16 px-6 ">
+    <section
+      id="contact-form"
+      className="bg-gradient-to-br max-w-[1560px] mx-auto from-yellow-50 to-white py-16 px-6"
+    >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-        {/* Left: Contact Info */}
+        {/* Left */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
             Get in Touch
           </h2>
           <p className="text-gray-600 mb-8">
-            We’re here to answer your queries and guide you. Whether you’re a student, parent, or partner — feel free to reach out.
+            We’re here to answer your queries and guide you.
           </p>
 
           <div className="space-y-8">
             <div className="flex items-center gap-4">
-              <Phone className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
-              <p className="text-gray-700">+91 8557081922, +91 9115112585 </p>
+              <Phone className="md:size-8 text-secondary" strokeWidth={1.5} />
+              <p>+91 8557081922, +91 9115112585</p>
             </div>
             <div className="flex items-center gap-4">
-              <Mail className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
-              <p className="text-gray-700">excellencegroupofinstitutes@gmail.com</p>
+              <Mail className="md:size-8 text-secondary" strokeWidth={1.5} />
+              <p>excellencegroupofinstitutes@gmail.com</p>
             </div>
-            <div>
-              <a className="flex items-center gap-4" href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9" target="_blank" >
-              <MapPin className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
-              <p className="text-gray-700">JK Center, Basant City, Near Keys Hotel, Ludhiana, Punjab</p>
-              </a>
-                 
-            </div>
-            <div >
-              <a href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9" className="flex items-center gap-4" target="_blank" >
-                <MapPin className="md:size-8 text-secondary flex-shrink-0" strokeWidth={1.5}  />
-              <p className="text-gray-700">SCO 44-C, Rajguru nagar market, Rajguru nagar, D Block, Master Properties Road, Ludhiana, Punjab</p>
-              </a>
-              
-            </div>
+            <a
+              className="flex items-center gap-4"
+              href="https://maps.app.goo.gl/kAi1JzwnoEbWRmtQ9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MapPin className="md:size-8 text-secondary" strokeWidth={1.5} />
+              <p>JK Center, Basant City, Ludhiana</p>
+            </a>
+            <a
+              className="flex items-center gap-4"
+              href="https://maps.app.goo.gl/LXGbiW62Q8qvyaPY9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MapPin className="md:size-8 text-secondary" strokeWidth={1.5} />
+              <p>SCO 44-C, Rajguru Nagar Market, Ludhiana</p>
+            </a>
           </div>
-
-          {/* Social Links */}
-          {/* <div className="flex gap-4 mt-8">
-            <a href="#" className="p-3 bg-secondary text-white rounded-full hover:bg-blue-700 transition">
-              <Facebook size={20} />
-            </a>
-            <a href="#" className="p-3 bg-secondary text-white rounded-full hover:bg-blue-700 transition">
-              <Twitter size={20} />
-            </a>
-            <a href="#" className="p-3 bg-secondary text-white rounded-full hover:bg-blue-700 transition">
-              <Linkedin size={20} />
-            </a>
-          </div> */}
         </div>
 
-        {/* Right: Contact Form */}
-        <div className="bg-white shadow-xl rounded-2xl p-8 border border-gray-100">
-          <h3 className="text-3xl font-semibold text-gray-800 mb-9">
-            Send Us a Message
-          </h3>
+        {/* Right */}
+        <div className="bg-white shadow-xl rounded-2xl p-8 ">
+          <h3 className="text-3xl font-semibold mb-8">Send Us a Message</h3>
+
           <form className="space-y-5" onSubmit={handleSubmit}>
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
               value={formData.name}
-              name="name"
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl"
             />
+
             <input
               type="email"
-              value={formData.email}
               name="email"
-              onChange={handleChange}
               placeholder="Your Email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl"
             />
+
             <input
               type="tel"
-              value={formData.contactNumber}
               name="contactNumber"
+              placeholder="Your Phone Number"
+              value={formData.contactNumber}
               onChange={handleChange}
-              placeholder="Your phone number"
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl"
             />
+
             <textarea
               rows="4"
+              name="message"
               placeholder="Your Message"
               value={formData.message}
-              name="message"
               onChange={handleChange}
-              className="w-full px-4 py-3 resize-none border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
-            ></textarea>
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl resize-none"
+            />
+
+            {/* ✅ Privacy Consent */}
+            <div className="flex items-start gap-2 text-sm text-gray-600">
+              <input
+                type="checkbox"
+                name="consent"
+                checked={formData.consent}
+                onChange={handleChange}
+                className="mt-1 accent-primary"
+              />
+              <p>
+                By submitting this form, you agree to our{" "}
+                <button
+                  type="button"
+                  onClick={() => navigate("/privacy-policy")}
+                  className="text-primary underline hover:text-secondary"
+                >
+                  Privacy Policy
+                </button>.
+              </p>
+            </div>
+
             <button
               type="submit"
               disabled={loading}
-              className="w-full hover:cursor-pointer bg-primary text-white py-3 rounded-xl font-semibold transition"
+              className="w-full bg-primary text-white py-3 rounded-xl font-semibold"
             >
-              {
-                loading?"Submitting":"Submit"
-              }
+              {loading ? "Submitting..." : "Submit"}
             </button>
           </form>
         </div>
-
       </div>
     </section>
   );
