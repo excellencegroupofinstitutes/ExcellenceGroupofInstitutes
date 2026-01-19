@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
     <section className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12 text-gray-800">
       
       {/* Page Header */}
-      <div className="mb-10 text-center mt-9">
+      <div className="mb-10 text-center mt-40">
         <h1 className="text-3xl sm:text-4xl font-bold mb-3">
           Privacy Policy
         </h1>

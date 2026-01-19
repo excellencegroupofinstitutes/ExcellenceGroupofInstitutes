@@ -5,7 +5,7 @@ export default function TermsAndConditions() {
     <section className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12 text-gray-800">
       
       {/* Header */}
-      <div className="mb-10 text-center">
+      <div className="mb-10 text-center mt-40">
         <h1 className="text-3xl sm:text-4xl font-bold mb-3">
           Terms and Conditions
         </h1>
@@ -15,7 +15,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Intro */}
-      <div className="space-y-4 text-base leading-relaxed">
+      <div className="space-y-4 text-base leading-relaxed !mt-9">
         <p>
           Welcome to <strong>Excellence Group of Institutes</strong>. By accessing
           our website (
