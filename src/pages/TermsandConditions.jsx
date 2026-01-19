@@ -4,8 +4,8 @@ export default function TermsAndConditions() {
   return (
     <section className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12 text-gray-800">
       
-      {/* Page Header */}
-      <div className="mb-10 text-center mt-9">
+      {/* Header */}
+      <div className="mb-10 text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-3">
           Terms and Conditions
         </h1>
@@ -21,9 +21,9 @@ export default function TermsAndConditions() {
           our website (
           <a
             href="https://www.excellencegroupofinstitutes.com"
-            className="text-blue-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-primary underline"
           >
             https://www.excellencegroupofinstitutes.com
           </a>
@@ -32,213 +32,178 @@ export default function TermsAndConditions() {
         </p>
       </div>
 
-      {/* Sections */}
-      <div className="mt-10 space-y-8 text-base leading-relaxed">
+      {/* CONTENT */}
+      <div className="mt-10 space-y-10 text-base leading-relaxed">
 
-        {/* 1 */}
+        {/* 1. Excellence Tuitions */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">
-            1. General Information
+          <h2 className="text-xl font-semibold mb-3">
+            1. Excellence Tuitions
           </h2>
-          <p>
-            Excellence Group of Institutes operates three primary verticals:
-            <strong> Excellence Tuitions</strong>,
-            <strong> Excellence Computer Centre</strong>, and
-            <strong> Excellence Web Services</strong>. These terms apply to all
-            students, clients, and visitors.
-          </p>
-        </div>
-
-        {/* 2 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            2. Services & Enrollment
-          </h2>
-
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong>Educational Services (Tuitions & Computer Centre):</strong>{" "}
-              Enrollment is subject to seat availability and successful
-              registration. Students must follow the institute’s code of
-              conduct and attendance policies.
+              <strong>Services & Enrollment:</strong> Enrollment depends on seat
+              availability and completion of registration. Students must follow
+              the institute’s code of conduct and attendance policies.
             </li>
-
             <li>
-              <strong>Professional Services (Web Services):</strong> Project
-              timelines, deliverables, and scope will be defined in a separate
-              Statement of Work (SOW) or project agreement.
+              <strong>Payment & Fees:</strong> Fees must be paid in advance as
+              per the schedule provided at enrollment. Late payments may lead
+              to suspension of services.
             </li>
-          </ul>
-        </div>
-
-        {/* 3 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            3. Refund Policy
-          </h2>
-          <p>
-            Any advance paid for a course, internship, or service is
-            <strong> non-refundable</strong>. A refund will be processed only in
-            cases where the institute fails to deliver the committed services
-            satisfactorily.
-          </p>
-        </div>
-
-        {/* 4 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            4. Payment & Fees
-          </h2>
-
-          <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong>Tuitions and Courses:</strong> Fees must be paid according
-              to the schedule provided at enrollment. Late payments may result
-              in suspension of services.
+              <strong>Refund Policy:</strong> Any advance paid is non-refundable.
+              Refunds are processed only if the institute fails to meet its
+              commitment to satisfactory services.
             </li>
-
             <li>
-              <strong>Web Services Model:</strong> Certain services operate on a
-              “Pay After Service” model. Payment is due upon successful delivery
-              of agreed milestones. An initial project starting fee is required
-              before commencement.
-            </li>
-          </ul>
-        </div>
-
-        {/* 5 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            5. Intellectual Property
-          </h2>
-
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              All website content, including text, graphics, logos, and course
-              material, is the intellectual property of Excellence Group of
-              Institutes.
-            </li>
-
-            <li>
-              <strong>Web Services Clients:</strong> Upon full payment,
-              ownership of final deliverables (website or digital assets) is
-              transferred to the client. Underlying tools, technology, and
-              methodologies remain the property of Excellence Group.
-            </li>
-          </ul>
-        </div>
-
-        {/* 6 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            6. Platform Policy Adherence
-          </h2>
-          <p>
-            For Excellence Web Services, clients are responsible for complying
-            with third-party platform policies (e.g., Meta, Google Ads).
-            Excellence Group of Institutes is not liable for account
-            restrictions due to client-side content or policy changes.
-          </p>
-        </div>
-
-        {/* 7 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            7. After-Sales Support & Service Maintenance
-          </h2>
-
-          <ul className="list-disc pl-6 space-y-4">
-
-            <li>
-              <strong>Excellence Web Services:</strong>
+              <strong>After-Sales Support:</strong>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>
-                  <strong>Post-Launch Support:</strong> 30-day complimentary
-                  support for bug fixes and technical issues related to
-                  delivered work.
+                  <strong>Progress Tracking:</strong> Post-session feedback and
+                  performance analysis for parents and students.
+                </li>
+                <li>
+                  <strong>Exam-Season Support:</strong> Priority access to mock
+                  tests and revision marathons during peak examination months.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Limitation of Liability:</strong> Academic results are not
+              guaranteed and depend on external factors such as student
+              performance.
+            </li>
+          </ul>
+        </div>
+
+        {/* 2. Excellence Computer Centre */}
+        <div>
+          <h2 className="text-xl font-semibold mb-3">
+            2. Excellence Computer Centre
+          </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <strong>Services & Enrollment:</strong> Enrollment is subject to
+              seat availability and registration completion. Students must
+              adhere to attendance and conduct policies.
+            </li>
+            <li>
+              <strong>Payment & Fees:</strong> Course fees follow the schedule
+              provided at enrollment. Non-payment may result in service
+              suspension.
+            </li>
+            <li>
+              <strong>Refund Policy:</strong> Advances for courses or internships
+              are non-refundable. Refunds apply only if service commitments are
+              not met.
+            </li>
+            <li>
+              <strong>After-Sales Support:</strong>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li>
+                  <strong>Certification Support:</strong> Assistance for final
+                  certification and IELTS/PTE guidance for up to 1 month after
+                  course completion.
+                </li>
+                <li>
+                  <strong>Query Resolution:</strong> Doubt-clearing sessions for
+                  former students, subject to faculty availability.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Limitation of Liability:</strong> Specific outcomes are not
+              guaranteed due to external factors.
+            </li>
+          </ul>
+        </div>
+
+        {/* 3. Excellence Web Services */}
+        <div>
+          <h2 className="text-xl font-semibold mb-3">
+            3. Excellence Web Services
+          </h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <strong>Services:</strong> Deliverables and timelines are defined
+              in a separate project agreement or Statement of Work (SOW).
+            </li>
+            <li>
+              <strong>Payment Model:</strong> A “Pay After Service” model is
+              applicable for specific services. An initial project starting
+              fee is mandatory, with final payment due upon milestone delivery.
+            </li>
+            <li>
+              <strong>Refund Policy:</strong> Advances are non-refundable.
+              Refunds apply only if service commitments are not met.
+            </li>
+            <li>
+              <strong>Intellectual Property:</strong> Ownership of final digital
+              assets transfers to the client upon full payment. Underlying
+              tools, technology, and methodologies remain the property of
+              Excellence Web Services.
+            </li>
+            <li>
+              <strong>Platform Policy:</strong> Clients are responsible for
+              adhering to third-party platform policies (Google Ads, Meta,
+              etc.). The institute is not liable for restrictions caused by
+              client content or external policy changes.
+            </li>
+            <li>
+              <strong>After-Sales Support:</strong>
+              <ul className="list-disc pl-6 mt-2 space-y-1">
+                <li>
+                  <strong>Post-Launch Support:</strong> 30 days of complimentary
+                  support for bugs or technical issues.
                 </li>
                 <li>
                   <strong>Maintenance:</strong> Free 1-year maintenance from
-                  delivery date covering downtime, bugs, or unexpected errors.
-                  Post this period, services are subject to AMC or hourly
-                  billing.
+                  delivery date covering downtime or unexpected errors.
+                  Additional support requires AMC or hourly billing.
                 </li>
                 <li>
-                  <strong>Training:</strong> One-time basic training for backend
-                  management of websites or dashboards.
+                  <strong>Training:</strong> One-time backend or dashboard
+                  walkthrough for the client’s team.
                 </li>
               </ul>
             </li>
-
             <li>
-              <strong>Excellence Computer Centre:</strong>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>
-                  Certification guidance and IELTS/PTE exam support for up to 1
-                  month post course completion.
-                </li>
-                <li>
-                  Doubt-clearing sessions subject to faculty availability.
-                </li>
-              </ul>
+              <strong>Limitation of Liability:</strong> No guarantee of fixed
+              search engine rankings due to third-party algorithm changes.
             </li>
-
-            <li>
-              <strong>Excellence Tuitions:</strong>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>
-                  Regular progress tracking and parent feedback.
-                </li>
-                <li>
-                  Priority access to revision marathons and mock tests during
-                  examination periods.
-                </li>
-              </ul>
-            </li>
-
           </ul>
         </div>
 
-        {/* 8 */}
+        {/* General Terms */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">
-            8. Limitation of Liability
+          <h2 className="text-xl font-semibold mb-3">
+            General Terms (Applicable to All Verticals)
           </h2>
-          <p>
-            Excellence Group of Institutes does not guarantee specific academic
-            results or fixed search engine rankings, as outcomes depend on
-            external factors such as student performance and third-party
-            algorithms.
-          </p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <strong>Agreement:</strong> Use of the website or services implies
+              acceptance of these terms.
+            </li>
+            <li>
+              <strong>Website Content:</strong> All text, graphics, and logos
+              are the property of Excellence Group of Institutes.
+            </li>
+            <li>
+              <strong>Termination:</strong> The institute may terminate services
+              for misconduct, breach of terms, or non-payment.
+            </li>
+            <li>
+              <strong>Governing Law:</strong> These terms are governed by Indian
+              law, with exclusive jurisdiction in Ludhiana, Punjab.
+            </li>
+          </ul>
         </div>
 
-        {/* 9 */}
+        {/* Contact */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">
-            9. Termination of Services
-          </h2>
-          <p>
-            We reserve the right to terminate enrollment or project services due
-            to misconduct, non-payment, or breach of these terms.
-          </p>
-        </div>
-
-        {/* 10 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            10. Governing Law
-          </h2>
-          <p>
-            These terms are governed by the laws of India. Any disputes shall be
-            subject to the exclusive jurisdiction of the courts in Ludhiana,
-            Punjab.
-          </p>
-        </div>
-
-        {/* 11 */}
-        <div>
-          <h2 className="text-xl font-semibold mb-2">
-            11. Contact Information
+          <h2 className="text-xl font-semibold mb-3">
+            Contact Information
           </h2>
           <ul className="space-y-1">
             <li>
