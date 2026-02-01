@@ -2,7 +2,7 @@ import React from "react";
 
 const OurPromise = () => {
   return (
-    <section className="mt-0 py-12 max-w-[1560px] mx-auto">
+    <section className="mt-10 py-12 max-w-[1560px] mx-auto">
       <div className="max-w-[1160px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 px-6 lg:px-0">
 
         {/* LEFT — Image */}
