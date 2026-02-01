@@ -12,7 +12,7 @@ const WebProjects = () => {
       id: "02",
       title: "Capital Store",
       subtext: "E-Commerce Website",
-      desc: "A modern and user-friendly e-commerce platform offering a seamless shopping experience with secure payments, intuitive navigation, and a wide range of premium-quality products tailored to customer needs.",
+      desc: "Built with modern web technologies featuring secure checkout, dynamic product listings, responsive design, and performance optimization.",
       img: "/images/project-3.png",
       hyperlink: "https://www.capitalstorecs.com/",
     },
@@ -20,7 +20,7 @@ const WebProjects = () => {
       id: "03",
       title: "Divya Agro Traders",
       subtext: "Agricultural Equipment Website",
-      desc: "A dedicated platform for farmers and agricultural businesses, providing reliable farming tools and advanced machinery to enhance productivity and support modern agricultural practices.",
+      desc: "An agricultural business website highlighting equipment offerings with clear navigation and easy customer inquiry functionality.",
       img: "/images/project-4.png",
       hyperlink: "https://www.divyaagrotraders.com/",
     },
@@ -28,7 +28,7 @@ const WebProjects = () => {
       id: "04",
       title: "Wow Kids Worksheets",
       subtext: "Online Kids Worksheets Website",
-      desc: "An engaging learning platform designed for young learners, offering interactive and curriculum-based worksheets that make education fun, creative, and easily accessible for parents and teachers.",
+      desc: "An educational platform for kids featuring interactive worksheets, responsive design, and easy content access.",
       img: "/images/project-5.png",
       hyperlink: "https://www.wowkidsworksheets.in/",
     },
@@ -52,7 +52,7 @@ const WebProjects = () => {
         </div>
 
         {/* Projects */}
-        <div className="space-y-20">
+        <div className="space-y-5">
           {projects.map((project) => (
             <div key={project.id}>
               <div
